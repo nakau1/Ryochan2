@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		82EF94CEB7ABBA29451FFA96 /* Pods_Ryochan2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94EBD6B9ACA52BC2DB6135F3 /* Pods_Ryochan2Tests.framework */; };
-		DB98A3EB20AB15F100A5273D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB98A3EA20AB15F100A5273D /* AppDelegate.swift */; };
-		DB98A3ED20AB15F100A5273D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB98A3EC20AB15F100A5273D /* ViewController.swift */; };
+		DB73173D20AB192900D49AF3 /* Dialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB73173720AB192900D49AF3 /* Dialog.swift */; };
+		DB73173E20AB192900D49AF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB73173C20AB192900D49AF3 /* AppDelegate.swift */; };
 		DB98A3F020AB15F100A5273D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB98A3EE20AB15F100A5273D /* Main.storyboard */; };
 		DB98A3F220AB15F100A5273D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB98A3F120AB15F100A5273D /* Assets.xcassets */; };
 		DB98A3F520AB15F100A5273D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB98A3F320AB15F100A5273D /* LaunchScreen.storyboard */; };
@@ -33,9 +33,9 @@
 		4BDA1F74F5AA0ED912797074 /* Pods_Ryochan2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ryochan2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94EBD6B9ACA52BC2DB6135F3 /* Pods_Ryochan2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ryochan2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D91675FE35FA4DFA2258BDA8 /* Pods-Ryochan2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ryochan2.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ryochan2/Pods-Ryochan2.release.xcconfig"; sourceTree = "<group>"; };
+		DB73173720AB192900D49AF3 /* Dialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dialog.swift; sourceTree = "<group>"; };
+		DB73173C20AB192900D49AF3 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB98A3E720AB15F100A5273D /* Ryochan2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ryochan2.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB98A3EA20AB15F100A5273D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DB98A3EC20AB15F100A5273D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DB98A3EF20AB15F100A5273D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB98A3F120AB15F100A5273D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB98A3F420AB15F100A5273D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -86,9 +86,84 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DB73173220AB192900D49AF3 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				DB73173820AB192900D49AF3 /* Definition */,
+				DB73173320AB192900D49AF3 /* Extension */,
+				DB73173620AB192900D49AF3 /* Dialog */,
+				DB73173520AB192900D49AF3 /* Protocol */,
+				DB73173A20AB192900D49AF3 /* Model */,
+				DB73173420AB192900D49AF3 /* ImageGenerator */,
+				DB73173B20AB192900D49AF3 /* View */,
+				DB73173920AB192900D49AF3 /* Screen */,
+				DB73173C20AB192900D49AF3 /* AppDelegate.swift */,
+			);
+			name = Sources;
+			path = Ryochan2/Sources;
+			sourceTree = "<group>";
+		};
+		DB73173320AB192900D49AF3 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		DB73173420AB192900D49AF3 /* ImageGenerator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ImageGenerator;
+			sourceTree = "<group>";
+		};
+		DB73173520AB192900D49AF3 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		DB73173620AB192900D49AF3 /* Dialog */ = {
+			isa = PBXGroup;
+			children = (
+				DB73173720AB192900D49AF3 /* Dialog.swift */,
+			);
+			path = Dialog;
+			sourceTree = "<group>";
+		};
+		DB73173820AB192900D49AF3 /* Definition */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Definition;
+			sourceTree = "<group>";
+		};
+		DB73173920AB192900D49AF3 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		DB73173A20AB192900D49AF3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DB73173B20AB192900D49AF3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		DB98A3DE20AB15F100A5273D = {
 			isa = PBXGroup;
 			children = (
+				DB73173220AB192900D49AF3 /* Sources */,
 				DB98A3E920AB15F100A5273D /* Ryochan2 */,
 				DB98A3FE20AB15F200A5273D /* Ryochan2Tests */,
 				DB98A3E820AB15F100A5273D /* Products */,
@@ -109,11 +184,9 @@
 		DB98A3E920AB15F100A5273D /* Ryochan2 */ = {
 			isa = PBXGroup;
 			children = (
-				DB98A3EA20AB15F100A5273D /* AppDelegate.swift */,
-				DB98A3EC20AB15F100A5273D /* ViewController.swift */,
 				DB98A3EE20AB15F100A5273D /* Main.storyboard */,
-				DB98A3F120AB15F100A5273D /* Assets.xcassets */,
 				DB98A3F320AB15F100A5273D /* LaunchScreen.storyboard */,
+				DB98A3F120AB15F100A5273D /* Assets.xcassets */,
 				DB98A3F620AB15F100A5273D /* Info.plist */,
 			);
 			path = Ryochan2;
@@ -328,8 +401,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB98A3ED20AB15F100A5273D /* ViewController.swift in Sources */,
-				DB98A3EB20AB15F100A5273D /* AppDelegate.swift in Sources */,
+				DB73173E20AB192900D49AF3 /* AppDelegate.swift in Sources */,
+				DB73173D20AB192900D49AF3 /* Dialog.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,7 +566,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F5GAB67SL8;
 				INFOPLIST_FILE = Ryochan2/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.neroblu.ios.app.Ryochan2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -509,7 +585,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F5GAB67SL8;
 				INFOPLIST_FILE = Ryochan2/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.neroblu.ios.app.Ryochan2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -526,7 +605,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F5GAB67SL8;
 				INFOPLIST_FILE = Ryochan2Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.neroblu.ios.app.Ryochan2Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -544,7 +627,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F5GAB67SL8;
 				INFOPLIST_FILE = Ryochan2Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.neroblu.ios.app.Ryochan2Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
