@@ -75,6 +75,10 @@
 		DB7317C820AB391700D49AF3 /* AlertDialog.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB7317BD20AB391700D49AF3 /* AlertDialog.storyboard */; };
 		DB7317C920AB391700D49AF3 /* AlertDialog+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7317BE20AB391700D49AF3 /* AlertDialog+App.swift */; };
 		DB7317CA20AB391700D49AF3 /* AlertDialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7317BF20AB391700D49AF3 /* AlertDialogViewController.swift */; };
+		DB7317D020AB39A300D49AF3 /* WallpaperAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7317CC20AB39A300D49AF3 /* WallpaperAdapter.swift */; };
+		DB7317D120AB39A300D49AF3 /* Wallpaper.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB7317CD20AB39A300D49AF3 /* Wallpaper.storyboard */; };
+		DB7317D220AB39A300D49AF3 /* WallpaperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7317CE20AB39A300D49AF3 /* WallpaperViewController.swift */; };
+		DB7317D320AB39A300D49AF3 /* WallpaperPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7317CF20AB39A300D49AF3 /* WallpaperPresenter.swift */; };
 		DB98A3F020AB15F100A5273D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB98A3EE20AB15F100A5273D /* Main.storyboard */; };
 		DB98A3F220AB15F100A5273D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB98A3F120AB15F100A5273D /* Assets.xcassets */; };
 		DB98A3F520AB15F100A5273D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB98A3F320AB15F100A5273D /* LaunchScreen.storyboard */; };
@@ -165,6 +169,10 @@
 		DB7317BD20AB391700D49AF3 /* AlertDialog.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AlertDialog.storyboard; sourceTree = "<group>"; };
 		DB7317BE20AB391700D49AF3 /* AlertDialog+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AlertDialog+App.swift"; sourceTree = "<group>"; };
 		DB7317BF20AB391700D49AF3 /* AlertDialogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertDialogViewController.swift; sourceTree = "<group>"; };
+		DB7317CC20AB39A300D49AF3 /* WallpaperAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallpaperAdapter.swift; sourceTree = "<group>"; };
+		DB7317CD20AB39A300D49AF3 /* Wallpaper.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Wallpaper.storyboard; sourceTree = "<group>"; };
+		DB7317CE20AB39A300D49AF3 /* WallpaperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallpaperViewController.swift; sourceTree = "<group>"; };
+		DB7317CF20AB39A300D49AF3 /* WallpaperPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallpaperPresenter.swift; sourceTree = "<group>"; };
 		DB98A3E720AB15F100A5273D /* Ryochan2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ryochan2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB98A3EF20AB15F100A5273D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB98A3F120AB15F100A5273D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -302,6 +310,7 @@
 				DB7317A020AB2CE600D49AF3 /* BootstrapViewController.swift */,
 				DB73179D20AB2CE600D49AF3 /* Launch */,
 				DB7317A620AB2FE200D49AF3 /* Top */,
+				DB7317CB20AB39A300D49AF3 /* Wallpaper */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -435,6 +444,17 @@
 			path = AlertDialog;
 			sourceTree = "<group>";
 		};
+		DB7317CB20AB39A300D49AF3 /* Wallpaper */ = {
+			isa = PBXGroup;
+			children = (
+				DB7317CD20AB39A300D49AF3 /* Wallpaper.storyboard */,
+				DB7317CF20AB39A300D49AF3 /* WallpaperPresenter.swift */,
+				DB7317CC20AB39A300D49AF3 /* WallpaperAdapter.swift */,
+				DB7317CE20AB39A300D49AF3 /* WallpaperViewController.swift */,
+			);
+			path = Wallpaper;
+			sourceTree = "<group>";
+		};
 		DB98A3DE20AB15F100A5273D = {
 			isa = PBXGroup;
 			children = (
@@ -565,6 +585,7 @@
 			files = (
 				DB7317C420AB391700D49AF3 /* TextInput.storyboard in Resources */,
 				DB98A3F520AB15F100A5273D /* LaunchScreen.storyboard in Resources */,
+				DB7317D120AB39A300D49AF3 /* Wallpaper.storyboard in Resources */,
 				DB7317AB20AB2FE200D49AF3 /* Top.storyboard in Resources */,
 				DB7317C620AB391700D49AF3 /* Menu.storyboard in Resources */,
 				DB7317C120AB391700D49AF3 /* ValueSelect.storyboard in Resources */,
@@ -694,6 +715,7 @@
 				DB73179A20AB257200D49AF3 /* ColorButton.swift in Sources */,
 				DB7317C720AB391700D49AF3 /* MenuViewController.swift in Sources */,
 				DB73179620AB257200D49AF3 /* PreviewView.swift in Sources */,
+				DB7317D220AB39A300D49AF3 /* WallpaperViewController.swift in Sources */,
 				DB7317C920AB391700D49AF3 /* AlertDialog+App.swift in Sources */,
 				DB73176220AB1DAB00D49AF3 /* Codable+App.swift in Sources */,
 				DB73176F20AB255000D49AF3 /* PlayerImageGenerator.swift in Sources */,
@@ -734,8 +756,10 @@
 				DB7317A220AB2CE600D49AF3 /* LaunchViewController.swift in Sources */,
 				DB7317A320AB2CE600D49AF3 /* BootstrapViewController.swift in Sources */,
 				DB7317AC20AB2FE200D49AF3 /* TopViewController.swift in Sources */,
+				DB7317D020AB39A300D49AF3 /* WallpaperAdapter.swift in Sources */,
 				DB73177120AB255000D49AF3 /* PortraitImageGenerator.swift in Sources */,
 				DB7317C220AB391700D49AF3 /* ColorSelectViewController.swift in Sources */,
+				DB7317D320AB39A300D49AF3 /* WallpaperPresenter.swift in Sources */,
 				DB73175320AB1D9B00D49AF3 /* DialogRiseupBehavior.swift in Sources */,
 				DB73173D20AB192900D49AF3 /* Dialog.swift in Sources */,
 				DB73174A20AB1D7000D49AF3 /* Color.swift in Sources */,
