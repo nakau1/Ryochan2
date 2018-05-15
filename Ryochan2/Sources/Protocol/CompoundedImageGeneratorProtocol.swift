@@ -4,10 +4,10 @@
 // =============================================================================
 import UIKit
 
-class DialogBehavior {
+protocol CompoundedImageGeneratorProtocol {
     
 }
 
-class Dialog {
+extension CompoundedImageGeneratorProtocol {
     
 }

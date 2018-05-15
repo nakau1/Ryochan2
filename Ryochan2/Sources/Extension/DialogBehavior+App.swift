@@ -4,10 +4,10 @@
 // =============================================================================
 import UIKit
 
-class DialogBehavior {
+extension DialogBehavior {
     
 }
 
-class Dialog {
+extension DialogRiseupBehavior {
     
 }

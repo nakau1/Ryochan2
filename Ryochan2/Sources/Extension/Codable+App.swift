@@ -2,12 +2,12 @@
 //  Ryochan
 //  Copyright Yuichi Nakayasu. All rights reserved.
 // =============================================================================
-import UIKit
+import Foundation
 
-class DialogBehavior {
+extension Decodable {
     
 }
 
-class Dialog {
+extension KeyedDecodingContainerProtocol {
     
 }

@@ -4,10 +4,6 @@
 // =============================================================================
 import UIKit
 
-class DialogBehavior {
-    
-}
-
-class Dialog {
-    
+enum Category: String, Codable {
+    case contour
 }

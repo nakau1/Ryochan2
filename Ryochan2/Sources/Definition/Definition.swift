@@ -2,12 +2,14 @@
 //  Ryochan
 //  Copyright Yuichi Nakayasu. All rights reserved.
 // =============================================================================
-import UIKit
+import Foundation
 
-class DialogBehavior {
+/// 定数
+struct Const {
     
 }
 
-class Dialog {
+/// ファイルパス
+struct Path {
     
 }

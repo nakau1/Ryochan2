@@ -2,12 +2,12 @@
 //  Ryochan
 //  Copyright Yuichi Nakayasu. All rights reserved.
 // =============================================================================
-import UIKit
+import CoreGraphics
 
-class DialogBehavior {
+extension CGFloat {
     
 }
 
-class Dialog {
+extension CGSize {
     
 }

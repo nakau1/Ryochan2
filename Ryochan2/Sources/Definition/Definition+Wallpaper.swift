@@ -2,12 +2,19 @@
 //  Ryochan
 //  Copyright Yuichi Nakayasu. All rights reserved.
 // =============================================================================
-import UIKit
+import Foundation
 
-class DialogBehavior {
+extension Const {
     
+    struct Wallpaper {
+        
+    }
 }
 
-class Dialog {
+extension Path {
     
+    struct Wallpaper {
+        
+        
+    }
 }

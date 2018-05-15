@@ -4,10 +4,7 @@
 // =============================================================================
 import UIKit
 
-class DialogBehavior {
+enum MovableType {
     
 }
 
-class Dialog {
-    
-}

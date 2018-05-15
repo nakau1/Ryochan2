@@ -4,10 +4,6 @@
 // =============================================================================
 import UIKit
 
-class DialogBehavior {
-    
-}
-
-class Dialog {
+class PreviewView: UIImageView {
     
 }
