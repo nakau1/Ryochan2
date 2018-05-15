@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		82EF94CEB7ABBA29451FFA96 /* Pods_Ryochan2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94EBD6B9ACA52BC2DB6135F3 /* Pods_Ryochan2Tests.framework */; };
+		DB98A3EB20AB15F100A5273D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB98A3EA20AB15F100A5273D /* AppDelegate.swift */; };
+		DB98A3ED20AB15F100A5273D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB98A3EC20AB15F100A5273D /* ViewController.swift */; };
+		DB98A3F020AB15F100A5273D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB98A3EE20AB15F100A5273D /* Main.storyboard */; };
+		DB98A3F220AB15F100A5273D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB98A3F120AB15F100A5273D /* Assets.xcassets */; };
+		DB98A3F520AB15F100A5273D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB98A3F320AB15F100A5273D /* LaunchScreen.storyboard */; };
+		DB98A40020AB15F200A5273D /* Ryochan2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB98A3FF20AB15F200A5273D /* Ryochan2Tests.swift */; };
+		DBA039832D1163DC057C0842 /* Pods_Ryochan2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BDA1F74F5AA0ED912797074 /* Pods_Ryochan2.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DB98A3FC20AB15F200A5273D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB98A3DF20AB15F100A5273D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB98A3E620AB15F100A5273D;
+			remoteInfo = Ryochan2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2606EEA6EE39094B2AEC53DE /* Pods-Ryochan2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ryochan2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ryochan2/Pods-Ryochan2.debug.xcconfig"; sourceTree = "<group>"; };
+		3DBDA0DC140D76DDE687319D /* Pods-Ryochan2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ryochan2Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ryochan2Tests/Pods-Ryochan2Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		4BDA1F74F5AA0ED912797074 /* Pods_Ryochan2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ryochan2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94EBD6B9ACA52BC2DB6135F3 /* Pods_Ryochan2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ryochan2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D91675FE35FA4DFA2258BDA8 /* Pods-Ryochan2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ryochan2.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ryochan2/Pods-Ryochan2.release.xcconfig"; sourceTree = "<group>"; };
+		DB98A3E720AB15F100A5273D /* Ryochan2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ryochan2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB98A3EA20AB15F100A5273D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DB98A3EC20AB15F100A5273D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DB98A3EF20AB15F100A5273D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DB98A3F120AB15F100A5273D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB98A3F420AB15F100A5273D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DB98A3F620AB15F100A5273D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB98A3FB20AB15F200A5273D /* Ryochan2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Ryochan2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB98A3FF20AB15F200A5273D /* Ryochan2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ryochan2Tests.swift; sourceTree = "<group>"; };
+		DB98A40120AB15F200A5273D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FECF8CCD3CFCFD6CA2C6822E /* Pods-Ryochan2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ryochan2Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ryochan2Tests/Pods-Ryochan2Tests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB98A3E420AB15F100A5273D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBA039832D1163DC057C0842 /* Pods_Ryochan2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB98A3F820AB15F200A5273D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82EF94CEB7ABBA29451FFA96 /* Pods_Ryochan2Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5706C7EBF9A76D9B9586C6DD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2606EEA6EE39094B2AEC53DE /* Pods-Ryochan2.debug.xcconfig */,
+				D91675FE35FA4DFA2258BDA8 /* Pods-Ryochan2.release.xcconfig */,
+				3DBDA0DC140D76DDE687319D /* Pods-Ryochan2Tests.debug.xcconfig */,
+				FECF8CCD3CFCFD6CA2C6822E /* Pods-Ryochan2Tests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C48FEE564B5FC1449A8CE7C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4BDA1F74F5AA0ED912797074 /* Pods_Ryochan2.framework */,
+				94EBD6B9ACA52BC2DB6135F3 /* Pods_Ryochan2Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB98A3DE20AB15F100A5273D = {
+			isa = PBXGroup;
+			children = (
+				DB98A3E920AB15F100A5273D /* Ryochan2 */,
+				DB98A3FE20AB15F200A5273D /* Ryochan2Tests */,
+				DB98A3E820AB15F100A5273D /* Products */,
+				5706C7EBF9A76D9B9586C6DD /* Pods */,
+				C48FEE564B5FC1449A8CE7C8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DB98A3E820AB15F100A5273D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB98A3E720AB15F100A5273D /* Ryochan2.app */,
+				DB98A3FB20AB15F200A5273D /* Ryochan2Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB98A3E920AB15F100A5273D /* Ryochan2 */ = {
+			isa = PBXGroup;
+			children = (
+				DB98A3EA20AB15F100A5273D /* AppDelegate.swift */,
+				DB98A3EC20AB15F100A5273D /* ViewController.swift */,
+				DB98A3EE20AB15F100A5273D /* Main.storyboard */,
+				DB98A3F120AB15F100A5273D /* Assets.xcassets */,
+				DB98A3F320AB15F100A5273D /* LaunchScreen.storyboard */,
+				DB98A3F620AB15F100A5273D /* Info.plist */,
+			);
+			path = Ryochan2;
+			sourceTree = "<group>";
+		};
+		DB98A3FE20AB15F200A5273D /* Ryochan2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DB98A3FF20AB15F200A5273D /* Ryochan2Tests.swift */,
+				DB98A40120AB15F200A5273D /* Info.plist */,
+			);
+			path = Ryochan2Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB98A3E620AB15F100A5273D /* Ryochan2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB98A40420AB15F200A5273D /* Build configuration list for PBXNativeTarget "Ryochan2" */;
+			buildPhases = (
+				A86968AC1ED2DC3BBF0A14DC /* [CP] Check Pods Manifest.lock */,
+				DB98A3E320AB15F100A5273D /* Sources */,
+				DB98A3E420AB15F100A5273D /* Frameworks */,
+				DB98A3E520AB15F100A5273D /* Resources */,
+				E0FCE73C58A22295A7EDCAA1 /* [CP] Embed Pods Frameworks */,
+				1519C60FA7E2BF2F6F3F6319 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ryochan2;
+			productName = Ryochan2;
+			productReference = DB98A3E720AB15F100A5273D /* Ryochan2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DB98A3FA20AB15F200A5273D /* Ryochan2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB98A40720AB15F200A5273D /* Build configuration list for PBXNativeTarget "Ryochan2Tests" */;
+			buildPhases = (
+				B979C4B986EF3EDB2B159849 /* [CP] Check Pods Manifest.lock */,
+				DB98A3F720AB15F200A5273D /* Sources */,
+				DB98A3F820AB15F200A5273D /* Frameworks */,
+				DB98A3F920AB15F200A5273D /* Resources */,
+				95B55C5921D90AB918436EE4 /* [CP] Embed Pods Frameworks */,
+				4BF6A43E85777BE564D5F0C4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB98A3FD20AB15F200A5273D /* PBXTargetDependency */,
+			);
+			name = Ryochan2Tests;
+			productName = Ryochan2Tests;
+			productReference = DB98A3FB20AB15F200A5273D /* Ryochan2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB98A3DF20AB15F100A5273D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "yuichi.nakayasu@gmail.com";
+				TargetAttributes = {
+					DB98A3E620AB15F100A5273D = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					DB98A3FA20AB15F200A5273D = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = DB98A3E620AB15F100A5273D;
+					};
+				};
+			};
+			buildConfigurationList = DB98A3E220AB15F100A5273D /* Build configuration list for PBXProject "Ryochan2" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB98A3DE20AB15F100A5273D;
+			productRefGroup = DB98A3E820AB15F100A5273D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB98A3E620AB15F100A5273D /* Ryochan2 */,
+				DB98A3FA20AB15F200A5273D /* Ryochan2Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB98A3E520AB15F100A5273D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB98A3F520AB15F100A5273D /* LaunchScreen.storyboard in Resources */,
+				DB98A3F220AB15F100A5273D /* Assets.xcassets in Resources */,
+				DB98A3F020AB15F100A5273D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB98A3F920AB15F200A5273D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1519C60FA7E2BF2F6F3F6319 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ryochan2/Pods-Ryochan2-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4BF6A43E85777BE564D5F0C4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ryochan2Tests/Pods-Ryochan2Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95B55C5921D90AB918436EE4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ryochan2Tests/Pods-Ryochan2Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A86968AC1ED2DC3BBF0A14DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B979C4B986EF3EDB2B159849 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E0FCE73C58A22295A7EDCAA1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ryochan2/Pods-Ryochan2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB98A3E320AB15F100A5273D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB98A3ED20AB15F100A5273D /* ViewController.swift in Sources */,
+				DB98A3EB20AB15F100A5273D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB98A3F720AB15F200A5273D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB98A40020AB15F200A5273D /* Ryochan2Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DB98A3FD20AB15F200A5273D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB98A3E620AB15F100A5273D /* Ryochan2 */;
+			targetProxy = DB98A3FC20AB15F200A5273D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DB98A3EE20AB15F100A5273D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB98A3EF20AB15F100A5273D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DB98A3F320AB15F100A5273D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB98A3F420AB15F100A5273D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DB98A40220AB15F200A5273D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DB98A40320AB15F200A5273D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB98A40520AB15F200A5273D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2606EEA6EE39094B2AEC53DE /* Pods-Ryochan2.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F5GAB67SL8;
+				INFOPLIST_FILE = Ryochan2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neroblu.ios.app.Ryochan2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB98A40620AB15F200A5273D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D91675FE35FA4DFA2258BDA8 /* Pods-Ryochan2.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F5GAB67SL8;
+				INFOPLIST_FILE = Ryochan2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neroblu.ios.app.Ryochan2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DB98A40820AB15F200A5273D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DBDA0DC140D76DDE687319D /* Pods-Ryochan2Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F5GAB67SL8;
+				INFOPLIST_FILE = Ryochan2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neroblu.ios.app.Ryochan2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ryochan2.app/Ryochan2";
+			};
+			name = Debug;
+		};
+		DB98A40920AB15F200A5273D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FECF8CCD3CFCFD6CA2C6822E /* Pods-Ryochan2Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F5GAB67SL8;
+				INFOPLIST_FILE = Ryochan2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.neroblu.ios.app.Ryochan2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ryochan2.app/Ryochan2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB98A3E220AB15F100A5273D /* Build configuration list for PBXProject "Ryochan2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB98A40220AB15F200A5273D /* Debug */,
+				DB98A40320AB15F200A5273D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB98A40420AB15F200A5273D /* Build configuration list for PBXNativeTarget "Ryochan2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB98A40520AB15F200A5273D /* Debug */,
+				DB98A40620AB15F200A5273D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB98A40720AB15F200A5273D /* Build configuration list for PBXNativeTarget "Ryochan2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB98A40820AB15F200A5273D /* Debug */,
+				DB98A40920AB15F200A5273D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB98A3DF20AB15F100A5273D /* Project object */;
+}
