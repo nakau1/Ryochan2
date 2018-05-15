@@ -4,6 +4,54 @@
 // =============================================================================
 import UIKit
 
+// MARK: - Prsentation and Dismisal -
+extension UIViewController {
+    
+    /// モーダルでの画面表示を行う
+    /// - Parameters:
+    ///   - viewController: 表示するビューコントローラ
+    ///   - completion: 表示完了時の処理
+    func present(_ viewController: UIViewController, completion: (() -> Void)? = nil) {
+        present(viewController, animated: true, completion: completion)
+    }
+    
+    /// モーダルでの画面表示を終了する
+    /// - Parameter completion: 表示終了時の処理
+    func dismiss(completion: (() -> Void)? = nil) {
+        dismiss(animated: true, completion: completion)
+    }
+}
+
+// MARK: - CrossDissolve prsentation -
+extension UIViewController {
+    
+    /// クロスディゾルブによる画面遷移を行う
+    /// - Parameters:
+    ///   - viewController: 遷移先のビューコントローラ
+    ///   - completion: 遷移完了時の処理
+    func present(crossDissolve viewController: UIViewController, completion: (() -> Void)? = nil) {
+        viewController.modalPresentationStyle = .overCurrentContext
+        viewController.modalTransitionStyle = .crossDissolve
+        present(viewController, animated: true, completion: completion)
+    }
+}
+
+// MARK: - Navigation -
+extension UIViewController {
+    
+    /// ナビゲーションプッシュでの画面遷移を行う
+    /// - Parameters:
+    ///   - viewController: 遷移するビューコントローラ
+    func push(_ viewController: UIViewController) {
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    /// ナビゲーションポップでの画面遷移を行う
+    func pop() {
+        _ = navigationController?.popViewController(animated: true)
+    }
+}
+
 // MARK: - Instantiate from storyboard -
 extension UIViewController {
     

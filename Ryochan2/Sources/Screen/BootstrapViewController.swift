@@ -12,7 +12,7 @@ class BootstrapViewController: UITableViewController {
         (section: "App",
          rows: [
             (title: "アプリ起動", handler: { vc in
-                vc.present(LaunchViewController.create(), animated: true) {}
+                vc.present(crossDissolve: LaunchViewController.create())
             }),
             ]),
         (section: "各画面テスト",
