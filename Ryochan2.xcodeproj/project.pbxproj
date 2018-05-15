@@ -56,6 +56,14 @@
 		DB73179920AB257200D49AF3 /* RoundedBorderedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB73179420AB257200D49AF3 /* RoundedBorderedView.swift */; };
 		DB73179A20AB257200D49AF3 /* ColorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB73179520AB257200D49AF3 /* ColorButton.swift */; };
 		DB73179C20AB297100D49AF3 /* UIImage+ImageGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB73179B20AB297100D49AF3 /* UIImage+ImageGenerator.swift */; };
+		DB7317A120AB2CE600D49AF3 /* LaunchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB73179E20AB2CE600D49AF3 /* LaunchPresenter.swift */; };
+		DB7317A220AB2CE600D49AF3 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB73179F20AB2CE600D49AF3 /* LaunchViewController.swift */; };
+		DB7317A320AB2CE600D49AF3 /* BootstrapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7317A020AB2CE600D49AF3 /* BootstrapViewController.swift */; };
+		DB7317A520AB2D0800D49AF3 /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB7317A420AB2D0800D49AF3 /* Launch.storyboard */; };
+		DB7317AA20AB2FE200D49AF3 /* TopPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7317A720AB2FE200D49AF3 /* TopPresenter.swift */; };
+		DB7317AB20AB2FE200D49AF3 /* Top.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB7317A820AB2FE200D49AF3 /* Top.storyboard */; };
+		DB7317AC20AB2FE200D49AF3 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7317A920AB2FE200D49AF3 /* TopViewController.swift */; };
+		DB7317AE20AB31DC00D49AF3 /* TopAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7317AD20AB31DC00D49AF3 /* TopAdapter.swift */; };
 		DB98A3F020AB15F100A5273D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB98A3EE20AB15F100A5273D /* Main.storyboard */; };
 		DB98A3F220AB15F100A5273D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB98A3F120AB15F100A5273D /* Assets.xcassets */; };
 		DB98A3F520AB15F100A5273D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB98A3F320AB15F100A5273D /* LaunchScreen.storyboard */; };
@@ -127,6 +135,14 @@
 		DB73179420AB257200D49AF3 /* RoundedBorderedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedBorderedView.swift; sourceTree = "<group>"; };
 		DB73179520AB257200D49AF3 /* ColorButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorButton.swift; sourceTree = "<group>"; };
 		DB73179B20AB297100D49AF3 /* UIImage+ImageGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+ImageGenerator.swift"; sourceTree = "<group>"; };
+		DB73179E20AB2CE600D49AF3 /* LaunchPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchPresenter.swift; sourceTree = "<group>"; };
+		DB73179F20AB2CE600D49AF3 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		DB7317A020AB2CE600D49AF3 /* BootstrapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BootstrapViewController.swift; sourceTree = "<group>"; };
+		DB7317A420AB2D0800D49AF3 /* Launch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
+		DB7317A720AB2FE200D49AF3 /* TopPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopPresenter.swift; sourceTree = "<group>"; };
+		DB7317A820AB2FE200D49AF3 /* Top.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Top.storyboard; sourceTree = "<group>"; };
+		DB7317A920AB2FE200D49AF3 /* TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
+		DB7317AD20AB31DC00D49AF3 /* TopAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopAdapter.swift; sourceTree = "<group>"; };
 		DB98A3E720AB15F100A5273D /* Ryochan2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ryochan2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB98A3EF20AB15F100A5273D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB98A3F120AB15F100A5273D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -260,6 +276,9 @@
 		DB73173920AB192900D49AF3 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				DB7317A020AB2CE600D49AF3 /* BootstrapViewController.swift */,
+				DB73179D20AB2CE600D49AF3 /* Launch */,
+				DB7317A620AB2FE200D49AF3 /* Top */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -312,6 +331,27 @@
 				DB73176520AB253300D49AF3 /* PartsSelectAdapter.swift */,
 			);
 			path = Adapter;
+			sourceTree = "<group>";
+		};
+		DB73179D20AB2CE600D49AF3 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				DB7317A420AB2D0800D49AF3 /* Launch.storyboard */,
+				DB73179E20AB2CE600D49AF3 /* LaunchPresenter.swift */,
+				DB73179F20AB2CE600D49AF3 /* LaunchViewController.swift */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		DB7317A620AB2FE200D49AF3 /* Top */ = {
+			isa = PBXGroup;
+			children = (
+				DB7317A820AB2FE200D49AF3 /* Top.storyboard */,
+				DB7317A720AB2FE200D49AF3 /* TopPresenter.swift */,
+				DB7317AD20AB31DC00D49AF3 /* TopAdapter.swift */,
+				DB7317A920AB2FE200D49AF3 /* TopViewController.swift */,
+			);
+			path = Top;
 			sourceTree = "<group>";
 		};
 		DB98A3DE20AB15F100A5273D = {
@@ -443,8 +483,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB98A3F520AB15F100A5273D /* LaunchScreen.storyboard in Resources */,
+				DB7317AB20AB2FE200D49AF3 /* Top.storyboard in Resources */,
 				DB98A3F220AB15F100A5273D /* Assets.xcassets in Resources */,
 				DB98A3F020AB15F100A5273D /* Main.storyboard in Resources */,
+				DB7317A520AB2D0800D49AF3 /* Launch.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,6 +604,7 @@
 				DB73177020AB255000D49AF3 /* WallpaperedImageGenerator.swift in Sources */,
 				DB73176720AB253400D49AF3 /* PartsSelectAdapter.swift in Sources */,
 				DB73178920AB256800D49AF3 /* Migration.swift in Sources */,
+				DB7317AA20AB2FE200D49AF3 /* TopPresenter.swift in Sources */,
 				DB73179A20AB257200D49AF3 /* ColorButton.swift in Sources */,
 				DB73179620AB257200D49AF3 /* PreviewView.swift in Sources */,
 				DB73176220AB1DAB00D49AF3 /* Codable+App.swift in Sources */,
@@ -571,6 +614,7 @@
 				DB73177520AB255C00D49AF3 /* CompoundedImageGeneratorProtocol.swift in Sources */,
 				DB73178D20AB256800D49AF3 /* File.swift in Sources */,
 				DB73173E20AB192900D49AF3 /* AppDelegate.swift in Sources */,
+				DB7317AE20AB31DC00D49AF3 /* TopAdapter.swift in Sources */,
 				DB73174820AB1D7000D49AF3 /* Definition+Portrait.swift in Sources */,
 				DB73178520AB256800D49AF3 /* UniformNumberPosition.swift in Sources */,
 				DB73175E20AB1DAB00D49AF3 /* UITextField+App.swift in Sources */,
@@ -595,6 +639,10 @@
 				DB73177620AB255C00D49AF3 /* Notificatable.swift in Sources */,
 				DB73178620AB256800D49AF3 /* Sns.swift in Sources */,
 				DB73178B20AB256800D49AF3 /* MovableType.swift in Sources */,
+				DB7317A120AB2CE600D49AF3 /* LaunchPresenter.swift in Sources */,
+				DB7317A220AB2CE600D49AF3 /* LaunchViewController.swift in Sources */,
+				DB7317A320AB2CE600D49AF3 /* BootstrapViewController.swift in Sources */,
+				DB7317AC20AB2FE200D49AF3 /* TopViewController.swift in Sources */,
 				DB73177120AB255000D49AF3 /* PortraitImageGenerator.swift in Sources */,
 				DB73175320AB1D9B00D49AF3 /* DialogRiseupBehavior.swift in Sources */,
 				DB73173D20AB192900D49AF3 /* Dialog.swift in Sources */,
