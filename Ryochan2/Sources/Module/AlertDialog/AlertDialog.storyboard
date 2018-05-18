@@ -10,10 +10,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Launch View Controller-->
+        <!--Alert Dialog View Controller-->
         <scene sceneID="X3t-bP-xCx">
             <objects>
-                <viewController id="HaB-xx-jn0" customClass="LaunchViewController" customModule="Ryochan2" customModuleProvider="target" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="agQ-bg-Vu7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="HaB-xx-jn0" customClass="AlertDialogViewController" customModule="Ryochan2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OWq-9n-RbM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,7 +22,6 @@
                         <viewLayoutGuide key="safeArea" id="DKy-gQ-KVf"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="agQ-bg-Vu7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-23" y="211"/>
         </scene>

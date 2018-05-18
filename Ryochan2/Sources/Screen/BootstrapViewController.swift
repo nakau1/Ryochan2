@@ -57,10 +57,12 @@ class BootstrapViewController: UITableViewController {
                 vc.present(crossDissolve: TextInputViewController.create())
             }),
             (title: "ドロワーメニュー", handler: { vc in
-                MenuViewController.show(from: vc)
+                let _ = MenuViewController.show(from: vc)
             }),
             (title: "アラートダイアログ", handler: { vc in
-                vc.present(crossDissolve: AlertDialogViewController.create())
+                AlertDialog.showConfirmDelete(from: vc, whenDelete: {
+                    print("削除を押した")
+                })
             }),
             ]),
         (section: "簡易テスト",

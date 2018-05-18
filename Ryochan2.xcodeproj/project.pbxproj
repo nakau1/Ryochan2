@@ -74,7 +74,7 @@
 		DB7317C720AB391700D49AF3 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7317BB20AB391700D49AF3 /* MenuViewController.swift */; };
 		DB7317C820AB391700D49AF3 /* AlertDialog.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB7317BD20AB391700D49AF3 /* AlertDialog.storyboard */; };
 		DB7317C920AB391700D49AF3 /* AlertDialog+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7317BE20AB391700D49AF3 /* AlertDialog+App.swift */; };
-		DB7317CA20AB391700D49AF3 /* AlertDialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7317BF20AB391700D49AF3 /* AlertDialogViewController.swift */; };
+		DB7317CA20AB391700D49AF3 /* AlertDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7317BF20AB391700D49AF3 /* AlertDialog.swift */; };
 		DB7317D020AB39A300D49AF3 /* WallpaperAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7317CC20AB39A300D49AF3 /* WallpaperAdapter.swift */; };
 		DB7317D120AB39A300D49AF3 /* Wallpaper.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB7317CD20AB39A300D49AF3 /* Wallpaper.storyboard */; };
 		DB7317D220AB39A300D49AF3 /* WallpaperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7317CE20AB39A300D49AF3 /* WallpaperViewController.swift */; };
@@ -196,7 +196,7 @@
 		DB7317BB20AB391700D49AF3 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		DB7317BD20AB391700D49AF3 /* AlertDialog.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AlertDialog.storyboard; sourceTree = "<group>"; };
 		DB7317BE20AB391700D49AF3 /* AlertDialog+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AlertDialog+App.swift"; sourceTree = "<group>"; };
-		DB7317BF20AB391700D49AF3 /* AlertDialogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertDialogViewController.swift; sourceTree = "<group>"; };
+		DB7317BF20AB391700D49AF3 /* AlertDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertDialog.swift; sourceTree = "<group>"; };
 		DB7317CC20AB39A300D49AF3 /* WallpaperAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallpaperAdapter.swift; sourceTree = "<group>"; };
 		DB7317CD20AB39A300D49AF3 /* Wallpaper.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Wallpaper.storyboard; sourceTree = "<group>"; };
 		DB7317CE20AB39A300D49AF3 /* WallpaperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallpaperViewController.swift; sourceTree = "<group>"; };
@@ -502,7 +502,7 @@
 			children = (
 				DB7317BD20AB391700D49AF3 /* AlertDialog.storyboard */,
 				DB7317BE20AB391700D49AF3 /* AlertDialog+App.swift */,
-				DB7317BF20AB391700D49AF3 /* AlertDialogViewController.swift */,
+				DB7317BF20AB391700D49AF3 /* AlertDialog.swift */,
 			);
 			path = AlertDialog;
 			sourceTree = "<group>";
@@ -899,7 +899,7 @@
 				E4B73C1220AEEB4200A301FB /* UniformEditViewController.swift in Sources */,
 				DB73176320AB1DAB00D49AF3 /* UIView+LayoutConstraint.swift in Sources */,
 				DB7317C020AB391700D49AF3 /* ValueSelectViewController.swift in Sources */,
-				DB7317CA20AB391700D49AF3 /* AlertDialogViewController.swift in Sources */,
+				DB7317CA20AB391700D49AF3 /* AlertDialog.swift in Sources */,
 				DB73176020AB1DAB00D49AF3 /* CoreGraphics+App.swift in Sources */,
 				DB73178C20AB256800D49AF3 /* Category.swift in Sources */,
 				DB73178820AB256800D49AF3 /* Parts.swift in Sources */,
