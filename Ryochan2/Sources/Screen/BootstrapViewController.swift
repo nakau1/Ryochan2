@@ -57,7 +57,7 @@ class BootstrapViewController: UITableViewController {
                 vc.present(crossDissolve: TextInputViewController.create())
             }),
             (title: "ドロワーメニュー", handler: { vc in
-                vc.present(crossDissolve: MenuViewController.create())
+                MenuViewController.show(from: vc)
             }),
             (title: "アラートダイアログ", handler: { vc in
                 vc.present(crossDissolve: AlertDialogViewController.create())

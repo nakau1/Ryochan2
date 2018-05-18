@@ -6,9 +6,14 @@ import UIKit
 
 class MenuViewController: UIViewController {
     
-    class func create() -> UIViewController {
-        let vc = instantiate(self)
+    class func show(from viewController: UIViewController) -> UIViewController {
+        let vc = create().withinNavigation(navigationBarHidden: true)
+        Dialog.show(vc, from: viewController, behavior: .menu)
         return vc
+    }
+    
+    class func create() -> UIViewController {
+        return instantiate(self)
     }
     
     override func viewDidLoad() {

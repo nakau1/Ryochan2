@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Launch View Controller-->
+        <!--Menu View Controller-->
         <scene sceneID="X3t-bP-xCx">
             <objects>
-                <viewController id="HaB-xx-jn0" customClass="LaunchViewController" customModule="Ryochan2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="HaB-xx-jn0" customClass="MenuViewController" customModule="Ryochan2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OWq-9n-RbM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
