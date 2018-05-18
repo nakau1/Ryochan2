@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Wallpaper View Controller-->
+        <!--Formation Substitute View Controller-->
         <scene sceneID="dfL-Yy-a7j">
             <objects>
-                <viewController id="fly-5s-CAo" customClass="WallpaperViewController" customModule="Ryochan2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="fly-5s-CAo" customClass="FormationSubstituteViewController" customModule="Ryochan2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ysw-UT-mFT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

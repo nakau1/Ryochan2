@@ -18,10 +18,49 @@ class BootstrapViewController: UITableViewController {
         (section: "各画面テスト",
          rows: [
             (title: "トップ画面", handler: { vc in
-                
+                vc.present(crossDissolve: TopViewController.create())
             }),
-            (title: "リスト画面", handler: { vc in
-                
+            (title: "似顔絵編集画面", handler: { vc in
+                vc.present(crossDissolve: PortraitEditViewController.create())
+            }),
+            (title: "似顔絵選択画面", handler: { vc in
+                vc.present(crossDissolve: PortraitSelectViewController.create())
+            }),
+            (title: "フォーメーション編集画面", handler: { vc in
+                vc.present(crossDissolve: FormationViewController.create())
+            }),
+            (title: "ベンチメンバー編集画面", handler: { vc in
+                vc.present(crossDissolve: FormationSubstituteViewController.create())
+            }),
+            (title: "ユニフォーム一覧画面", handler: { vc in
+                vc.present(crossDissolve: UniformListViewController.create())
+            }),
+            (title: "ユニフォーム編集画面", handler: { vc in
+                vc.present(crossDissolve: UniformEditViewController.create())
+            }),
+            (title: "ユニフォーム選択画面", handler: { vc in
+                vc.present(crossDissolve: UniformSelectViewController.create())
+            }),
+            (title: "壁紙選択画面", handler: { vc in
+                vc.present(crossDissolve: WallpaperViewController.create())
+            }),
+            ]),
+        (section: "モジュールテスト",
+         rows: [
+            (title: "値選択ダイアログ", handler: { vc in
+                vc.present(crossDissolve: ValueSelectViewController.create())
+            }),
+            (title: "色選択ダイアログ", handler: { vc in
+                vc.present(crossDissolve: ColorSelectViewController.create())
+            }),
+            (title: "文字入力モジュール", handler: { vc in
+                vc.present(crossDissolve: TextInputViewController.create())
+            }),
+            (title: "ドロワーメニュー", handler: { vc in
+                vc.present(crossDissolve: MenuViewController.create())
+            }),
+            (title: "アラートダイアログ", handler: { vc in
+                vc.present(crossDissolve: AlertDialogViewController.create())
             }),
             ]),
         (section: "簡易テスト",

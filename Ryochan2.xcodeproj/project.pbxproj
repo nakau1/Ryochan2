@@ -84,6 +84,34 @@
 		DB98A3F520AB15F100A5273D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB98A3F320AB15F100A5273D /* LaunchScreen.storyboard */; };
 		DB98A40020AB15F200A5273D /* Ryochan2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB98A3FF20AB15F200A5273D /* Ryochan2Tests.swift */; };
 		DBA039832D1163DC057C0842 /* Pods_Ryochan2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BDA1F74F5AA0ED912797074 /* Pods_Ryochan2.framework */; };
+		E4B73BE220AEEB1100A301FB /* PortraitEdit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4B73BDE20AEEB1100A301FB /* PortraitEdit.storyboard */; };
+		E4B73BE320AEEB1100A301FB /* PortraitEditAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B73BDF20AEEB1100A301FB /* PortraitEditAdapter.swift */; };
+		E4B73BE420AEEB1100A301FB /* PortraitEditPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B73BE020AEEB1100A301FB /* PortraitEditPresenter.swift */; };
+		E4B73BE520AEEB1100A301FB /* PortraitEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B73BE120AEEB1100A301FB /* PortraitEditViewController.swift */; };
+		E4B73BEB20AEEB2200A301FB /* PortraitSelectPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B73BE720AEEB2200A301FB /* PortraitSelectPresenter.swift */; };
+		E4B73BEC20AEEB2200A301FB /* PortraitSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B73BE820AEEB2200A301FB /* PortraitSelectViewController.swift */; };
+		E4B73BED20AEEB2200A301FB /* PortraitSelect.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4B73BE920AEEB2200A301FB /* PortraitSelect.storyboard */; };
+		E4B73BEE20AEEB2200A301FB /* PortraitSelectAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B73BEA20AEEB2200A301FB /* PortraitSelectAdapter.swift */; };
+		E4B73BF420AEEB2B00A301FB /* Formation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4B73BF020AEEB2B00A301FB /* Formation.storyboard */; };
+		E4B73BF520AEEB2B00A301FB /* FormationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B73BF120AEEB2B00A301FB /* FormationPresenter.swift */; };
+		E4B73BF620AEEB2B00A301FB /* FormationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B73BF220AEEB2B00A301FB /* FormationAdapter.swift */; };
+		E4B73BF720AEEB2B00A301FB /* FormationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B73BF320AEEB2B00A301FB /* FormationViewController.swift */; };
+		E4B73BFD20AEEB3200A301FB /* FormationSubstitutePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B73BF920AEEB3200A301FB /* FormationSubstitutePresenter.swift */; };
+		E4B73BFE20AEEB3200A301FB /* FormationSubstituteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B73BFA20AEEB3200A301FB /* FormationSubstituteViewController.swift */; };
+		E4B73BFF20AEEB3200A301FB /* FormationSubstitute.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4B73BFB20AEEB3200A301FB /* FormationSubstitute.storyboard */; };
+		E4B73C0020AEEB3200A301FB /* FormationSubstituteAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B73BFC20AEEB3200A301FB /* FormationSubstituteAdapter.swift */; };
+		E4B73C0620AEEB3D00A301FB /* UniformListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B73C0220AEEB3D00A301FB /* UniformListPresenter.swift */; };
+		E4B73C0720AEEB3D00A301FB /* UniformList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4B73C0320AEEB3D00A301FB /* UniformList.storyboard */; };
+		E4B73C0820AEEB3D00A301FB /* UniformListAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B73C0420AEEB3D00A301FB /* UniformListAdapter.swift */; };
+		E4B73C0920AEEB3D00A301FB /* UniformListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B73C0520AEEB3D00A301FB /* UniformListViewController.swift */; };
+		E4B73C0F20AEEB4200A301FB /* UniformEditAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B73C0B20AEEB4200A301FB /* UniformEditAdapter.swift */; };
+		E4B73C1020AEEB4200A301FB /* UniformEdit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4B73C0C20AEEB4200A301FB /* UniformEdit.storyboard */; };
+		E4B73C1120AEEB4200A301FB /* UniformEditPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B73C0D20AEEB4200A301FB /* UniformEditPresenter.swift */; };
+		E4B73C1220AEEB4200A301FB /* UniformEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B73C0E20AEEB4200A301FB /* UniformEditViewController.swift */; };
+		E4B73C1820AEEB4800A301FB /* UniformSelectPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B73C1420AEEB4800A301FB /* UniformSelectPresenter.swift */; };
+		E4B73C1920AEEB4800A301FB /* UniformSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B73C1520AEEB4800A301FB /* UniformSelectViewController.swift */; };
+		E4B73C1A20AEEB4800A301FB /* UniformSelect.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4B73C1620AEEB4800A301FB /* UniformSelect.storyboard */; };
+		E4B73C1B20AEEB4800A301FB /* UniformSelectAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B73C1720AEEB4800A301FB /* UniformSelectAdapter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -181,6 +209,34 @@
 		DB98A3FB20AB15F200A5273D /* Ryochan2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Ryochan2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB98A3FF20AB15F200A5273D /* Ryochan2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ryochan2Tests.swift; sourceTree = "<group>"; };
 		DB98A40120AB15F200A5273D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4B73BDE20AEEB1100A301FB /* PortraitEdit.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PortraitEdit.storyboard; sourceTree = "<group>"; };
+		E4B73BDF20AEEB1100A301FB /* PortraitEditAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortraitEditAdapter.swift; sourceTree = "<group>"; };
+		E4B73BE020AEEB1100A301FB /* PortraitEditPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortraitEditPresenter.swift; sourceTree = "<group>"; };
+		E4B73BE120AEEB1100A301FB /* PortraitEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortraitEditViewController.swift; sourceTree = "<group>"; };
+		E4B73BE720AEEB2200A301FB /* PortraitSelectPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortraitSelectPresenter.swift; sourceTree = "<group>"; };
+		E4B73BE820AEEB2200A301FB /* PortraitSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortraitSelectViewController.swift; sourceTree = "<group>"; };
+		E4B73BE920AEEB2200A301FB /* PortraitSelect.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PortraitSelect.storyboard; sourceTree = "<group>"; };
+		E4B73BEA20AEEB2200A301FB /* PortraitSelectAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortraitSelectAdapter.swift; sourceTree = "<group>"; };
+		E4B73BF020AEEB2B00A301FB /* Formation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Formation.storyboard; sourceTree = "<group>"; };
+		E4B73BF120AEEB2B00A301FB /* FormationPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormationPresenter.swift; sourceTree = "<group>"; };
+		E4B73BF220AEEB2B00A301FB /* FormationAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormationAdapter.swift; sourceTree = "<group>"; };
+		E4B73BF320AEEB2B00A301FB /* FormationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormationViewController.swift; sourceTree = "<group>"; };
+		E4B73BF920AEEB3200A301FB /* FormationSubstitutePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormationSubstitutePresenter.swift; sourceTree = "<group>"; };
+		E4B73BFA20AEEB3200A301FB /* FormationSubstituteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormationSubstituteViewController.swift; sourceTree = "<group>"; };
+		E4B73BFB20AEEB3200A301FB /* FormationSubstitute.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FormationSubstitute.storyboard; sourceTree = "<group>"; };
+		E4B73BFC20AEEB3200A301FB /* FormationSubstituteAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormationSubstituteAdapter.swift; sourceTree = "<group>"; };
+		E4B73C0220AEEB3D00A301FB /* UniformListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniformListPresenter.swift; sourceTree = "<group>"; };
+		E4B73C0320AEEB3D00A301FB /* UniformList.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UniformList.storyboard; sourceTree = "<group>"; };
+		E4B73C0420AEEB3D00A301FB /* UniformListAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniformListAdapter.swift; sourceTree = "<group>"; };
+		E4B73C0520AEEB3D00A301FB /* UniformListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniformListViewController.swift; sourceTree = "<group>"; };
+		E4B73C0B20AEEB4200A301FB /* UniformEditAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniformEditAdapter.swift; sourceTree = "<group>"; };
+		E4B73C0C20AEEB4200A301FB /* UniformEdit.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UniformEdit.storyboard; sourceTree = "<group>"; };
+		E4B73C0D20AEEB4200A301FB /* UniformEditPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniformEditPresenter.swift; sourceTree = "<group>"; };
+		E4B73C0E20AEEB4200A301FB /* UniformEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniformEditViewController.swift; sourceTree = "<group>"; };
+		E4B73C1420AEEB4800A301FB /* UniformSelectPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniformSelectPresenter.swift; sourceTree = "<group>"; };
+		E4B73C1520AEEB4800A301FB /* UniformSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniformSelectViewController.swift; sourceTree = "<group>"; };
+		E4B73C1620AEEB4800A301FB /* UniformSelect.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UniformSelect.storyboard; sourceTree = "<group>"; };
+		E4B73C1720AEEB4800A301FB /* UniformSelectAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniformSelectAdapter.swift; sourceTree = "<group>"; };
 		FECF8CCD3CFCFD6CA2C6822E /* Pods-Ryochan2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ryochan2Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ryochan2Tests/Pods-Ryochan2Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -310,6 +366,13 @@
 				DB7317A020AB2CE600D49AF3 /* BootstrapViewController.swift */,
 				DB73179D20AB2CE600D49AF3 /* Launch */,
 				DB7317A620AB2FE200D49AF3 /* Top */,
+				E4B73BDD20AEEB1100A301FB /* PortraitEdit */,
+				E4B73BE620AEEB2200A301FB /* PortraitSelect */,
+				E4B73BEF20AEEB2B00A301FB /* Formation */,
+				E4B73BF820AEEB3200A301FB /* FormationSubstitute */,
+				E4B73C0120AEEB3D00A301FB /* UniformList */,
+				E4B73C0A20AEEB4200A301FB /* UniformEdit */,
+				E4B73C1320AEEB4800A301FB /* UniformSelect */,
 				DB7317CB20AB39A300D49AF3 /* Wallpaper */,
 			);
 			path = Screen;
@@ -496,6 +559,83 @@
 			path = Ryochan2Tests;
 			sourceTree = "<group>";
 		};
+		E4B73BDD20AEEB1100A301FB /* PortraitEdit */ = {
+			isa = PBXGroup;
+			children = (
+				E4B73BDE20AEEB1100A301FB /* PortraitEdit.storyboard */,
+				E4B73BE020AEEB1100A301FB /* PortraitEditPresenter.swift */,
+				E4B73BDF20AEEB1100A301FB /* PortraitEditAdapter.swift */,
+				E4B73BE120AEEB1100A301FB /* PortraitEditViewController.swift */,
+			);
+			path = PortraitEdit;
+			sourceTree = "<group>";
+		};
+		E4B73BE620AEEB2200A301FB /* PortraitSelect */ = {
+			isa = PBXGroup;
+			children = (
+				E4B73BE920AEEB2200A301FB /* PortraitSelect.storyboard */,
+				E4B73BE720AEEB2200A301FB /* PortraitSelectPresenter.swift */,
+				E4B73BEA20AEEB2200A301FB /* PortraitSelectAdapter.swift */,
+				E4B73BE820AEEB2200A301FB /* PortraitSelectViewController.swift */,
+			);
+			path = PortraitSelect;
+			sourceTree = "<group>";
+		};
+		E4B73BEF20AEEB2B00A301FB /* Formation */ = {
+			isa = PBXGroup;
+			children = (
+				E4B73BF020AEEB2B00A301FB /* Formation.storyboard */,
+				E4B73BF120AEEB2B00A301FB /* FormationPresenter.swift */,
+				E4B73BF220AEEB2B00A301FB /* FormationAdapter.swift */,
+				E4B73BF320AEEB2B00A301FB /* FormationViewController.swift */,
+			);
+			path = Formation;
+			sourceTree = "<group>";
+		};
+		E4B73BF820AEEB3200A301FB /* FormationSubstitute */ = {
+			isa = PBXGroup;
+			children = (
+				E4B73BFB20AEEB3200A301FB /* FormationSubstitute.storyboard */,
+				E4B73BF920AEEB3200A301FB /* FormationSubstitutePresenter.swift */,
+				E4B73BFC20AEEB3200A301FB /* FormationSubstituteAdapter.swift */,
+				E4B73BFA20AEEB3200A301FB /* FormationSubstituteViewController.swift */,
+			);
+			path = FormationSubstitute;
+			sourceTree = "<group>";
+		};
+		E4B73C0120AEEB3D00A301FB /* UniformList */ = {
+			isa = PBXGroup;
+			children = (
+				E4B73C0320AEEB3D00A301FB /* UniformList.storyboard */,
+				E4B73C0220AEEB3D00A301FB /* UniformListPresenter.swift */,
+				E4B73C0420AEEB3D00A301FB /* UniformListAdapter.swift */,
+				E4B73C0520AEEB3D00A301FB /* UniformListViewController.swift */,
+			);
+			path = UniformList;
+			sourceTree = "<group>";
+		};
+		E4B73C0A20AEEB4200A301FB /* UniformEdit */ = {
+			isa = PBXGroup;
+			children = (
+				E4B73C0C20AEEB4200A301FB /* UniformEdit.storyboard */,
+				E4B73C0D20AEEB4200A301FB /* UniformEditPresenter.swift */,
+				E4B73C0B20AEEB4200A301FB /* UniformEditAdapter.swift */,
+				E4B73C0E20AEEB4200A301FB /* UniformEditViewController.swift */,
+			);
+			path = UniformEdit;
+			sourceTree = "<group>";
+		};
+		E4B73C1320AEEB4800A301FB /* UniformSelect */ = {
+			isa = PBXGroup;
+			children = (
+				E4B73C1620AEEB4800A301FB /* UniformSelect.storyboard */,
+				E4B73C1420AEEB4800A301FB /* UniformSelectPresenter.swift */,
+				E4B73C1720AEEB4800A301FB /* UniformSelectAdapter.swift */,
+				E4B73C1520AEEB4800A301FB /* UniformSelectViewController.swift */,
+			);
+			path = UniformSelect;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -583,17 +723,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4B73BFF20AEEB3200A301FB /* FormationSubstitute.storyboard in Resources */,
 				DB7317C420AB391700D49AF3 /* TextInput.storyboard in Resources */,
 				DB98A3F520AB15F100A5273D /* LaunchScreen.storyboard in Resources */,
 				DB7317D120AB39A300D49AF3 /* Wallpaper.storyboard in Resources */,
 				DB7317AB20AB2FE200D49AF3 /* Top.storyboard in Resources */,
+				E4B73BF420AEEB2B00A301FB /* Formation.storyboard in Resources */,
 				DB7317C620AB391700D49AF3 /* Menu.storyboard in Resources */,
 				DB7317C120AB391700D49AF3 /* ValueSelect.storyboard in Resources */,
 				DB7317C320AB391700D49AF3 /* ColorSelect.storyboard in Resources */,
+				E4B73C0720AEEB3D00A301FB /* UniformList.storyboard in Resources */,
 				DB98A3F220AB15F100A5273D /* Assets.xcassets in Resources */,
+				E4B73BED20AEEB2200A301FB /* PortraitSelect.storyboard in Resources */,
 				DB7317C820AB391700D49AF3 /* AlertDialog.storyboard in Resources */,
+				E4B73BE220AEEB1100A301FB /* PortraitEdit.storyboard in Resources */,
 				DB98A3F020AB15F100A5273D /* Main.storyboard in Resources */,
+				E4B73C1020AEEB4200A301FB /* UniformEdit.storyboard in Resources */,
 				DB7317A520AB2D0800D49AF3 /* Launch.storyboard in Resources */,
+				E4B73C1A20AEEB4800A301FB /* UniformSelect.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -704,15 +851,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4B73BFD20AEEB3200A301FB /* FormationSubstitutePresenter.swift in Sources */,
 				DB73178420AB256800D49AF3 /* Uniform.swift in Sources */,
 				DB73174C20AB1D7000D49AF3 /* Dimension.swift in Sources */,
 				DB73174D20AB1D7000D49AF3 /* Definition.swift in Sources */,
 				DB73179020AB256800D49AF3 /* Formation.swift in Sources */,
 				DB73177020AB255000D49AF3 /* WallpaperedImageGenerator.swift in Sources */,
 				DB73176720AB253400D49AF3 /* PartsSelectAdapter.swift in Sources */,
+				E4B73BF720AEEB2B00A301FB /* FormationViewController.swift in Sources */,
+				E4B73BEB20AEEB2200A301FB /* PortraitSelectPresenter.swift in Sources */,
 				DB73178920AB256800D49AF3 /* Migration.swift in Sources */,
 				DB7317AA20AB2FE200D49AF3 /* TopPresenter.swift in Sources */,
 				DB73179A20AB257200D49AF3 /* ColorButton.swift in Sources */,
+				E4B73BFE20AEEB3200A301FB /* FormationSubstituteViewController.swift in Sources */,
 				DB7317C720AB391700D49AF3 /* MenuViewController.swift in Sources */,
 				DB73179620AB257200D49AF3 /* PreviewView.swift in Sources */,
 				DB7317D220AB39A300D49AF3 /* WallpaperViewController.swift in Sources */,
@@ -720,11 +871,14 @@
 				DB73176220AB1DAB00D49AF3 /* Codable+App.swift in Sources */,
 				DB73176F20AB255000D49AF3 /* PlayerImageGenerator.swift in Sources */,
 				DB73176120AB1DAB00D49AF3 /* String+App.swift in Sources */,
+				E4B73BEC20AEEB2200A301FB /* PortraitSelectViewController.swift in Sources */,
+				E4B73BE320AEEB1100A301FB /* PortraitEditAdapter.swift in Sources */,
 				DB73178F20AB256800D49AF3 /* Portrait.swift in Sources */,
 				DB73177520AB255C00D49AF3 /* CompoundedImageGeneratorProtocol.swift in Sources */,
 				DB73178D20AB256800D49AF3 /* File.swift in Sources */,
 				DB73173E20AB192900D49AF3 /* AppDelegate.swift in Sources */,
 				DB7317AE20AB31DC00D49AF3 /* TopAdapter.swift in Sources */,
+				E4B73BF520AEEB2B00A301FB /* FormationPresenter.swift in Sources */,
 				DB73174820AB1D7000D49AF3 /* Definition+Portrait.swift in Sources */,
 				DB73178520AB256800D49AF3 /* UniformNumberPosition.swift in Sources */,
 				DB73175E20AB1DAB00D49AF3 /* UITextField+App.swift in Sources */,
@@ -732,23 +886,34 @@
 				DB73175C20AB1DAB00D49AF3 /* UIViewController+App.swift in Sources */,
 				DB73179720AB257200D49AF3 /* HighlightButton.swift in Sources */,
 				DB73179920AB257200D49AF3 /* RoundedBorderedView.swift in Sources */,
+				E4B73C0F20AEEB4200A301FB /* UniformEditAdapter.swift in Sources */,
+				E4B73BF620AEEB2B00A301FB /* FormationAdapter.swift in Sources */,
 				DB73174920AB1D7000D49AF3 /* Definition+Formation.swift in Sources */,
+				E4B73C1B20AEEB4800A301FB /* UniformSelectAdapter.swift in Sources */,
+				E4B73C0820AEEB3D00A301FB /* UniformListAdapter.swift in Sources */,
+				E4B73C0620AEEB3D00A301FB /* UniformListPresenter.swift in Sources */,
 				DB73178E20AB256800D49AF3 /* Wallpaper.swift in Sources */,
 				DB73174E20AB1D7000D49AF3 /* Definition+Wallpaper.swift in Sources */,
+				E4B73BE520AEEB1100A301FB /* PortraitEditViewController.swift in Sources */,
 				DB73176E20AB255000D49AF3 /* FormationImageGenerator.swift in Sources */,
+				E4B73C1220AEEB4200A301FB /* UniformEditViewController.swift in Sources */,
 				DB73176320AB1DAB00D49AF3 /* UIView+LayoutConstraint.swift in Sources */,
 				DB7317C020AB391700D49AF3 /* ValueSelectViewController.swift in Sources */,
 				DB7317CA20AB391700D49AF3 /* AlertDialogViewController.swift in Sources */,
 				DB73176020AB1DAB00D49AF3 /* CoreGraphics+App.swift in Sources */,
 				DB73178C20AB256800D49AF3 /* Category.swift in Sources */,
 				DB73178820AB256800D49AF3 /* Parts.swift in Sources */,
+				E4B73C1920AEEB4800A301FB /* UniformSelectViewController.swift in Sources */,
 				DB73178720AB256800D49AF3 /* PartsColorType.swift in Sources */,
+				E4B73BE420AEEB1100A301FB /* PortraitEditPresenter.swift in Sources */,
 				DB73174720AB1D7000D49AF3 /* Definition+Uniform.swift in Sources */,
 				DB73176820AB253400D49AF3 /* CategorySelectAdapter.swift in Sources */,
 				DB73174B20AB1D7000D49AF3 /* Definition+Parts.swift in Sources */,
 				DB73178A20AB256800D49AF3 /* Position.swift in Sources */,
 				DB73179820AB257200D49AF3 /* NumberSelectorView.swift in Sources */,
 				DB7317C520AB391700D49AF3 /* TextInputViewController.swift in Sources */,
+				E4B73C0020AEEB3200A301FB /* FormationSubstituteAdapter.swift in Sources */,
+				E4B73BEE20AEEB2200A301FB /* PortraitSelectAdapter.swift in Sources */,
 				DB73177620AB255C00D49AF3 /* Notificatable.swift in Sources */,
 				DB73178620AB256800D49AF3 /* Sns.swift in Sources */,
 				DB73178B20AB256800D49AF3 /* MovableType.swift in Sources */,
@@ -756,8 +921,10 @@
 				DB7317A220AB2CE600D49AF3 /* LaunchViewController.swift in Sources */,
 				DB7317A320AB2CE600D49AF3 /* BootstrapViewController.swift in Sources */,
 				DB7317AC20AB2FE200D49AF3 /* TopViewController.swift in Sources */,
+				E4B73C1120AEEB4200A301FB /* UniformEditPresenter.swift in Sources */,
 				DB7317D020AB39A300D49AF3 /* WallpaperAdapter.swift in Sources */,
 				DB73177120AB255000D49AF3 /* PortraitImageGenerator.swift in Sources */,
+				E4B73C1820AEEB4800A301FB /* UniformSelectPresenter.swift in Sources */,
 				DB7317C220AB391700D49AF3 /* ColorSelectViewController.swift in Sources */,
 				DB7317D320AB39A300D49AF3 /* WallpaperPresenter.swift in Sources */,
 				DB73175320AB1D9B00D49AF3 /* DialogRiseupBehavior.swift in Sources */,
@@ -767,6 +934,7 @@
 				DB73179C20AB297100D49AF3 /* UIImage+ImageGenerator.swift in Sources */,
 				DB73177220AB255000D49AF3 /* UniformImageGenerator.swift in Sources */,
 				DB73175F20AB1DAB00D49AF3 /* DialogBehavior+App.swift in Sources */,
+				E4B73C0920AEEB3D00A301FB /* UniformListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
