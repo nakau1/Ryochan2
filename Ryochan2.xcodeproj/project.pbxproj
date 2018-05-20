@@ -8,6 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		82EF94CEB7ABBA29451FFA96 /* Pods_Ryochan2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94EBD6B9ACA52BC2DB6135F3 /* Pods_Ryochan2Tests.framework */; };
+		DB05539220B1E6270008DAD5 /* UniformNumberPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB05538320B1E6260008DAD5 /* UniformNumberPosition.swift */; };
+		DB05539320B1E6270008DAD5 /* PartsColorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB05538420B1E6260008DAD5 /* PartsColorType.swift */; };
+		DB05539420B1E6270008DAD5 /* MovableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB05538520B1E6260008DAD5 /* MovableType.swift */; };
+		DB05539520B1E6270008DAD5 /* Uniform.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB05538720B1E6260008DAD5 /* Uniform.swift */; };
+		DB05539620B1E6270008DAD5 /* Wallpaper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB05538820B1E6260008DAD5 /* Wallpaper.swift */; };
+		DB05539720B1E6270008DAD5 /* Parts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB05538920B1E6260008DAD5 /* Parts.swift */; };
+		DB05539820B1E6270008DAD5 /* Formation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB05538A20B1E6260008DAD5 /* Formation.swift */; };
+		DB05539920B1E6270008DAD5 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB05538B20B1E6260008DAD5 /* Category.swift */; };
+		DB05539A20B1E6270008DAD5 /* Portrait.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB05538C20B1E6260008DAD5 /* Portrait.swift */; };
+		DB05539B20B1E6270008DAD5 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB05538D20B1E6260008DAD5 /* Position.swift */; };
+		DB05539C20B1E6270008DAD5 /* Migration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB05538F20B1E6260008DAD5 /* Migration.swift */; };
+		DB05539D20B1E6270008DAD5 /* Sns.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB05539020B1E6260008DAD5 /* Sns.swift */; };
+		DB05539E20B1E6270008DAD5 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB05539120B1E6270008DAD5 /* File.swift */; };
 		DB73173D20AB192900D49AF3 /* Dialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB73173720AB192900D49AF3 /* Dialog.swift */; };
 		DB73173E20AB192900D49AF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB73173C20AB192900D49AF3 /* AppDelegate.swift */; };
 		DB73174720AB1D7000D49AF3 /* Definition+Uniform.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB73173F20AB1D7000D49AF3 /* Definition+Uniform.swift */; };
@@ -37,19 +50,6 @@
 		DB73177220AB255000D49AF3 /* UniformImageGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB73176D20AB255000D49AF3 /* UniformImageGenerator.swift */; };
 		DB73177520AB255C00D49AF3 /* CompoundedImageGeneratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB73177320AB255C00D49AF3 /* CompoundedImageGeneratorProtocol.swift */; };
 		DB73177620AB255C00D49AF3 /* Notificatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB73177420AB255C00D49AF3 /* Notificatable.swift */; };
-		DB73178420AB256800D49AF3 /* Uniform.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB73177720AB256800D49AF3 /* Uniform.swift */; };
-		DB73178520AB256800D49AF3 /* UniformNumberPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB73177820AB256800D49AF3 /* UniformNumberPosition.swift */; };
-		DB73178620AB256800D49AF3 /* Sns.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB73177920AB256800D49AF3 /* Sns.swift */; };
-		DB73178720AB256800D49AF3 /* PartsColorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB73177A20AB256800D49AF3 /* PartsColorType.swift */; };
-		DB73178820AB256800D49AF3 /* Parts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB73177B20AB256800D49AF3 /* Parts.swift */; };
-		DB73178920AB256800D49AF3 /* Migration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB73177C20AB256800D49AF3 /* Migration.swift */; };
-		DB73178A20AB256800D49AF3 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB73177D20AB256800D49AF3 /* Position.swift */; };
-		DB73178B20AB256800D49AF3 /* MovableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB73177E20AB256800D49AF3 /* MovableType.swift */; };
-		DB73178C20AB256800D49AF3 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB73177F20AB256800D49AF3 /* Category.swift */; };
-		DB73178D20AB256800D49AF3 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB73178020AB256800D49AF3 /* File.swift */; };
-		DB73178E20AB256800D49AF3 /* Wallpaper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB73178120AB256800D49AF3 /* Wallpaper.swift */; };
-		DB73178F20AB256800D49AF3 /* Portrait.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB73178220AB256800D49AF3 /* Portrait.swift */; };
-		DB73179020AB256800D49AF3 /* Formation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB73178320AB256800D49AF3 /* Formation.swift */; };
 		DB73179620AB257200D49AF3 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB73179120AB257200D49AF3 /* PreviewView.swift */; };
 		DB73179720AB257200D49AF3 /* HighlightButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB73179220AB257200D49AF3 /* HighlightButton.swift */; };
 		DB73179820AB257200D49AF3 /* NumberSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB73179320AB257200D49AF3 /* NumberSelectorView.swift */; };
@@ -132,6 +132,19 @@
 		4BDA1F74F5AA0ED912797074 /* Pods_Ryochan2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ryochan2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94EBD6B9ACA52BC2DB6135F3 /* Pods_Ryochan2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ryochan2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D91675FE35FA4DFA2258BDA8 /* Pods-Ryochan2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ryochan2.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ryochan2/Pods-Ryochan2.release.xcconfig"; sourceTree = "<group>"; };
+		DB05538320B1E6260008DAD5 /* UniformNumberPosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniformNumberPosition.swift; sourceTree = "<group>"; };
+		DB05538420B1E6260008DAD5 /* PartsColorType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartsColorType.swift; sourceTree = "<group>"; };
+		DB05538520B1E6260008DAD5 /* MovableType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovableType.swift; sourceTree = "<group>"; };
+		DB05538720B1E6260008DAD5 /* Uniform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Uniform.swift; sourceTree = "<group>"; };
+		DB05538820B1E6260008DAD5 /* Wallpaper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wallpaper.swift; sourceTree = "<group>"; };
+		DB05538920B1E6260008DAD5 /* Parts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parts.swift; sourceTree = "<group>"; };
+		DB05538A20B1E6260008DAD5 /* Formation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Formation.swift; sourceTree = "<group>"; };
+		DB05538B20B1E6260008DAD5 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		DB05538C20B1E6260008DAD5 /* Portrait.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Portrait.swift; sourceTree = "<group>"; };
+		DB05538D20B1E6260008DAD5 /* Position.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
+		DB05538F20B1E6260008DAD5 /* Migration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Migration.swift; sourceTree = "<group>"; };
+		DB05539020B1E6260008DAD5 /* Sns.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sns.swift; sourceTree = "<group>"; };
+		DB05539120B1E6270008DAD5 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		DB73173720AB192900D49AF3 /* Dialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dialog.swift; sourceTree = "<group>"; };
 		DB73173C20AB192900D49AF3 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB73173F20AB1D7000D49AF3 /* Definition+Uniform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Definition+Uniform.swift"; sourceTree = "<group>"; };
@@ -161,19 +174,6 @@
 		DB73176D20AB255000D49AF3 /* UniformImageGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniformImageGenerator.swift; sourceTree = "<group>"; };
 		DB73177320AB255C00D49AF3 /* CompoundedImageGeneratorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompoundedImageGeneratorProtocol.swift; sourceTree = "<group>"; };
 		DB73177420AB255C00D49AF3 /* Notificatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notificatable.swift; sourceTree = "<group>"; };
-		DB73177720AB256800D49AF3 /* Uniform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Uniform.swift; sourceTree = "<group>"; };
-		DB73177820AB256800D49AF3 /* UniformNumberPosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniformNumberPosition.swift; sourceTree = "<group>"; };
-		DB73177920AB256800D49AF3 /* Sns.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sns.swift; sourceTree = "<group>"; };
-		DB73177A20AB256800D49AF3 /* PartsColorType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartsColorType.swift; sourceTree = "<group>"; };
-		DB73177B20AB256800D49AF3 /* Parts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parts.swift; sourceTree = "<group>"; };
-		DB73177C20AB256800D49AF3 /* Migration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Migration.swift; sourceTree = "<group>"; };
-		DB73177D20AB256800D49AF3 /* Position.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
-		DB73177E20AB256800D49AF3 /* MovableType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovableType.swift; sourceTree = "<group>"; };
-		DB73177F20AB256800D49AF3 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
-		DB73178020AB256800D49AF3 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
-		DB73178120AB256800D49AF3 /* Wallpaper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wallpaper.swift; sourceTree = "<group>"; };
-		DB73178220AB256800D49AF3 /* Portrait.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Portrait.swift; sourceTree = "<group>"; };
-		DB73178320AB256800D49AF3 /* Formation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Formation.swift; sourceTree = "<group>"; };
 		DB73179120AB257200D49AF3 /* PreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
 		DB73179220AB257200D49AF3 /* HighlightButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighlightButton.swift; sourceTree = "<group>"; };
 		DB73179320AB257200D49AF3 /* NumberSelectorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberSelectorView.swift; sourceTree = "<group>"; };
@@ -284,6 +284,37 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DB05538220B1E6260008DAD5 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				DB05538320B1E6260008DAD5 /* UniformNumberPosition.swift */,
+				DB05538420B1E6260008DAD5 /* PartsColorType.swift */,
+				DB05538520B1E6260008DAD5 /* MovableType.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		DB05538620B1E6260008DAD5 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				DB05538720B1E6260008DAD5 /* Uniform.swift */,
+				DB05538820B1E6260008DAD5 /* Wallpaper.swift */,
+				DB05538920B1E6260008DAD5 /* Parts.swift */,
+				DB05538A20B1E6260008DAD5 /* Formation.swift */,
+				DB05538B20B1E6260008DAD5 /* Category.swift */,
+				DB05538C20B1E6260008DAD5 /* Portrait.swift */,
+				DB05538D20B1E6260008DAD5 /* Position.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		DB05538E20B1E6260008DAD5 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		DB73173220AB192900D49AF3 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
@@ -387,19 +418,12 @@
 		DB73173A20AB192900D49AF3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				DB73177F20AB256800D49AF3 /* Category.swift */,
-				DB73178020AB256800D49AF3 /* File.swift */,
-				DB73178320AB256800D49AF3 /* Formation.swift */,
-				DB73177C20AB256800D49AF3 /* Migration.swift */,
-				DB73177E20AB256800D49AF3 /* MovableType.swift */,
-				DB73177B20AB256800D49AF3 /* Parts.swift */,
-				DB73177A20AB256800D49AF3 /* PartsColorType.swift */,
-				DB73178220AB256800D49AF3 /* Portrait.swift */,
-				DB73177D20AB256800D49AF3 /* Position.swift */,
-				DB73177920AB256800D49AF3 /* Sns.swift */,
-				DB73177720AB256800D49AF3 /* Uniform.swift */,
-				DB73177820AB256800D49AF3 /* UniformNumberPosition.swift */,
-				DB73178120AB256800D49AF3 /* Wallpaper.swift */,
+				DB05538620B1E6260008DAD5 /* Entity */,
+				DB05538E20B1E6260008DAD5 /* Manager */,
+				DB05538220B1E6260008DAD5 /* Enum */,
+				DB05539120B1E6270008DAD5 /* File.swift */,
+				DB05538F20B1E6260008DAD5 /* Migration.swift */,
+				DB05539020B1E6260008DAD5 /* Sns.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -858,17 +882,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4B73BFD20AEEB3200A301FB /* FormationSubstitutePresenter.swift in Sources */,
-				DB73178420AB256800D49AF3 /* Uniform.swift in Sources */,
 				DB73174C20AB1D7000D49AF3 /* Dimension.swift in Sources */,
 				DB73174D20AB1D7000D49AF3 /* Definition.swift in Sources */,
-				DB73179020AB256800D49AF3 /* Formation.swift in Sources */,
 				DB73177020AB255000D49AF3 /* WallpaperedImageGenerator.swift in Sources */,
 				DB73176720AB253400D49AF3 /* PartsSelectAdapter.swift in Sources */,
 				E4B73BF720AEEB2B00A301FB /* FormationViewController.swift in Sources */,
 				E4B73BEB20AEEB2200A301FB /* PortraitSelectPresenter.swift in Sources */,
-				DB73178920AB256800D49AF3 /* Migration.swift in Sources */,
 				DB7317AA20AB2FE200D49AF3 /* TopPresenter.swift in Sources */,
 				DB73179A20AB257200D49AF3 /* ColorButton.swift in Sources */,
+				DB05539820B1E6270008DAD5 /* Formation.swift in Sources */,
 				E4B73BFE20AEEB3200A301FB /* FormationSubstituteViewController.swift in Sources */,
 				DB7317C720AB391700D49AF3 /* MenuViewController.swift in Sources */,
 				DB73179620AB257200D49AF3 /* PreviewView.swift in Sources */,
@@ -879,14 +901,13 @@
 				DB73176120AB1DAB00D49AF3 /* String+App.swift in Sources */,
 				E4B73BEC20AEEB2200A301FB /* PortraitSelectViewController.swift in Sources */,
 				E4B73BE320AEEB1100A301FB /* PortraitEditAdapter.swift in Sources */,
-				DB73178F20AB256800D49AF3 /* Portrait.swift in Sources */,
 				DB73177520AB255C00D49AF3 /* CompoundedImageGeneratorProtocol.swift in Sources */,
-				DB73178D20AB256800D49AF3 /* File.swift in Sources */,
 				DB73173E20AB192900D49AF3 /* AppDelegate.swift in Sources */,
 				DB7317AE20AB31DC00D49AF3 /* TopAdapter.swift in Sources */,
+				DB05539920B1E6270008DAD5 /* Category.swift in Sources */,
 				E4B73BF520AEEB2B00A301FB /* FormationPresenter.swift in Sources */,
+				DB05539D20B1E6270008DAD5 /* Sns.swift in Sources */,
 				DB73174820AB1D7000D49AF3 /* Definition+Portrait.swift in Sources */,
-				DB73178520AB256800D49AF3 /* UniformNumberPosition.swift in Sources */,
 				DB73175E20AB1DAB00D49AF3 /* UITextField+App.swift in Sources */,
 				DB73175220AB1D9B00D49AF3 /* DialogRightDrawBehavior.swift in Sources */,
 				DB73175C20AB1DAB00D49AF3 /* UIViewController+App.swift in Sources */,
@@ -897,49 +918,52 @@
 				DB73174920AB1D7000D49AF3 /* Definition+Formation.swift in Sources */,
 				E4B73C1B20AEEB4800A301FB /* UniformSelectAdapter.swift in Sources */,
 				E4B73C0820AEEB3D00A301FB /* UniformListAdapter.swift in Sources */,
+				DB05539E20B1E6270008DAD5 /* File.swift in Sources */,
+				DB05539620B1E6270008DAD5 /* Wallpaper.swift in Sources */,
 				E4B73C0620AEEB3D00A301FB /* UniformListPresenter.swift in Sources */,
-				DB73178E20AB256800D49AF3 /* Wallpaper.swift in Sources */,
 				DB73174E20AB1D7000D49AF3 /* Definition+Wallpaper.swift in Sources */,
 				E4B73BE520AEEB1100A301FB /* PortraitEditViewController.swift in Sources */,
 				DB73176E20AB255000D49AF3 /* FormationImageGenerator.swift in Sources */,
+				DB05539220B1E6270008DAD5 /* UniformNumberPosition.swift in Sources */,
 				E4B73C1220AEEB4200A301FB /* UniformEditViewController.swift in Sources */,
 				DB73176320AB1DAB00D49AF3 /* UIView+LayoutConstraint.swift in Sources */,
+				DB05539320B1E6270008DAD5 /* PartsColorType.swift in Sources */,
 				DB7317C020AB391700D49AF3 /* ValueSelectViewController.swift in Sources */,
 				DB7317CA20AB391700D49AF3 /* AlertDialog.swift in Sources */,
 				DB73176020AB1DAB00D49AF3 /* CoreGraphics+App.swift in Sources */,
-				DB73178C20AB256800D49AF3 /* Category.swift in Sources */,
-				DB73178820AB256800D49AF3 /* Parts.swift in Sources */,
 				E4B73C1920AEEB4800A301FB /* UniformSelectViewController.swift in Sources */,
-				DB73178720AB256800D49AF3 /* PartsColorType.swift in Sources */,
 				E4B73BE420AEEB1100A301FB /* PortraitEditPresenter.swift in Sources */,
+				DB05539A20B1E6270008DAD5 /* Portrait.swift in Sources */,
 				DB73174720AB1D7000D49AF3 /* Definition+Uniform.swift in Sources */,
+				DB05539420B1E6270008DAD5 /* MovableType.swift in Sources */,
 				DB73176820AB253400D49AF3 /* CategorySelectAdapter.swift in Sources */,
+				DB05539B20B1E6270008DAD5 /* Position.swift in Sources */,
 				DB73174B20AB1D7000D49AF3 /* Definition+Parts.swift in Sources */,
-				DB73178A20AB256800D49AF3 /* Position.swift in Sources */,
 				DB73179820AB257200D49AF3 /* NumberSelectorView.swift in Sources */,
 				DB7317C520AB391700D49AF3 /* TextInputViewController.swift in Sources */,
 				E4B73C0020AEEB3200A301FB /* FormationSubstituteAdapter.swift in Sources */,
 				E4B73BEE20AEEB2200A301FB /* PortraitSelectAdapter.swift in Sources */,
 				E4B73C1F20AEFCCA00A301FB /* UIButton+App.swift in Sources */,
 				DB73177620AB255C00D49AF3 /* Notificatable.swift in Sources */,
-				DB73178620AB256800D49AF3 /* Sns.swift in Sources */,
-				DB73178B20AB256800D49AF3 /* MovableType.swift in Sources */,
 				DB7317A120AB2CE600D49AF3 /* LaunchPresenter.swift in Sources */,
 				DB7317A220AB2CE600D49AF3 /* LaunchViewController.swift in Sources */,
 				DB7317A320AB2CE600D49AF3 /* BootstrapViewController.swift in Sources */,
 				DB7317AC20AB2FE200D49AF3 /* TopViewController.swift in Sources */,
 				E4B73C1120AEEB4200A301FB /* UniformEditPresenter.swift in Sources */,
 				DB7317D020AB39A300D49AF3 /* WallpaperAdapter.swift in Sources */,
+				DB05539C20B1E6270008DAD5 /* Migration.swift in Sources */,
 				DB73177120AB255000D49AF3 /* PortraitImageGenerator.swift in Sources */,
 				E4B73C1820AEEB4800A301FB /* UniformSelectPresenter.swift in Sources */,
 				DB7317C220AB391700D49AF3 /* ColorSelectViewController.swift in Sources */,
 				DB7317D320AB39A300D49AF3 /* WallpaperPresenter.swift in Sources */,
 				DB73175320AB1D9B00D49AF3 /* DialogRiseupBehavior.swift in Sources */,
+				DB05539720B1E6270008DAD5 /* Parts.swift in Sources */,
 				DB73173D20AB192900D49AF3 /* Dialog.swift in Sources */,
 				DB73174A20AB1D7000D49AF3 /* Color.swift in Sources */,
 				DB73175D20AB1DAB00D49AF3 /* UIColor+App.swift in Sources */,
 				E4B73C1D20AEF95600A301FB /* UIView+App.swift in Sources */,
 				DB73179C20AB297100D49AF3 /* UIImage+ImageGenerator.swift in Sources */,
+				DB05539520B1E6270008DAD5 /* Uniform.swift in Sources */,
 				DB73177220AB255000D49AF3 /* UniformImageGenerator.swift in Sources */,
 				DB73175F20AB1DAB00D49AF3 /* DialogBehavior+App.swift in Sources */,
 				E4B73C0920AEEB3D00A301FB /* UniformListViewController.swift in Sources */,
