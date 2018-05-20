@@ -1,12 +1,18 @@
 PODS:
+  - Nimble (7.0.2)
+  - Quick (1.2.0)
   - SSZipArchive (2.0.8)
 
 DEPENDENCIES:
+  - Nimble
+  - Quick
   - SSZipArchive
 
 SPEC CHECKSUMS:
+  Nimble: bfe1f814edabba69ff145cb1283e04ed636a67f2
+  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
   SSZipArchive: e6ab66e1936fac7e3b5073e9f5eb364d91dfbfc7
 
-PODFILE CHECKSUM: 5eac5c949b93d88cca070673a751882d3512e287
+PODFILE CHECKSUM: b6980c7133e4ea793059d1fbf36c437434547323
 
 COCOAPODS: 1.2.1

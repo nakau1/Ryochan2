@@ -6,6 +6,8 @@ target 'Ryochan2' do
   use_frameworks!
 
   pod 'SSZipArchive'
+  pod 'Quick'
+  pod 'Nimble'
 
   target 'Ryochan2Tests' do
     inherit! :search_paths

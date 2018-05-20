@@ -89,7 +89,7 @@
 		DB98A3F020AB15F100A5273D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB98A3EE20AB15F100A5273D /* Main.storyboard */; };
 		DB98A3F220AB15F100A5273D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB98A3F120AB15F100A5273D /* Assets.xcassets */; };
 		DB98A3F520AB15F100A5273D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB98A3F320AB15F100A5273D /* LaunchScreen.storyboard */; };
-		DB98A40020AB15F200A5273D /* Ryochan2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB98A3FF20AB15F200A5273D /* Ryochan2Tests.swift */; };
+		DB98A40020AB15F200A5273D /* StringExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB98A3FF20AB15F200A5273D /* StringExtensionTest.swift */; };
 		DBA039832D1163DC057C0842 /* Pods_Ryochan2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BDA1F74F5AA0ED912797074 /* Pods_Ryochan2.framework */; };
 		E4B73BE220AEEB1100A301FB /* PortraitEdit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4B73BDE20AEEB1100A301FB /* PortraitEdit.storyboard */; };
 		E4B73BE320AEEB1100A301FB /* PortraitEditAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B73BDF20AEEB1100A301FB /* PortraitEditAdapter.swift */; };
@@ -223,7 +223,7 @@
 		DB98A3F420AB15F100A5273D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB98A3F620AB15F100A5273D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB98A3FB20AB15F200A5273D /* Ryochan2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Ryochan2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB98A3FF20AB15F200A5273D /* Ryochan2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ryochan2Tests.swift; sourceTree = "<group>"; };
+		DB98A3FF20AB15F200A5273D /* StringExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionTest.swift; sourceTree = "<group>"; };
 		DB98A40120AB15F200A5273D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4B73BDE20AEEB1100A301FB /* PortraitEdit.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PortraitEdit.storyboard; sourceTree = "<group>"; };
 		E4B73BDF20AEEB1100A301FB /* PortraitEditAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortraitEditAdapter.swift; sourceTree = "<group>"; };
@@ -604,7 +604,7 @@
 		DB98A3FE20AB15F200A5273D /* Ryochan2Tests */ = {
 			isa = PBXGroup;
 			children = (
-				DB98A3FF20AB15F200A5273D /* Ryochan2Tests.swift */,
+				DB98A3FF20AB15F200A5273D /* StringExtensionTest.swift */,
 				DB98A40120AB15F200A5273D /* Info.plist */,
 			);
 			path = Ryochan2Tests;
@@ -1002,7 +1002,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB98A40020AB15F200A5273D /* Ryochan2Tests.swift in Sources */,
+				DB98A40020AB15F200A5273D /* StringExtensionTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
