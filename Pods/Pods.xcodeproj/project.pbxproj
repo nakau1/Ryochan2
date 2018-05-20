@@ -7,47 +7,143 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0005ABD7B9F2B93584BC83AEF87E3D73 /* SSZipCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = FA6FA278A80E555CC4E02AAFDBEB9FF0 /* SSZipCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		01BED1E6FBAB15C1EBDD985692E49D22 /* Pods-Ryochan2-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D7E087F495302CAFC1C0C1BEA32924F /* Pods-Ryochan2-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		01FDD91BA7C46C25469E412B7A710E06 /* aes_ni.c in Sources */ = {isa = PBXBuildFile; fileRef = 42F4E66AB19698B2349B55DCA2732489 /* aes_ni.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		04F9F86D0A71F18E7316964015332019 /* aescrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = 4736157FC0FB5579F88316F6BC95E591 /* aescrypt.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0A2DF7EE27C3848FED82FD3043C4F2DF /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 7A3FA58B71C994A2E1DE708DB5C2D0E2 /* ioapi.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1C07FAFBFB6FF628A5F18B16F434364B /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D8167946C07ADF18E51090AD23FF77E /* crypt.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1CC02842A6B04964880DE4A863C5D315 /* aestab.c in Sources */ = {isa = PBXBuildFile; fileRef = 475E0A0FF2DACFCE1C9182665B8313B0 /* aestab.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		334DB13540B21529A566DAD667B4BDAE /* Pods-Ryochan2Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 406C8940CC9C40F44B6FD61722C72320 /* Pods-Ryochan2Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6B747C25E335BD753BFD0025C96EC122 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		852B4CED9BD726B14F7387BED1C5C06C /* Pods-Ryochan2-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 414B64D7797BC2B2B6D51630F04A1CF8 /* Pods-Ryochan2-dummy.m */; };
-		98D602E85964B88DE4B1E2914FDF654E /* Pods-Ryochan2-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D7E087F495302CAFC1C0C1BEA32924F /* Pods-Ryochan2-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37548DACF842579EA15D422BB97BFAF7 /* aes_ni.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C958F28F20DC236142612D32600C64E /* aes_ni.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3983D324E0C48B954FBC24177B465A86 /* aestab.h in Headers */ = {isa = PBXBuildFile; fileRef = B4657344196B79A41FA99474D676FB94 /* aestab.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3A7F771D75C6C8EB881137057F87F7B2 /* minishared.c in Sources */ = {isa = PBXBuildFile; fileRef = 7F36B72D20F0D170EC5DE5FE0636D796 /* minishared.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		405948DB900CD3BC2408D87BA3B32BF0 /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C4C50D1BB85EDEFF321215473889A59 /* unzip.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		41AD00669EFD5C3835C0590F97D01054 /* ZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 582CC59F4056E635B58BBFD852B9441D /* ZipArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42BF1D593960A1AEB4D3EC1E6840B35F /* crypt.c in Sources */ = {isa = PBXBuildFile; fileRef = DDB436CEFCF39DB6E67B94697FD1AC8A /* crypt.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4A98421AF0542F5C159687E0B8953568 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 77DA1F16CC954BC6BE66BA9447E2A153 /* zip.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4AC6D43FF956E8FE740384AC0CBBEAE8 /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = AC08EFEB4FD6312CE017A34FA83DAD02 /* hmac.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4F0FDDB982F51D4B4327E2FBE57FAF83 /* SSZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = A7FCCAF87E1EE2B31F675B02C96C5798 /* SSZipArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5852184B12A9F4DDBE7BDADBB36E160C /* pwd2key.c in Sources */ = {isa = PBXBuildFile; fileRef = B69E7D6494F1571BC824CF8AC82FE63E /* pwd2key.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		648A2818EF4C8B63F56C65D412DEF7F1 /* prng.c in Sources */ = {isa = PBXBuildFile; fileRef = E33B4E2BBE0158145D2CACA981B8E23C /* prng.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		692C9542571AC93227125B5A01AA5A32 /* ioapi_mem.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C3B4AE16D27E68A232D059F2094F9E5 /* ioapi_mem.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		71204865C5A6506195320E6C08732672 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = B8F00841E12E9B8516896044370A558E /* SSZipArchive.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7BD5BA42F4FD50470C19DFBA37EC3701 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		855A00A705F94366DB3AC9A14EF33AA3 /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = 21C3DDBC63B005B56B3854F10F1FAF10 /* sha1.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8A4A4E45428D04B9BCC324511E014650 /* brg_endian.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E6594D672471F2A6F3F6CB3C6E847E2 /* brg_endian.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8B02600133507E5F41219CCF2E8B0F81 /* SSZipArchive-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 480979755085099EFF48067B3C842892 /* SSZipArchive-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9328C44273CB4F1B5A8BE4EC07C06F33 /* fileenc.c in Sources */ = {isa = PBXBuildFile; fileRef = 36006ED0E20B7BF1B34A0092C1CD2E08 /* fileenc.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9FDD6A84387F11D22A908B8AA5FF3A7D /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 73BDE9CE5581B07D9D9D93746E3631BB /* ioapi.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A1451A8D0619B7400876CAF52034EF01 /* pwd2key.h in Headers */ = {isa = PBXBuildFile; fileRef = B0BB3AE54C79579AFD75700F902B5FAE /* pwd2key.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A86774FF0D169DD50FC5EC91CDDF3DBD /* aeskey.c in Sources */ = {isa = PBXBuildFile; fileRef = 7F447C9EE44AEF2F079535BEF8649580 /* aeskey.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A8E61C6DDC06C3356C91EE9D5ADBCAF5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		ACAAC0400852728D8A4A8D25B8B167E8 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = AFCAAEBBF9349965002B24D98A46FE2B /* zip.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		ADD3F03CF3839A7311C20651A44F8EA5 /* Pods-Ryochan2-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 414B64D7797BC2B2B6D51630F04A1CF8 /* Pods-Ryochan2-dummy.m */; };
+		B717AF09B7F9751543D4E7EAD2F12FB1 /* ioapi_buf.c in Sources */ = {isa = PBXBuildFile; fileRef = 03BCF323FE14FD6FA1F6D2553DB81786 /* ioapi_buf.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B7E2D3C75C336D2B05D8161CAE4E9D99 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 9C89E4F74DE78548D6C35765D2CA7E5A /* unzip.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		BD309088F3193ECADAEF6538F26448B4 /* fileenc.h in Headers */ = {isa = PBXBuildFile; fileRef = 816FD18DCD11E6D481681AEF17482B36 /* fileenc.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C057F3F74552BBF2DD2452E61E321E7A /* SSZipArchive-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FAFF6ABD71C59912DA0FC6B52E2A57E0 /* SSZipArchive-dummy.m */; };
+		C9AAEBBDC5B5DC814B84A8FEAB3F9B0B /* prng.h in Headers */ = {isa = PBXBuildFile; fileRef = 53D6F70DCC4A7E0B0CD3C34DBCC7E6DD /* prng.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CB988FE38E518C1CD0F90555F71515B3 /* aes.h in Headers */ = {isa = PBXBuildFile; fileRef = ABD36C1265730DB326700DA310FD4E66 /* aes.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D0E0DF8954AD973144A3713FF0EC99EC /* hmac.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B51BA79FE286DC137BA9B0DD3C4D579 /* hmac.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D12A1951D18461FAC5E745930DA28E8F /* ioapi_mem.c in Sources */ = {isa = PBXBuildFile; fileRef = 8CD41EB5A031CBEB516054C89BBABE0E /* ioapi_mem.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D17DB196DAAE952F23CF116A77F993BE /* sha1.h in Headers */ = {isa = PBXBuildFile; fileRef = AC45C6C3553EF25DD6633F595572B5F4 /* sha1.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D4904858B91B0F3124553B898AA547D5 /* ioapi_buf.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A6C3CA62F0B57DD79AE3EDEC3E721EB /* ioapi_buf.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D8CFC80FD57713605AE7844FB0E3EBEA /* aesopt.h in Headers */ = {isa = PBXBuildFile; fileRef = CA296BC3A968C204404C9DD0D5F66805 /* aesopt.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DF52F2F2D06DD3A52BB72923070B4966 /* brg_types.h in Headers */ = {isa = PBXBuildFile; fileRef = 448AF3D2EE4035FD3E4D5BC430837AC1 /* brg_types.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		E4DAE5C3A58564A383190BCC778B75AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		F171677AE41ADF7A7D7F5F48CED26012 /* Pods-Ryochan2Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F272C7A5CBD8300D28D2894A2BCD2F5 /* Pods-Ryochan2Tests-dummy.m */; };
+		F62DDF379A7D949BC7B9BBFA5DE660A8 /* minishared.h in Headers */ = {isa = PBXBuildFile; fileRef = 85646E439D1F414EA902646352228FC1 /* minishared.h */; settings = {ATTRIBUTES = (Project, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D56DCEBCF716C4204858F1AEE9C81A3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3093B8DCB95BACCB657375CFA0A7BE65;
+			remoteInfo = SSZipArchive;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		03BCF323FE14FD6FA1F6D2553DB81786 /* ioapi_buf.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ioapi_buf.c; path = SSZipArchive/minizip/ioapi_buf.c; sourceTree = "<group>"; };
 		042073919A18D82A18F4AF353BAE029A /* Pods-Ryochan2Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Ryochan2Tests.modulemap"; sourceTree = "<group>"; };
 		042E6A0C4460684C29E695DF2BD1FF4E /* Pods-Ryochan2.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Ryochan2.modulemap"; sourceTree = "<group>"; };
 		0D878382BB03774AD301B88B276B10C4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21C3DDBC63B005B56B3854F10F1FAF10 /* sha1.c */ = {isa = PBXFileReference; includeInIndex = 1; name = sha1.c; path = SSZipArchive/minizip/aes/sha1.c; sourceTree = "<group>"; };
 		29C8A63C2408338794004517EFDD79DD /* Pods-Ryochan2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Ryochan2.debug.xcconfig"; sourceTree = "<group>"; };
 		2DC7CA484C7B001CB8E84FB2B036556D /* Pods-Ryochan2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Ryochan2Tests.release.xcconfig"; sourceTree = "<group>"; };
 		30AE6855A370EAF4B221F8163D9C5B01 /* Pods-Ryochan2-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Ryochan2-frameworks.sh"; sourceTree = "<group>"; };
+		32CCC77F3FF01ABA542434086CB3CBEB /* SSZipArchive.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SSZipArchive.modulemap; sourceTree = "<group>"; };
+		36006ED0E20B7BF1B34A0092C1CD2E08 /* fileenc.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fileenc.c; path = SSZipArchive/minizip/aes/fileenc.c; sourceTree = "<group>"; };
 		406C8940CC9C40F44B6FD61722C72320 /* Pods-Ryochan2Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Ryochan2Tests-umbrella.h"; sourceTree = "<group>"; };
 		414B64D7797BC2B2B6D51630F04A1CF8 /* Pods-Ryochan2-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Ryochan2-dummy.m"; sourceTree = "<group>"; };
+		42F4E66AB19698B2349B55DCA2732489 /* aes_ni.c */ = {isa = PBXFileReference; includeInIndex = 1; name = aes_ni.c; path = SSZipArchive/minizip/aes/aes_ni.c; sourceTree = "<group>"; };
+		448AF3D2EE4035FD3E4D5BC430837AC1 /* brg_types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = brg_types.h; path = SSZipArchive/minizip/aes/brg_types.h; sourceTree = "<group>"; };
+		4736157FC0FB5579F88316F6BC95E591 /* aescrypt.c */ = {isa = PBXFileReference; includeInIndex = 1; name = aescrypt.c; path = SSZipArchive/minizip/aes/aescrypt.c; sourceTree = "<group>"; };
+		475E0A0FF2DACFCE1C9182665B8313B0 /* aestab.c */ = {isa = PBXFileReference; includeInIndex = 1; name = aestab.c; path = SSZipArchive/minizip/aes/aestab.c; sourceTree = "<group>"; };
+		480979755085099EFF48067B3C842892 /* SSZipArchive-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSZipArchive-umbrella.h"; sourceTree = "<group>"; };
+		4B51BA79FE286DC137BA9B0DD3C4D579 /* hmac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hmac.h; path = SSZipArchive/minizip/aes/hmac.h; sourceTree = "<group>"; };
+		4E6594D672471F2A6F3F6CB3C6E847E2 /* brg_endian.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = brg_endian.h; path = SSZipArchive/minizip/aes/brg_endian.h; sourceTree = "<group>"; };
+		53D6F70DCC4A7E0B0CD3C34DBCC7E6DD /* prng.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = prng.h; path = SSZipArchive/minizip/aes/prng.h; sourceTree = "<group>"; };
 		55250955F81519BB930F9644BF54F00E /* Pods-Ryochan2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Ryochan2Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		582CC59F4056E635B58BBFD852B9441D /* ZipArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZipArchive.h; path = SSZipArchive/ZipArchive.h; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		67074CA448ACF684F3FFE1C161684CA4 /* SSZipArchive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SSZipArchive.framework; path = SSZipArchive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AA07E70DE7543A34814CBB4F96E07B8 /* Pods-Ryochan2Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Ryochan2Tests-resources.sh"; sourceTree = "<group>"; };
+		6C4C50D1BB85EDEFF321215473889A59 /* unzip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unzip.h; path = SSZipArchive/minizip/unzip.h; sourceTree = "<group>"; };
+		73BDE9CE5581B07D9D9D93746E3631BB /* ioapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = SSZipArchive/minizip/ioapi.h; sourceTree = "<group>"; };
 		75B9E709B134FED45A96A85FC271366E /* Pods-Ryochan2-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Ryochan2-acknowledgements.markdown"; sourceTree = "<group>"; };
+		77DA1F16CC954BC6BE66BA9447E2A153 /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = zip.c; path = SSZipArchive/minizip/zip.c; sourceTree = "<group>"; };
+		7A3FA58B71C994A2E1DE708DB5C2D0E2 /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ioapi.c; path = SSZipArchive/minizip/ioapi.c; sourceTree = "<group>"; };
+		7D6C7647EBDF4F4DF5E4EC3B5320826E /* Pods_Ryochan2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Ryochan2Tests.framework; path = "Pods-Ryochan2Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D7E087F495302CAFC1C0C1BEA32924F /* Pods-Ryochan2-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Ryochan2-umbrella.h"; sourceTree = "<group>"; };
+		7D8167946C07ADF18E51090AD23FF77E /* crypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypt.h; path = SSZipArchive/minizip/crypt.h; sourceTree = "<group>"; };
+		7F36B72D20F0D170EC5DE5FE0636D796 /* minishared.c */ = {isa = PBXFileReference; includeInIndex = 1; name = minishared.c; path = SSZipArchive/minizip/minishared.c; sourceTree = "<group>"; };
+		7F447C9EE44AEF2F079535BEF8649580 /* aeskey.c */ = {isa = PBXFileReference; includeInIndex = 1; name = aeskey.c; path = SSZipArchive/minizip/aes/aeskey.c; sourceTree = "<group>"; };
+		816FD18DCD11E6D481681AEF17482B36 /* fileenc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fileenc.h; path = SSZipArchive/minizip/aes/fileenc.h; sourceTree = "<group>"; };
+		85646E439D1F414EA902646352228FC1 /* minishared.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = minishared.h; path = SSZipArchive/minizip/minishared.h; sourceTree = "<group>"; };
+		8CD41EB5A031CBEB516054C89BBABE0E /* ioapi_mem.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ioapi_mem.c; path = SSZipArchive/minizip/ioapi_mem.c; sourceTree = "<group>"; };
 		8E54742A342EA4BB5F1801EC0D3B39F4 /* Pods-Ryochan2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Ryochan2.release.xcconfig"; sourceTree = "<group>"; };
-		91C4E8DC7CC7DFCF05186EEBF94F0D9A /* Pods_Ryochan2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Ryochan2Tests.framework; path = "Pods-Ryochan2Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		944734ED17847CB059C4D62C92CBE349 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A6C3CA62F0B57DD79AE3EDEC3E721EB /* ioapi_buf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi_buf.h; path = SSZipArchive/minizip/ioapi_buf.h; sourceTree = "<group>"; };
 		9B0A2E05710D8A93624A0F0C0055057F /* Pods-Ryochan2Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Ryochan2Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9C3B4AE16D27E68A232D059F2094F9E5 /* ioapi_mem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi_mem.h; path = SSZipArchive/minizip/ioapi_mem.h; sourceTree = "<group>"; };
+		9C89E4F74DE78548D6C35765D2CA7E5A /* unzip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = unzip.c; path = SSZipArchive/minizip/unzip.c; sourceTree = "<group>"; };
+		9C958F28F20DC236142612D32600C64E /* aes_ni.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aes_ni.h; path = SSZipArchive/minizip/aes/aes_ni.h; sourceTree = "<group>"; };
 		9F272C7A5CBD8300D28D2894A2BCD2F5 /* Pods-Ryochan2Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Ryochan2Tests-dummy.m"; sourceTree = "<group>"; };
+		A7FCCAF87E1EE2B31F675B02C96C5798 /* SSZipArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSZipArchive.h; path = SSZipArchive/SSZipArchive.h; sourceTree = "<group>"; };
+		ABD36C1265730DB326700DA310FD4E66 /* aes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aes.h; path = SSZipArchive/minizip/aes/aes.h; sourceTree = "<group>"; };
+		AC08EFEB4FD6312CE017A34FA83DAD02 /* hmac.c */ = {isa = PBXFileReference; includeInIndex = 1; name = hmac.c; path = SSZipArchive/minizip/aes/hmac.c; sourceTree = "<group>"; };
+		AC45C6C3553EF25DD6633F595572B5F4 /* sha1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sha1.h; path = SSZipArchive/minizip/aes/sha1.h; sourceTree = "<group>"; };
+		AFCAAEBBF9349965002B24D98A46FE2B /* zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zip.h; path = SSZipArchive/minizip/zip.h; sourceTree = "<group>"; };
+		B0BB3AE54C79579AFD75700F902B5FAE /* pwd2key.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pwd2key.h; path = SSZipArchive/minizip/aes/pwd2key.h; sourceTree = "<group>"; };
+		B4657344196B79A41FA99474D676FB94 /* aestab.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aestab.h; path = SSZipArchive/minizip/aes/aestab.h; sourceTree = "<group>"; };
+		B69E7D6494F1571BC824CF8AC82FE63E /* pwd2key.c */ = {isa = PBXFileReference; includeInIndex = 1; name = pwd2key.c; path = SSZipArchive/minizip/aes/pwd2key.c; sourceTree = "<group>"; };
+		B8F00841E12E9B8516896044370A558E /* SSZipArchive.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSZipArchive.m; path = SSZipArchive/SSZipArchive.m; sourceTree = "<group>"; };
+		C0187C57153A701178AB6A052CB639DF /* SSZipArchive-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSZipArchive-prefix.pch"; sourceTree = "<group>"; };
 		C4453D32C585936E31C94B0CB46DDE99 /* Pods-Ryochan2Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Ryochan2Tests-frameworks.sh"; sourceTree = "<group>"; };
+		CA296BC3A968C204404C9DD0D5F66805 /* aesopt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aesopt.h; path = SSZipArchive/minizip/aes/aesopt.h; sourceTree = "<group>"; };
 		D15F3209D6642A08E2EA2A367A76009E /* Pods-Ryochan2-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Ryochan2-resources.sh"; sourceTree = "<group>"; };
-		D6749EE2998C357AE285B8F63E64EB7C /* Pods_Ryochan2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Ryochan2.framework; path = "Pods-Ryochan2.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7B90821AFDE0C1FA42FC6941B4558C0 /* Pods-Ryochan2Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Ryochan2Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DDB436CEFCF39DB6E67B94697FD1AC8A /* crypt.c */ = {isa = PBXFileReference; includeInIndex = 1; name = crypt.c; path = SSZipArchive/minizip/crypt.c; sourceTree = "<group>"; };
 		E18F7B78306C92C74F43CE33DCFA8001 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2083465093BCA45E2D7B48416DD935F /* Pods-Ryochan2-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Ryochan2-acknowledgements.plist"; sourceTree = "<group>"; };
+		E308CA1FA4CCF041005DCD77C2D6E780 /* Pods_Ryochan2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Ryochan2.framework; path = "Pods-Ryochan2.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E33B4E2BBE0158145D2CACA981B8E23C /* prng.c */ = {isa = PBXFileReference; includeInIndex = 1; name = prng.c; path = SSZipArchive/minizip/aes/prng.c; sourceTree = "<group>"; };
+		EAD3E66C06EEE51F2544034F02942E85 /* SSZipArchive.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SSZipArchive.xcconfig; sourceTree = "<group>"; };
+		FA6FA278A80E555CC4E02AAFDBEB9FF0 /* SSZipCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSZipCommon.h; path = SSZipArchive/SSZipCommon.h; sourceTree = "<group>"; };
+		FAFF6ABD71C59912DA0FC6B52E2A57E0 /* SSZipArchive-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SSZipArchive-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		40478191997E5FFD11F845EC4C069ECB /* Frameworks */ = {
+		8172B22049CFE34678A41D698BAEF128 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B747C25E335BD753BFD0025C96EC122 /* Foundation.framework in Frameworks */,
+				7BD5BA42F4FD50470C19DFBA37EC3701 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,9 +155,49 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E6BF3BF84D90BC2E7FFAF71A935178E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8E61C6DDC06C3356C91EE9D5ADBCAF5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19154435905B8A374172332F2EBC822C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E308CA1FA4CCF041005DCD77C2D6E780 /* Pods_Ryochan2.framework */,
+				7D6C7647EBDF4F4DF5E4EC3B5320826E /* Pods_Ryochan2Tests.framework */,
+				67074CA448ACF684F3FFE1C161684CA4 /* SSZipArchive.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		37825C941A649843DBAF12FF32836639 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				944734ED17847CB059C4D62C92CBE349 /* Info.plist */,
+				32CCC77F3FF01ABA542434086CB3CBEB /* SSZipArchive.modulemap */,
+				EAD3E66C06EEE51F2544034F02942E85 /* SSZipArchive.xcconfig */,
+				FAFF6ABD71C59912DA0FC6B52E2A57E0 /* SSZipArchive-dummy.m */,
+				C0187C57153A701178AB6A052CB639DF /* SSZipArchive-prefix.pch */,
+				480979755085099EFF48067B3C842892 /* SSZipArchive-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SSZipArchive";
+			sourceTree = "<group>";
+		};
+		4F145446B1368F3E3D7B8B3E2EE155E1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BEF6BCF68025934414F583F6514D1BF8 /* SSZipArchive */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		4FD6CB2D9B30F1344EFB06B809966955 /* Pods-Ryochan2Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,7 +239,8 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				9DCD61D6D256B5CF0BD23B6BDF5F0449 /* Products */,
+				4F145446B1368F3E3D7B8B3E2EE155E1 /* Pods */,
+				19154435905B8A374172332F2EBC822C /* Products */,
 				942FFF36B91A9B77AB6F26CC2047B6FF /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -117,21 +254,59 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		9DCD61D6D256B5CF0BD23B6BDF5F0449 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D6749EE2998C357AE285B8F63E64EB7C /* Pods_Ryochan2.framework */,
-				91C4E8DC7CC7DFCF05186EEBF94F0D9A /* Pods_Ryochan2Tests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BEF6BCF68025934414F583F6514D1BF8 /* SSZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				ABD36C1265730DB326700DA310FD4E66 /* aes.h */,
+				42F4E66AB19698B2349B55DCA2732489 /* aes_ni.c */,
+				9C958F28F20DC236142612D32600C64E /* aes_ni.h */,
+				4736157FC0FB5579F88316F6BC95E591 /* aescrypt.c */,
+				7F447C9EE44AEF2F079535BEF8649580 /* aeskey.c */,
+				CA296BC3A968C204404C9DD0D5F66805 /* aesopt.h */,
+				475E0A0FF2DACFCE1C9182665B8313B0 /* aestab.c */,
+				B4657344196B79A41FA99474D676FB94 /* aestab.h */,
+				4E6594D672471F2A6F3F6CB3C6E847E2 /* brg_endian.h */,
+				448AF3D2EE4035FD3E4D5BC430837AC1 /* brg_types.h */,
+				DDB436CEFCF39DB6E67B94697FD1AC8A /* crypt.c */,
+				7D8167946C07ADF18E51090AD23FF77E /* crypt.h */,
+				36006ED0E20B7BF1B34A0092C1CD2E08 /* fileenc.c */,
+				816FD18DCD11E6D481681AEF17482B36 /* fileenc.h */,
+				AC08EFEB4FD6312CE017A34FA83DAD02 /* hmac.c */,
+				4B51BA79FE286DC137BA9B0DD3C4D579 /* hmac.h */,
+				7A3FA58B71C994A2E1DE708DB5C2D0E2 /* ioapi.c */,
+				73BDE9CE5581B07D9D9D93746E3631BB /* ioapi.h */,
+				03BCF323FE14FD6FA1F6D2553DB81786 /* ioapi_buf.c */,
+				9A6C3CA62F0B57DD79AE3EDEC3E721EB /* ioapi_buf.h */,
+				8CD41EB5A031CBEB516054C89BBABE0E /* ioapi_mem.c */,
+				9C3B4AE16D27E68A232D059F2094F9E5 /* ioapi_mem.h */,
+				7F36B72D20F0D170EC5DE5FE0636D796 /* minishared.c */,
+				85646E439D1F414EA902646352228FC1 /* minishared.h */,
+				E33B4E2BBE0158145D2CACA981B8E23C /* prng.c */,
+				53D6F70DCC4A7E0B0CD3C34DBCC7E6DD /* prng.h */,
+				B69E7D6494F1571BC824CF8AC82FE63E /* pwd2key.c */,
+				B0BB3AE54C79579AFD75700F902B5FAE /* pwd2key.h */,
+				21C3DDBC63B005B56B3854F10F1FAF10 /* sha1.c */,
+				AC45C6C3553EF25DD6633F595572B5F4 /* sha1.h */,
+				A7FCCAF87E1EE2B31F675B02C96C5798 /* SSZipArchive.h */,
+				B8F00841E12E9B8516896044370A558E /* SSZipArchive.m */,
+				FA6FA278A80E555CC4E02AAFDBEB9FF0 /* SSZipCommon.h */,
+				9C89E4F74DE78548D6C35765D2CA7E5A /* unzip.c */,
+				6C4C50D1BB85EDEFF321215473889A59 /* unzip.h */,
+				77DA1F16CC954BC6BE66BA9447E2A153 /* zip.c */,
+				AFCAAEBBF9349965002B24D98A46FE2B /* zip.h */,
+				582CC59F4056E635B58BBFD852B9441D /* ZipArchive.h */,
+				37825C941A649843DBAF12FF32836639 /* Support Files */,
+			);
+			name = SSZipArchive;
+			path = SSZipArchive;
 			sourceTree = "<group>";
 		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
@@ -145,11 +320,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		01C55A5E4C6678037399F51CD980ED60 /* Headers */ = {
+		56FC2E7E8A8780737FC8B7A9550467FF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98D602E85964B88DE4B1E2914FDF654E /* Pods-Ryochan2-umbrella.h in Headers */,
+				CB988FE38E518C1CD0F90555F71515B3 /* aes.h in Headers */,
+				37548DACF842579EA15D422BB97BFAF7 /* aes_ni.h in Headers */,
+				D8CFC80FD57713605AE7844FB0E3EBEA /* aesopt.h in Headers */,
+				3983D324E0C48B954FBC24177B465A86 /* aestab.h in Headers */,
+				8A4A4E45428D04B9BCC324511E014650 /* brg_endian.h in Headers */,
+				DF52F2F2D06DD3A52BB72923070B4966 /* brg_types.h in Headers */,
+				1C07FAFBFB6FF628A5F18B16F434364B /* crypt.h in Headers */,
+				BD309088F3193ECADAEF6538F26448B4 /* fileenc.h in Headers */,
+				D0E0DF8954AD973144A3713FF0EC99EC /* hmac.h in Headers */,
+				9FDD6A84387F11D22A908B8AA5FF3A7D /* ioapi.h in Headers */,
+				D4904858B91B0F3124553B898AA547D5 /* ioapi_buf.h in Headers */,
+				692C9542571AC93227125B5A01AA5A32 /* ioapi_mem.h in Headers */,
+				F62DDF379A7D949BC7B9BBFA5DE660A8 /* minishared.h in Headers */,
+				C9AAEBBDC5B5DC814B84A8FEAB3F9B0B /* prng.h in Headers */,
+				A1451A8D0619B7400876CAF52034EF01 /* pwd2key.h in Headers */,
+				D17DB196DAAE952F23CF116A77F993BE /* sha1.h in Headers */,
+				8B02600133507E5F41219CCF2E8B0F81 /* SSZipArchive-umbrella.h in Headers */,
+				4F0FDDB982F51D4B4327E2FBE57FAF83 /* SSZipArchive.h in Headers */,
+				0005ABD7B9F2B93584BC83AEF87E3D73 /* SSZipCommon.h in Headers */,
+				405948DB900CD3BC2408D87BA3B32BF0 /* unzip.h in Headers */,
+				ACAAC0400852728D8A4A8D25B8B167E8 /* zip.h in Headers */,
+				41AD00669EFD5C3835C0590F97D01054 /* ZipArchive.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD2A7BABAEF33133166E91258741DB82 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01BED1E6FBAB15C1EBDD985692E49D22 /* Pods-Ryochan2-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,24 +382,42 @@
 			);
 			name = "Pods-Ryochan2Tests";
 			productName = "Pods-Ryochan2Tests";
-			productReference = 91C4E8DC7CC7DFCF05186EEBF94F0D9A /* Pods_Ryochan2Tests.framework */;
+			productReference = 7D6C7647EBDF4F4DF5E4EC3B5320826E /* Pods_Ryochan2Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		9DE2EF691D68853412B457A37CB19BE5 /* Pods-Ryochan2 */ = {
+		3093B8DCB95BACCB657375CFA0A7BE65 /* SSZipArchive */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E21A8F85825FCF7F1A0E2D8B5757DD51 /* Build configuration list for PBXNativeTarget "Pods-Ryochan2" */;
+			buildConfigurationList = E143B720AC6219B59E24681FC39EB269 /* Build configuration list for PBXNativeTarget "SSZipArchive" */;
 			buildPhases = (
-				F4C7A59E2BF1A9F73B14C92605244A95 /* Sources */,
-				40478191997E5FFD11F845EC4C069ECB /* Frameworks */,
-				01C55A5E4C6678037399F51CD980ED60 /* Headers */,
+				BD38D8B03FF3DC41E6261D71C15D70AF /* Sources */,
+				8172B22049CFE34678A41D698BAEF128 /* Frameworks */,
+				56FC2E7E8A8780737FC8B7A9550467FF /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
+			name = SSZipArchive;
+			productName = SSZipArchive;
+			productReference = 67074CA448ACF684F3FFE1C161684CA4 /* SSZipArchive.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D519CBD316AD2CFEC919580DA8EF6A37 /* Pods-Ryochan2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 128445D5F151494FD3F73ADB7E19AEE0 /* Build configuration list for PBXNativeTarget "Pods-Ryochan2" */;
+			buildPhases = (
+				6992AC90725EFAF6A33B3F019C1BEF3E /* Sources */,
+				E6BF3BF84D90BC2E7FFAF71A935178E8 /* Frameworks */,
+				BD2A7BABAEF33133166E91258741DB82 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52559FAF355D5DA26AC5937272E02E63 /* PBXTargetDependency */,
+			);
 			name = "Pods-Ryochan2";
 			productName = "Pods-Ryochan2";
-			productReference = D6749EE2998C357AE285B8F63E64EB7C /* Pods_Ryochan2.framework */;
+			productReference = E308CA1FA4CCF041005DCD77C2D6E780 /* Pods_Ryochan2.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -215,12 +437,13 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 9DCD61D6D256B5CF0BD23B6BDF5F0449 /* Products */;
+			productRefGroup = 19154435905B8A374172332F2EBC822C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9DE2EF691D68853412B457A37CB19BE5 /* Pods-Ryochan2 */,
+				D519CBD316AD2CFEC919580DA8EF6A37 /* Pods-Ryochan2 */,
 				0F5321F792A2E1EDEF23676947C1C6D7 /* Pods-Ryochan2Tests */,
+				3093B8DCB95BACCB657375CFA0A7BE65 /* SSZipArchive */,
 			);
 		};
 /* End PBXProject section */
@@ -234,20 +457,83 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F4C7A59E2BF1A9F73B14C92605244A95 /* Sources */ = {
+		6992AC90725EFAF6A33B3F019C1BEF3E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				852B4CED9BD726B14F7387BED1C5C06C /* Pods-Ryochan2-dummy.m in Sources */,
+				ADD3F03CF3839A7311C20651A44F8EA5 /* Pods-Ryochan2-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD38D8B03FF3DC41E6261D71C15D70AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01FDD91BA7C46C25469E412B7A710E06 /* aes_ni.c in Sources */,
+				04F9F86D0A71F18E7316964015332019 /* aescrypt.c in Sources */,
+				A86774FF0D169DD50FC5EC91CDDF3DBD /* aeskey.c in Sources */,
+				1CC02842A6B04964880DE4A863C5D315 /* aestab.c in Sources */,
+				42BF1D593960A1AEB4D3EC1E6840B35F /* crypt.c in Sources */,
+				9328C44273CB4F1B5A8BE4EC07C06F33 /* fileenc.c in Sources */,
+				4AC6D43FF956E8FE740384AC0CBBEAE8 /* hmac.c in Sources */,
+				0A2DF7EE27C3848FED82FD3043C4F2DF /* ioapi.c in Sources */,
+				B717AF09B7F9751543D4E7EAD2F12FB1 /* ioapi_buf.c in Sources */,
+				D12A1951D18461FAC5E745930DA28E8F /* ioapi_mem.c in Sources */,
+				3A7F771D75C6C8EB881137057F87F7B2 /* minishared.c in Sources */,
+				648A2818EF4C8B63F56C65D412DEF7F1 /* prng.c in Sources */,
+				5852184B12A9F4DDBE7BDADBB36E160C /* pwd2key.c in Sources */,
+				855A00A705F94366DB3AC9A14EF33AA3 /* sha1.c in Sources */,
+				C057F3F74552BBF2DD2452E61E321E7A /* SSZipArchive-dummy.m in Sources */,
+				71204865C5A6506195320E6C08732672 /* SSZipArchive.m in Sources */,
+				B7E2D3C75C336D2B05D8161CAE4E9D99 /* unzip.c in Sources */,
+				4A98421AF0542F5C159687E0B8953568 /* zip.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		52559FAF355D5DA26AC5937272E02E63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SSZipArchive;
+			target = 3093B8DCB95BACCB657375CFA0A7BE65 /* SSZipArchive */;
+			targetProxy = D56DCEBCF716C4204858F1AEE9C81A3E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		03248CDA6D0083225B4432D30B5F2BCA /* Debug */ = {
+		2456FFA190746CD31240F8D4FC037B9B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 29C8A63C2408338794004517EFDD79DD /* Pods-Ryochan2.debug.xcconfig */;
+			baseConfigurationReference = EAD3E66C06EEE51F2544034F02942E85 /* SSZipArchive.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SSZipArchive/SSZipArchive-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SSZipArchive/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SSZipArchive/SSZipArchive.modulemap";
+				PRODUCT_NAME = SSZipArchive;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2FC95C325AD735E618216B5D0F5E4B96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E54742A342EA4BB5F1801EC0D3B39F4 /* Pods-Ryochan2.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -273,10 +559,11 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		3620B0AB1E3D59F72E52F45C6F2E3B33 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -312,11 +599,10 @@
 			};
 			name = Release;
 		};
-		6741F4FB79501835632F995309111EEE /* Release */ = {
+		4A49315A4875C475802CAD88DCD5B892 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8E54742A342EA4BB5F1801EC0D3B39F4 /* Pods-Ryochan2.release.xcconfig */;
+			baseConfigurationReference = EAD3E66C06EEE51F2544034F02942E85 /* SSZipArchive.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -326,19 +612,16 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Ryochan2/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SSZipArchive/SSZipArchive-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SSZipArchive/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Ryochan2/Pods-Ryochan2.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Ryochan2;
+				MODULEMAP_FILE = "Target Support Files/SSZipArchive/SSZipArchive.modulemap";
+				PRODUCT_NAME = SSZipArchive;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -499,9 +782,51 @@
 			};
 			name = Release;
 		};
+		C89D7F20B0CE5DE9B94CD466DAF16BB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29C8A63C2408338794004517EFDD79DD /* Pods-Ryochan2.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Ryochan2/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Ryochan2/Pods-Ryochan2.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Ryochan2;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		128445D5F151494FD3F73ADB7E19AEE0 /* Build configuration list for PBXNativeTarget "Pods-Ryochan2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C89D7F20B0CE5DE9B94CD466DAF16BB9 /* Debug */,
+				2FC95C325AD735E618216B5D0F5E4B96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		1C446A3699297906082E789DD5D2CAAC /* Build configuration list for PBXNativeTarget "Pods-Ryochan2Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -520,11 +845,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E21A8F85825FCF7F1A0E2D8B5757DD51 /* Build configuration list for PBXNativeTarget "Pods-Ryochan2" */ = {
+		E143B720AC6219B59E24681FC39EB269 /* Build configuration list for PBXNativeTarget "SSZipArchive" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				03248CDA6D0083225B4432D30B5F2BCA /* Debug */,
-				6741F4FB79501835632F995309111EEE /* Release */,
+				2456FFA190746CD31240F8D4FC037B9B /* Debug */,
+				4A49315A4875C475802CAD88DCD5B892 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
