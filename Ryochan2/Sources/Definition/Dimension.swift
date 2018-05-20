@@ -12,6 +12,9 @@ extension CGFloat {
     /// 画面の高さ
     static let screenHeight: CGFloat = UIScreen.main.bounds.height
     
+    /// アラートダイアログの幅
+    static let alertDialogWidth: CGFloat = screenWidth * 0.8
+    
     /// 右ドローメニューの幅
     static let rightDrawWidth: CGFloat = screenWidth * 0.8
 }

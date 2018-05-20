@@ -59,15 +59,48 @@ struct AlertDialogAction {
 
 class AlertDialogViewController: UIViewController {
     
+    @IBOutlet private weak var messageLabel: UILabel!
+    @IBOutlet private var leftButton: HighlightButton!
+    @IBOutlet private var rightButton: HighlightButton!
+    
+    private var message: String!
+    private var leftAction: AlertDialogAction?
+    private var rightAction: AlertDialogAction?
+    
     class func create(message: String, left: AlertDialogAction?, right: AlertDialogAction?) -> UIViewController {
         let vc = instantiate(self)
-//        vc.message = message
-//        vc.leftAction = left
-//        vc.rightAction = right
+        vc.message = message
+        vc.leftAction = left
+        vc.rightAction = right
         return vc
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        messageLabel.text = message
+        setupButton(leftButton, action: leftAction)
+        setupButton(rightButton, action: rightAction)
+        
+        //view.width = .alertDialogWidth
+    }
+    
+    @IBAction private func didTapLeftButton() {
+        leftAction!.handler()
+        dismiss()
+    }
+    
+    @IBAction private func didTapRightButton() {
+        rightAction!.handler()
+        dismiss()
+    }
+    
+    private func setupButton(_ button: HighlightButton, action actionOrNil: AlertDialogAction?) {
+        if let action = actionOrNil {
+            button.title = action.title
+            button.normalBackgroundColor = action.buttonColor
+            button.tintColor = action.buttonColor.withAlphaComponent(0.7)
+        } else {
+            button.isHidden = true
+        }
     }
 }

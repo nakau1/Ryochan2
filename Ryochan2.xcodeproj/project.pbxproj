@@ -112,6 +112,8 @@
 		E4B73C1920AEEB4800A301FB /* UniformSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B73C1520AEEB4800A301FB /* UniformSelectViewController.swift */; };
 		E4B73C1A20AEEB4800A301FB /* UniformSelect.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4B73C1620AEEB4800A301FB /* UniformSelect.storyboard */; };
 		E4B73C1B20AEEB4800A301FB /* UniformSelectAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B73C1720AEEB4800A301FB /* UniformSelectAdapter.swift */; };
+		E4B73C1D20AEF95600A301FB /* UIView+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B73C1C20AEF95500A301FB /* UIView+App.swift */; };
+		E4B73C1F20AEFCCA00A301FB /* UIButton+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B73C1E20AEFCC900A301FB /* UIButton+App.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -237,6 +239,8 @@
 		E4B73C1520AEEB4800A301FB /* UniformSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniformSelectViewController.swift; sourceTree = "<group>"; };
 		E4B73C1620AEEB4800A301FB /* UniformSelect.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UniformSelect.storyboard; sourceTree = "<group>"; };
 		E4B73C1720AEEB4800A301FB /* UniformSelectAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniformSelectAdapter.swift; sourceTree = "<group>"; };
+		E4B73C1C20AEF95500A301FB /* UIView+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+App.swift"; sourceTree = "<group>"; };
+		E4B73C1E20AEFCC900A301FB /* UIButton+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+App.swift"; sourceTree = "<group>"; };
 		FECF8CCD3CFCFD6CA2C6822E /* Pods-Ryochan2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ryochan2Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ryochan2Tests/Pods-Ryochan2Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -307,8 +311,10 @@
 				DB73175720AB1DAB00D49AF3 /* DialogBehavior+App.swift */,
 				DB73175920AB1DAB00D49AF3 /* String+App.swift */,
 				DB73175520AB1DAB00D49AF3 /* UIColor+App.swift */,
+				E4B73C1E20AEFCC900A301FB /* UIButton+App.swift */,
 				DB73175620AB1DAB00D49AF3 /* UITextField+App.swift */,
 				DB73175B20AB1DAB00D49AF3 /* UIView+LayoutConstraint.swift */,
+				E4B73C1C20AEF95500A301FB /* UIView+App.swift */,
 				DB73175420AB1DAB00D49AF3 /* UIViewController+App.swift */,
 			);
 			path = Extension;
@@ -401,11 +407,11 @@
 		DB73173B20AB192900D49AF3 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DB73179520AB257200D49AF3 /* ColorButton.swift */,
+				DB73179420AB257200D49AF3 /* RoundedBorderedView.swift */,
 				DB73179220AB257200D49AF3 /* HighlightButton.swift */,
+				DB73179520AB257200D49AF3 /* ColorButton.swift */,
 				DB73179320AB257200D49AF3 /* NumberSelectorView.swift */,
 				DB73179120AB257200D49AF3 /* PreviewView.swift */,
-				DB73179420AB257200D49AF3 /* RoundedBorderedView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -914,6 +920,7 @@
 				DB7317C520AB391700D49AF3 /* TextInputViewController.swift in Sources */,
 				E4B73C0020AEEB3200A301FB /* FormationSubstituteAdapter.swift in Sources */,
 				E4B73BEE20AEEB2200A301FB /* PortraitSelectAdapter.swift in Sources */,
+				E4B73C1F20AEFCCA00A301FB /* UIButton+App.swift in Sources */,
 				DB73177620AB255C00D49AF3 /* Notificatable.swift in Sources */,
 				DB73178620AB256800D49AF3 /* Sns.swift in Sources */,
 				DB73178B20AB256800D49AF3 /* MovableType.swift in Sources */,
@@ -931,6 +938,7 @@
 				DB73173D20AB192900D49AF3 /* Dialog.swift in Sources */,
 				DB73174A20AB1D7000D49AF3 /* Color.swift in Sources */,
 				DB73175D20AB1DAB00D49AF3 /* UIColor+App.swift in Sources */,
+				E4B73C1D20AEF95600A301FB /* UIView+App.swift in Sources */,
 				DB73179C20AB297100D49AF3 /* UIImage+ImageGenerator.swift in Sources */,
 				DB73177220AB255000D49AF3 /* UniformImageGenerator.swift in Sources */,
 				DB73175F20AB1DAB00D49AF3 /* DialogBehavior+App.swift in Sources */,

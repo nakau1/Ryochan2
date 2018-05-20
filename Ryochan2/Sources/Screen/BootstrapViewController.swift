@@ -15,6 +15,17 @@ class BootstrapViewController: UITableViewController {
                 vc.present(crossDissolve: LaunchViewController.create())
             }),
             ]),
+        (section: "モジュールテスト",
+         rows: [
+            (title: "削除確認アラートダイアログ", handler: { vc in
+                AlertDialog.showConfirmDelete(from: vc, whenDelete: {
+                    print("削除を押した")
+                })
+            }),
+            (title: "削除不可アラートダイアログ", handler: { vc in
+                AlertDialog.showErrorDueMinimumNumber(from: vc)
+            }),
+            ]),
         (section: "各画面テスト",
          rows: [
             (title: "トップ画面", handler: { vc in
@@ -58,11 +69,6 @@ class BootstrapViewController: UITableViewController {
             }),
             (title: "ドロワーメニュー", handler: { vc in
                 let _ = MenuViewController.show(from: vc)
-            }),
-            (title: "アラートダイアログ", handler: { vc in
-                AlertDialog.showConfirmDelete(from: vc, whenDelete: {
-                    print("削除を押した")
-                })
             }),
             ]),
         (section: "簡易テスト",
