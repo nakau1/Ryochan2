@@ -15,15 +15,12 @@ extension String {
     func substring(start: Int, end: Int) -> String {
         let max = count - 1
         var s = start, e = end
-        if max < 0 || e < s || max < s {
+        if max < 0 || e < s || max < s || e < 0 {
             return ""
-        } else if s < 0 {
-            s = 0
-        } else if e < 0 {
-            e = 0
-        } else if max < e {
-            e = max
         }
+        s = s >= 0 ? s : 0
+        e = max >= e ? e : max
+        
         let substring = self[index(startIndex, offsetBy: s)...index(startIndex, offsetBy: e)]
         return String(substring)
     }
