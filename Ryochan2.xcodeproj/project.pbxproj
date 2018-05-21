@@ -121,6 +121,7 @@
 		E4B73C1B20AEEB4800A301FB /* UniformSelectAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B73C1720AEEB4800A301FB /* UniformSelectAdapter.swift */; };
 		E4B73C1D20AEF95600A301FB /* UIView+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B73C1C20AEF95500A301FB /* UIView+App.swift */; };
 		E4B73C1F20AEFCCA00A301FB /* UIButton+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B73C1E20AEFCC900A301FB /* UIButton+App.swift */; };
+		E4B73C2120B25EE100A301FB /* ColorExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B73C2020B25EE100A301FB /* ColorExtensionTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -255,6 +256,7 @@
 		E4B73C1720AEEB4800A301FB /* UniformSelectAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniformSelectAdapter.swift; sourceTree = "<group>"; };
 		E4B73C1C20AEF95500A301FB /* UIView+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+App.swift"; sourceTree = "<group>"; };
 		E4B73C1E20AEFCC900A301FB /* UIButton+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+App.swift"; sourceTree = "<group>"; };
+		E4B73C2020B25EE100A301FB /* ColorExtensionTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtensionTest.swift; sourceTree = "<group>"; };
 		FECF8CCD3CFCFD6CA2C6822E /* Pods-Ryochan2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ryochan2Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ryochan2Tests/Pods-Ryochan2Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -605,6 +607,7 @@
 			isa = PBXGroup;
 			children = (
 				DB98A3FF20AB15F200A5273D /* StringExtensionTest.swift */,
+				E4B73C2020B25EE100A301FB /* ColorExtensionTest.swift */,
 				DB98A40120AB15F200A5273D /* Info.plist */,
 			);
 			path = Ryochan2Tests;
@@ -1003,6 +1006,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB98A40020AB15F200A5273D /* StringExtensionTest.swift in Sources */,
+				E4B73C2120B25EE100A301FB /* ColorExtensionTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
