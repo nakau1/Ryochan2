@@ -91,6 +91,7 @@
 		DB98A3F520AB15F100A5273D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB98A3F320AB15F100A5273D /* LaunchScreen.storyboard */; };
 		DB98A40020AB15F200A5273D /* StringExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB98A3FF20AB15F200A5273D /* StringExtensionTest.swift */; };
 		DBA039832D1163DC057C0842 /* Pods_Ryochan2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BDA1F74F5AA0ED912797074 /* Pods_Ryochan2.framework */; };
+		E4428ABF20B51A8400704862 /* Definition+Migration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4428ABE20B51A8400704862 /* Definition+Migration.swift */; };
 		E4B73BE220AEEB1100A301FB /* PortraitEdit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4B73BDE20AEEB1100A301FB /* PortraitEdit.storyboard */; };
 		E4B73BE320AEEB1100A301FB /* PortraitEditAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B73BDF20AEEB1100A301FB /* PortraitEditAdapter.swift */; };
 		E4B73BE420AEEB1100A301FB /* PortraitEditPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B73BE020AEEB1100A301FB /* PortraitEditPresenter.swift */; };
@@ -226,6 +227,7 @@
 		DB98A3FB20AB15F200A5273D /* Ryochan2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Ryochan2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB98A3FF20AB15F200A5273D /* StringExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionTest.swift; sourceTree = "<group>"; };
 		DB98A40120AB15F200A5273D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4428ABE20B51A8400704862 /* Definition+Migration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Definition+Migration.swift"; sourceTree = "<group>"; };
 		E4B73BDE20AEEB1100A301FB /* PortraitEdit.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PortraitEdit.storyboard; sourceTree = "<group>"; };
 		E4B73BDF20AEEB1100A301FB /* PortraitEditAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortraitEditAdapter.swift; sourceTree = "<group>"; };
 		E4B73BE020AEEB1100A301FB /* PortraitEditPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortraitEditPresenter.swift; sourceTree = "<group>"; };
@@ -414,6 +416,7 @@
 				DB73173F20AB1D7000D49AF3 /* Definition+Uniform.swift */,
 				DB73174120AB1D7000D49AF3 /* Definition+Formation.swift */,
 				DB73174620AB1D7000D49AF3 /* Definition+Wallpaper.swift */,
+				E4428ABE20B51A8400704862 /* Definition+Migration.swift */,
 				DB73174220AB1D7000D49AF3 /* Color.swift */,
 				DB73174420AB1D7000D49AF3 /* Dimension.swift */,
 			);
@@ -916,6 +919,7 @@
 				DB73179A20AB257200D49AF3 /* ColorButton.swift in Sources */,
 				DB05539820B1E6270008DAD5 /* Formation.swift in Sources */,
 				E4B73BFE20AEEB3200A301FB /* FormationSubstituteViewController.swift in Sources */,
+				E4428ABF20B51A8400704862 /* Definition+Migration.swift in Sources */,
 				DB7317C720AB391700D49AF3 /* MenuViewController.swift in Sources */,
 				DB0553A920B1E6850008DAD5 /* PortraitManager.swift in Sources */,
 				DB73179620AB257200D49AF3 /* PreviewView.swift in Sources */,
