@@ -5,6 +5,8 @@
 import Foundation
 import CoreGraphics
 
+typealias JsonCodable = JsonEncodable & JsonDecodable
+
 protocol JsonDecodable {}
 
 extension JsonDecodable {
@@ -32,8 +34,15 @@ extension JsonDecodable {
     }
 }
 
-extension Decodable {
+protocol JsonEncodable {}
+
+extension JsonEncodable {
     
+    func jsonEncodedData<T>(_ object: T) -> Data where T: Encodable {
+        let encoder = JSONEncoder()
+        encoder.outputFormatting = [.sortedKeys, .prettyPrinted]
+        return (try? encoder.encode(object)) ?? Data()
+    }
 }
 
 extension KeyedDecodingContainerProtocol {
