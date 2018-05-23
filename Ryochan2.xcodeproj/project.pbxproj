@@ -93,6 +93,8 @@
 		DBA039832D1163DC057C0842 /* Pods_Ryochan2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BDA1F74F5AA0ED912797074 /* Pods_Ryochan2.framework */; };
 		E4428ABF20B51A8400704862 /* Definition+Migration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4428ABE20B51A8400704862 /* Definition+Migration.swift */; };
 		E4428AC120B549D600704862 /* Resources.zip in Resources */ = {isa = PBXBuildFile; fileRef = E4428AC020B549D600704862 /* Resources.zip */; };
+		E4428AC420B5700A00704862 /* JsonEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4428AC220B5700900704862 /* JsonEncodable.swift */; };
+		E4428AC520B5700A00704862 /* JsonDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4428AC320B5700A00704862 /* JsonDecodable.swift */; };
 		E4B73BE220AEEB1100A301FB /* PortraitEdit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4B73BDE20AEEB1100A301FB /* PortraitEdit.storyboard */; };
 		E4B73BE320AEEB1100A301FB /* PortraitEditAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B73BDF20AEEB1100A301FB /* PortraitEditAdapter.swift */; };
 		E4B73BE420AEEB1100A301FB /* PortraitEditPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B73BE020AEEB1100A301FB /* PortraitEditPresenter.swift */; };
@@ -230,6 +232,8 @@
 		DB98A40120AB15F200A5273D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4428ABE20B51A8400704862 /* Definition+Migration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Definition+Migration.swift"; sourceTree = "<group>"; };
 		E4428AC020B549D600704862 /* Resources.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = Resources.zip; sourceTree = "<group>"; };
+		E4428AC220B5700900704862 /* JsonEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonEncodable.swift; sourceTree = "<group>"; };
+		E4428AC320B5700A00704862 /* JsonDecodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonDecodable.swift; sourceTree = "<group>"; };
 		E4B73BDE20AEEB1100A301FB /* PortraitEdit.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PortraitEdit.storyboard; sourceTree = "<group>"; };
 		E4B73BDF20AEEB1100A301FB /* PortraitEditAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortraitEditAdapter.swift; sourceTree = "<group>"; };
 		E4B73BE020AEEB1100A301FB /* PortraitEditPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortraitEditPresenter.swift; sourceTree = "<group>"; };
@@ -394,6 +398,8 @@
 		DB73173520AB192900D49AF3 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
+				E4428AC220B5700900704862 /* JsonEncodable.swift */,
+				E4428AC320B5700A00704862 /* JsonDecodable.swift */,
 				DB73177320AB255C00D49AF3 /* CompoundedImageGeneratorProtocol.swift */,
 				DB73177420AB255C00D49AF3 /* Notificatable.swift */,
 			);
@@ -945,6 +951,7 @@
 				DB73175E20AB1DAB00D49AF3 /* UITextField+App.swift in Sources */,
 				DB73175220AB1D9B00D49AF3 /* DialogRightDrawBehavior.swift in Sources */,
 				DB73175C20AB1DAB00D49AF3 /* UIViewController+App.swift in Sources */,
+				E4428AC420B5700A00704862 /* JsonEncodable.swift in Sources */,
 				DB73179720AB257200D49AF3 /* HighlightButton.swift in Sources */,
 				DB73179920AB257200D49AF3 /* RoundedBorderedView.swift in Sources */,
 				E4B73C0F20AEEB4200A301FB /* UniformEditAdapter.swift in Sources */,
@@ -970,6 +977,7 @@
 				DB73176020AB1DAB00D49AF3 /* CoreGraphics+App.swift in Sources */,
 				E4B73C1920AEEB4800A301FB /* UniformSelectViewController.swift in Sources */,
 				E4B73BE420AEEB1100A301FB /* PortraitEditPresenter.swift in Sources */,
+				E4428AC520B5700A00704862 /* JsonDecodable.swift in Sources */,
 				DB05539A20B1E6270008DAD5 /* Portrait.swift in Sources */,
 				DB73174720AB1D7000D49AF3 /* Definition+Uniform.swift in Sources */,
 				DB05539420B1E6270008DAD5 /* MovableType.swift in Sources */,
