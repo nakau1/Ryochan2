@@ -14,7 +14,7 @@ class WallpaperManager: JsonDecodable {
         return []
     }
     
-    func writeImages() {
+    func writeImages(of wallpaper: Wallpaper) {
         
     }
 }

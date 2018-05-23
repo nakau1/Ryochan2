@@ -16,7 +16,7 @@ extension Const {
         static let imageExtension = ".png"
         
         /// 画像のプレフィックス
-        static let imagePrefix = "wallpaper"
+        static let imagePrefix = "background" //TODO: wallpaper に変更
         
         /// 一覧用の縦横比率
         static let sizeRatio = 3.f / 4.f

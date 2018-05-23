@@ -17,9 +17,14 @@ extension Path {
     
     struct Migration {
         
-        /// ZIPファイルのパス
+        /// プロジェクト内にあるリソースZIPファイルのパス
         static var zipSource: String {
             return Bundle.main.path(forResource: Const.Migration.zipFileName, ofType: "zip")!
+        }
+        
+        /// ZIPファイルの解凍先のパス
+        static var zipDestination: String {
+            return Path.documentDirectory.path(Const.Migration.zipFileName)
         }
     }
 }
