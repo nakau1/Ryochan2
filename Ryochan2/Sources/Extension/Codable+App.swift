@@ -2,12 +2,11 @@
 //  Ryochan
 //  Copyright Yuichi Nakayasu. All rights reserved.
 // =============================================================================
-import Foundation
-import CoreGraphics
+import UIKit
 
 extension KeyedDecodingContainerProtocol {
     
-    func to<T: Decodable>(_ type: T.Type, _ key: Key, _ substitute: T) -> T {
+    func to<T>(_ type: T.Type, _ key: Key, _ substitute: T) -> T where T: Decodable {
         guard let tmp = try? decodeIfPresent(type, forKey: key), let ret = tmp else {
             return substitute
         }
@@ -47,5 +46,19 @@ extension KeyedDecodingContainerProtocol {
             return substitute
         }
         return ret
+    }
+    
+    func color(_ key: Key, _ substitute: UIColor = .clear) -> UIColor {
+        guard let tmp = try? decodeIfPresent(Int.self, forKey: key), let ret = tmp else {
+            return substitute
+        }
+        return UIColor(rgb: ret)
+    }
+}
+
+extension KeyedEncodingContainerProtocol {
+    
+    mutating func encode(_ value: UIColor, forKey key: Key) throws {
+        try encode(value.rgb, forKey: key)
     }
 }
