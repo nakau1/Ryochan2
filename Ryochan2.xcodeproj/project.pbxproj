@@ -92,6 +92,7 @@
 		DB98A40020AB15F200A5273D /* StringExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB98A3FF20AB15F200A5273D /* StringExtensionTest.swift */; };
 		DBA039832D1163DC057C0842 /* Pods_Ryochan2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BDA1F74F5AA0ED912797074 /* Pods_Ryochan2.framework */; };
 		E4428ABF20B51A8400704862 /* Definition+Migration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4428ABE20B51A8400704862 /* Definition+Migration.swift */; };
+		E4428AC120B549D600704862 /* Resources.zip in Resources */ = {isa = PBXBuildFile; fileRef = E4428AC020B549D600704862 /* Resources.zip */; };
 		E4B73BE220AEEB1100A301FB /* PortraitEdit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4B73BDE20AEEB1100A301FB /* PortraitEdit.storyboard */; };
 		E4B73BE320AEEB1100A301FB /* PortraitEditAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B73BDF20AEEB1100A301FB /* PortraitEditAdapter.swift */; };
 		E4B73BE420AEEB1100A301FB /* PortraitEditPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B73BE020AEEB1100A301FB /* PortraitEditPresenter.swift */; };
@@ -228,6 +229,7 @@
 		DB98A3FF20AB15F200A5273D /* StringExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionTest.swift; sourceTree = "<group>"; };
 		DB98A40120AB15F200A5273D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4428ABE20B51A8400704862 /* Definition+Migration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Definition+Migration.swift"; sourceTree = "<group>"; };
+		E4428AC020B549D600704862 /* Resources.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = Resources.zip; sourceTree = "<group>"; };
 		E4B73BDE20AEEB1100A301FB /* PortraitEdit.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PortraitEdit.storyboard; sourceTree = "<group>"; };
 		E4B73BDF20AEEB1100A301FB /* PortraitEditAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortraitEditAdapter.swift; sourceTree = "<group>"; };
 		E4B73BE020AEEB1100A301FB /* PortraitEditPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortraitEditPresenter.swift; sourceTree = "<group>"; };
@@ -598,6 +600,7 @@
 		DB98A3E920AB15F100A5273D /* Ryochan2 */ = {
 			isa = PBXGroup;
 			children = (
+				E4428AC020B549D600704862 /* Resources.zip */,
 				DB98A3EE20AB15F100A5273D /* Main.storyboard */,
 				DB98A3F320AB15F100A5273D /* LaunchScreen.storyboard */,
 				DB98A3F120AB15F100A5273D /* Assets.xcassets */,
@@ -792,6 +795,7 @@
 				E4B73C0720AEEB3D00A301FB /* UniformList.storyboard in Resources */,
 				DB98A3F220AB15F100A5273D /* Assets.xcassets in Resources */,
 				E4B73BED20AEEB2200A301FB /* PortraitSelect.storyboard in Resources */,
+				E4428AC120B549D600704862 /* Resources.zip in Resources */,
 				DB7317C820AB391700D49AF3 /* AlertDialog.storyboard in Resources */,
 				E4B73BE220AEEB1100A301FB /* PortraitEdit.storyboard in Resources */,
 				DB98A3F020AB15F100A5273D /* Main.storyboard in Resources */,
