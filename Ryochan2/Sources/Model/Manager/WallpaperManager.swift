@@ -4,6 +4,17 @@
 // =============================================================================
 import UIKit
 
-class WallpaperManager {
+class WallpaperManager: JsonDecodable {
     
+    func list() -> [Wallpaper] {
+        return jsonDecode(path: "", to: [Wallpaper].self, default: [])
+    }
+    
+    func thumbImages() -> [UIImage?] {
+        return []
+    }
+    
+    func writeImages() {
+        
+    }
 }
