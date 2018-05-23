@@ -70,6 +70,38 @@ class Migration: JsonEncodable {
         )
     }
     
+    // MARK: - parts
+    
+    /// ZIP解凍先のファイルから壁紙であるファイルを抽出してオブジェクトで返却する
+    ///
+    /// - Returns: 壁紙オブジェクトの配列
+    private func distributeParts() -> [Parts] {
+        return []
+    }
+    
+    /// カテゴリのファイル名に即した名前であるかどうかを返す
+    ///
+    /// - Parameters:
+    ///   - fileName: 対象のファイル名
+    ///   - category: カテゴリ
+    /// - Returns: カテゴリのファイル名に即した名前であるかどうか
+    func isMatchedName(_ fileName: String, for category: Category) -> Bool {
+        return fileName.hasPrefix(category.fileBaseName) && fileName.hasSuffix(Const.Parts.imageExtension)
+    }
+    
+    /// 色素材パーツ用のファイル名であるかどうかを返す
+    ///
+    /// - Parameters:
+    ///   - fileName: 対象のファイル名
+    ///   - category: カテゴリ
+    /// - Returns: 色素材パーツ用のファイル名であるかどうか
+    func isColorMaterialName(_ fileName: String, for category: Category) -> Bool {
+//        if category.partsColorType != .outlinedColorable {
+//            return false
+//        }
+        return fileName.removedBackward(Const.Parts.imageExtension.count).hasSuffix(Const.Parts.colorPartsImageSuffix)
+    }
+    
     // MARK: - wallpaper
     
     /// ZIP解凍先のファイルから壁紙であるファイルを抽出してオブジェクトで返却する
