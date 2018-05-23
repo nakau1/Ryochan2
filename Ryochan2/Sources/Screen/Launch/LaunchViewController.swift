@@ -14,11 +14,15 @@ class LaunchViewController: UIViewController {
         return vc
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        presenter.executeLaunching()
     }
 }
 
 extension LaunchViewController: LaunchViewable {
     
+    func showResultExecuteLaunching() {
+        present(crossDissolve: TopViewController.create())
+    }
 }
