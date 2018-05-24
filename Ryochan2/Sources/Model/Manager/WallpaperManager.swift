@@ -7,7 +7,7 @@ import UIKit
 class WallpaperManager: JsonDecodable {
     
     func list() -> [Wallpaper] {
-        return jsonDecode(path: "", to: [Wallpaper].self, default: [])
+        return loadJson(path: "", to: [Wallpaper].self, default: [])
     }
     
     func thumbImages() -> [UIImage?] {

@@ -96,6 +96,7 @@
 		E4428AC420B5700A00704862 /* JsonEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4428AC220B5700900704862 /* JsonEncodable.swift */; };
 		E4428AC520B5700A00704862 /* JsonDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4428AC320B5700A00704862 /* JsonDecodable.swift */; };
 		E4428AC720B647D300704862 /* UIImage+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4428AC620B647D300704862 /* UIImage+App.swift */; };
+		E4428AC920B6B80000704862 /* FormationTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4428AC820B6B80000704862 /* FormationTemplate.swift */; };
 		E4B73BE220AEEB1100A301FB /* PortraitEdit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4B73BDE20AEEB1100A301FB /* PortraitEdit.storyboard */; };
 		E4B73BE320AEEB1100A301FB /* PortraitEditAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B73BDF20AEEB1100A301FB /* PortraitEditAdapter.swift */; };
 		E4B73BE420AEEB1100A301FB /* PortraitEditPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B73BE020AEEB1100A301FB /* PortraitEditPresenter.swift */; };
@@ -236,6 +237,7 @@
 		E4428AC220B5700900704862 /* JsonEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonEncodable.swift; sourceTree = "<group>"; };
 		E4428AC320B5700A00704862 /* JsonDecodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonDecodable.swift; sourceTree = "<group>"; };
 		E4428AC620B647D300704862 /* UIImage+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+App.swift"; sourceTree = "<group>"; };
+		E4428AC820B6B80000704862 /* FormationTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormationTemplate.swift; sourceTree = "<group>"; };
 		E4B73BDE20AEEB1100A301FB /* PortraitEdit.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PortraitEdit.storyboard; sourceTree = "<group>"; };
 		E4B73BDF20AEEB1100A301FB /* PortraitEditAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortraitEditAdapter.swift; sourceTree = "<group>"; };
 		E4B73BE020AEEB1100A301FB /* PortraitEditPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortraitEditPresenter.swift; sourceTree = "<group>"; };
@@ -326,9 +328,10 @@
 				DB05538920B1E6260008DAD5 /* Parts.swift */,
 				DB05538B20B1E6260008DAD5 /* Category.swift */,
 				DB05538C20B1E6260008DAD5 /* Portrait.swift */,
-				DB05538A20B1E6260008DAD5 /* Formation.swift */,
 				DB05538720B1E6260008DAD5 /* Uniform.swift */,
+				DB05538A20B1E6260008DAD5 /* Formation.swift */,
 				DB05538D20B1E6260008DAD5 /* Position.swift */,
+				E4428AC820B6B80000704862 /* FormationTemplate.swift */,
 				DB05538820B1E6260008DAD5 /* Wallpaper.swift */,
 			);
 			path = Entity;
@@ -337,12 +340,12 @@
 		DB05538E20B1E6260008DAD5 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				DB0553A520B1E6850008DAD5 /* CategoryManager.swift */,
-				DB0553A320B1E6850008DAD5 /* FormationManager.swift */,
 				DB0553A120B1E6840008DAD5 /* PartsManager.swift */,
+				DB0553A520B1E6850008DAD5 /* CategoryManager.swift */,
 				DB0553A220B1E6850008DAD5 /* PortraitManager.swift */,
-				DB0553A420B1E6850008DAD5 /* PositionManager.swift */,
 				DB05539F20B1E6840008DAD5 /* UniformManager.swift */,
+				DB0553A320B1E6850008DAD5 /* FormationManager.swift */,
+				DB0553A420B1E6850008DAD5 /* PositionManager.swift */,
 				DB0553A020B1E6840008DAD5 /* WallpaperManager.swift */,
 			);
 			path = Manager;
@@ -960,6 +963,7 @@
 				DB73179920AB257200D49AF3 /* RoundedBorderedView.swift in Sources */,
 				E4B73C0F20AEEB4200A301FB /* UniformEditAdapter.swift in Sources */,
 				E4B73BF620AEEB2B00A301FB /* FormationAdapter.swift in Sources */,
+				E4428AC920B6B80000704862 /* FormationTemplate.swift in Sources */,
 				DB73174920AB1D7000D49AF3 /* Definition+Formation.swift in Sources */,
 				E4B73C1B20AEEB4800A301FB /* UniformSelectAdapter.swift in Sources */,
 				E4B73C0820AEEB3D00A301FB /* UniformListAdapter.swift in Sources */,

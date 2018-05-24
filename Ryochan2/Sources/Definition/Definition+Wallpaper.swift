@@ -7,10 +7,8 @@ import CoreGraphics
 
 extension Const {
     
+    /// 壁紙
     struct Wallpaper {
-        
-        /// JSONファイル名
-        static let jsonFileName = "wallpapers.json"
         
         /// 画像の拡張子
         static let imageExtension = ".png"
@@ -25,32 +23,33 @@ extension Const {
 
 extension Path {
     
+    /// 壁紙
     struct Wallpaper {
         
-        /// 壁紙一覧用のJSONファイルのパス
+        /// 一覧用のJSONファイルのパス
         static var json: String {
-            return documentDirectory.path(Const.Wallpaper.jsonFileName)
+            return documentDirectory.path("wallpapers.json")
         }
         
-        /// 壁紙サムネイル用ディレクトリのパス
-        static var thumbDirectory: String {
-            return documentDirectory.path("Wallpaper")
+        /// ディレクトリのパス
+        static var directory: String {
+            return documentDirectory.path("Wallpapers")
         }
         
-        /// 壁紙サムネイル画像ファイルのパス
-        ///
-        /// - Parameter wallpaper: 壁紙オブジェクト
-        /// - Returns: パス文字列
-        static func thumb(of wallpaper: Ryochan2.Wallpaper) -> String {
-            return thumbDirectory.path(wallpaper.resource)
-        }
-        
-        /// 壁紙画像ファイルのパス
+        /// 画像ファイルのパス
         ///
         /// - Parameter wallpaper: 壁紙オブジェクト
         /// - Returns: パス文字列
         static func image(of wallpaper: Ryochan2.Wallpaper) -> String {
-            return "" // TODO
+            return Path.Migration.zipDestination.path(wallpaper.resource)
+        }
+        
+        /// サムネイル画像ファイルのパス
+        ///
+        /// - Parameter wallpaper: 壁紙オブジェクト
+        /// - Returns: パス文字列
+        static func thumb(of wallpaper: Ryochan2.Wallpaper) -> String {
+            return directory.path(wallpaper.resource)
         }
     }
 }

@@ -7,6 +7,7 @@ import Foundation
 extension Const {
     
     struct Parts {
+        
         /// JSONファイル名
         static let jsonFileName = "parts.json"
         
@@ -22,7 +23,7 @@ extension Path {
     
     struct Parts {
         
-        /// 壁紙一覧用のJSONファイルのパス
+        /// 一覧用のJSONファイルのパス
         static var json: String {
             return documentDirectory.path(Const.Parts.jsonFileName)
         }

@@ -4,6 +4,7 @@
 // =============================================================================
 import UIKit
 
+/// パーツ
 class Parts: Codable {
     
     /// カテゴリ
@@ -13,10 +14,10 @@ class Parts: Codable {
     var resource = ""
     
     /// 配置場所
-    var position = CGPoint.zero
+    var position: CGPoint = .zero
     
     /// 中央部分から分離する距離
-    var separate: CGFloat = 0.0
+    var separatedDistance: CGFloat = 0.0
     
     /// パーツ色
     var color: UIColor = .black
@@ -37,9 +38,9 @@ class Parts: Codable {
     
     enum Keys: String, CodingKey {
         case category
-        case resource
-        case position
-        case separate
+        case resource = "res"
+        case position = "pos"
+        case separatedDistance = "separate"
         case color
     }
     
@@ -49,8 +50,8 @@ class Parts: Codable {
         category = container.to(Category.self, .category, Category.contour)
         resource = container.string(.resource)
         position = container.point(.position)
-        separate = container.cgfloat(.separate)
-        color    = container.color(.color)
+        separatedDistance = container.cgfloat(.separatedDistance)
+        color = container.color(.color)
     }
     
     func encode(to encoder: Encoder) throws {
@@ -59,7 +60,7 @@ class Parts: Codable {
         try container.encode(category, forKey: .category)
         try container.encode(resource, forKey: .resource)
         try container.encode(position, forKey: .position)
-        try container.encode(separate, forKey: .separate)
+        try container.encode(separatedDistance, forKey: .separatedDistance)
         try container.encode(color, forKey: .color)
     }
 }
