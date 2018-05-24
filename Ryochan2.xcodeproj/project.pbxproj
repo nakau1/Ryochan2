@@ -95,6 +95,7 @@
 		E4428AC120B549D600704862 /* Resources.zip in Resources */ = {isa = PBXBuildFile; fileRef = E4428AC020B549D600704862 /* Resources.zip */; };
 		E4428AC420B5700A00704862 /* JsonEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4428AC220B5700900704862 /* JsonEncodable.swift */; };
 		E4428AC520B5700A00704862 /* JsonDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4428AC320B5700A00704862 /* JsonDecodable.swift */; };
+		E4428AC720B647D300704862 /* UIImage+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4428AC620B647D300704862 /* UIImage+App.swift */; };
 		E4B73BE220AEEB1100A301FB /* PortraitEdit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4B73BDE20AEEB1100A301FB /* PortraitEdit.storyboard */; };
 		E4B73BE320AEEB1100A301FB /* PortraitEditAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B73BDF20AEEB1100A301FB /* PortraitEditAdapter.swift */; };
 		E4B73BE420AEEB1100A301FB /* PortraitEditPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B73BE020AEEB1100A301FB /* PortraitEditPresenter.swift */; };
@@ -234,6 +235,7 @@
 		E4428AC020B549D600704862 /* Resources.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = Resources.zip; sourceTree = "<group>"; };
 		E4428AC220B5700900704862 /* JsonEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonEncodable.swift; sourceTree = "<group>"; };
 		E4428AC320B5700A00704862 /* JsonDecodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonDecodable.swift; sourceTree = "<group>"; };
+		E4428AC620B647D300704862 /* UIImage+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+App.swift"; sourceTree = "<group>"; };
 		E4B73BDE20AEEB1100A301FB /* PortraitEdit.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PortraitEdit.storyboard; sourceTree = "<group>"; };
 		E4B73BDF20AEEB1100A301FB /* PortraitEditAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortraitEditAdapter.swift; sourceTree = "<group>"; };
 		E4B73BE020AEEB1100A301FB /* PortraitEditPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortraitEditPresenter.swift; sourceTree = "<group>"; };
@@ -321,10 +323,10 @@
 		DB05538620B1E6260008DAD5 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				DB05538B20B1E6260008DAD5 /* Category.swift */,
-				DB05538A20B1E6260008DAD5 /* Formation.swift */,
 				DB05538920B1E6260008DAD5 /* Parts.swift */,
+				DB05538B20B1E6260008DAD5 /* Category.swift */,
 				DB05538C20B1E6260008DAD5 /* Portrait.swift */,
+				DB05538A20B1E6260008DAD5 /* Formation.swift */,
 				DB05538720B1E6260008DAD5 /* Uniform.swift */,
 				DB05538D20B1E6260008DAD5 /* Position.swift */,
 				DB05538820B1E6260008DAD5 /* Wallpaper.swift */,
@@ -373,6 +375,7 @@
 				DB73175720AB1DAB00D49AF3 /* DialogBehavior+App.swift */,
 				DB73175920AB1DAB00D49AF3 /* String+App.swift */,
 				DB73175520AB1DAB00D49AF3 /* UIColor+App.swift */,
+				E4428AC620B647D300704862 /* UIImage+App.swift */,
 				E4B73C1E20AEFCC900A301FB /* UIButton+App.swift */,
 				DB73175620AB1DAB00D49AF3 /* UITextField+App.swift */,
 				DB73175B20AB1DAB00D49AF3 /* UIView+LayoutConstraint.swift */,
@@ -943,6 +946,7 @@
 				E4B73BE320AEEB1100A301FB /* PortraitEditAdapter.swift in Sources */,
 				DB73177520AB255C00D49AF3 /* CompoundedImageGeneratorProtocol.swift in Sources */,
 				DB73173E20AB192900D49AF3 /* AppDelegate.swift in Sources */,
+				E4428AC720B647D300704862 /* UIImage+App.swift in Sources */,
 				DB7317AE20AB31DC00D49AF3 /* TopAdapter.swift in Sources */,
 				DB05539920B1E6270008DAD5 /* Category.swift in Sources */,
 				E4B73BF520AEEB2B00A301FB /* FormationPresenter.swift in Sources */,
