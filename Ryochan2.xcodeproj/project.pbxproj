@@ -23,11 +23,8 @@
 		DB05539E20B1E6270008DAD5 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB05539120B1E6270008DAD5 /* File.swift */; };
 		DB0553A620B1E6850008DAD5 /* UniformManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB05539F20B1E6840008DAD5 /* UniformManager.swift */; };
 		DB0553A720B1E6850008DAD5 /* WallpaperManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0553A020B1E6840008DAD5 /* WallpaperManager.swift */; };
-		DB0553A820B1E6850008DAD5 /* PartsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0553A120B1E6840008DAD5 /* PartsManager.swift */; };
 		DB0553A920B1E6850008DAD5 /* PortraitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0553A220B1E6850008DAD5 /* PortraitManager.swift */; };
 		DB0553AA20B1E6850008DAD5 /* FormationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0553A320B1E6850008DAD5 /* FormationManager.swift */; };
-		DB0553AB20B1E6850008DAD5 /* PositionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0553A420B1E6850008DAD5 /* PositionManager.swift */; };
-		DB0553AC20B1E6850008DAD5 /* CategoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0553A520B1E6850008DAD5 /* CategoryManager.swift */; };
 		DB73173D20AB192900D49AF3 /* Dialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB73173720AB192900D49AF3 /* Dialog.swift */; };
 		DB73173E20AB192900D49AF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB73173C20AB192900D49AF3 /* AppDelegate.swift */; };
 		DB73174720AB1D7000D49AF3 /* Definition+Uniform.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB73173F20AB1D7000D49AF3 /* Definition+Uniform.swift */; };
@@ -161,11 +158,8 @@
 		DB05539120B1E6270008DAD5 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		DB05539F20B1E6840008DAD5 /* UniformManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniformManager.swift; sourceTree = "<group>"; };
 		DB0553A020B1E6840008DAD5 /* WallpaperManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WallpaperManager.swift; sourceTree = "<group>"; };
-		DB0553A120B1E6840008DAD5 /* PartsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartsManager.swift; sourceTree = "<group>"; };
 		DB0553A220B1E6850008DAD5 /* PortraitManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortraitManager.swift; sourceTree = "<group>"; };
 		DB0553A320B1E6850008DAD5 /* FormationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormationManager.swift; sourceTree = "<group>"; };
-		DB0553A420B1E6850008DAD5 /* PositionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositionManager.swift; sourceTree = "<group>"; };
-		DB0553A520B1E6850008DAD5 /* CategoryManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryManager.swift; sourceTree = "<group>"; };
 		DB73173720AB192900D49AF3 /* Dialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dialog.swift; sourceTree = "<group>"; };
 		DB73173C20AB192900D49AF3 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB73173F20AB1D7000D49AF3 /* Definition+Uniform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Definition+Uniform.swift"; sourceTree = "<group>"; };
@@ -340,12 +334,9 @@
 		DB05538E20B1E6260008DAD5 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				DB0553A120B1E6840008DAD5 /* PartsManager.swift */,
-				DB0553A520B1E6850008DAD5 /* CategoryManager.swift */,
 				DB0553A220B1E6850008DAD5 /* PortraitManager.swift */,
 				DB05539F20B1E6840008DAD5 /* UniformManager.swift */,
 				DB0553A320B1E6850008DAD5 /* FormationManager.swift */,
-				DB0553A420B1E6850008DAD5 /* PositionManager.swift */,
 				DB0553A020B1E6840008DAD5 /* WallpaperManager.swift */,
 			);
 			path = Manager;
@@ -945,7 +936,6 @@
 				DB73176F20AB255000D49AF3 /* PlayerImageGenerator.swift in Sources */,
 				DB73176120AB1DAB00D49AF3 /* String+App.swift in Sources */,
 				E4B73BEC20AEEB2200A301FB /* PortraitSelectViewController.swift in Sources */,
-				DB0553AC20B1E6850008DAD5 /* CategoryManager.swift in Sources */,
 				E4B73BE320AEEB1100A301FB /* PortraitEditAdapter.swift in Sources */,
 				DB73177520AB255C00D49AF3 /* CompoundedImageGeneratorProtocol.swift in Sources */,
 				DB73173E20AB192900D49AF3 /* AppDelegate.swift in Sources */,
@@ -975,7 +965,6 @@
 				E4B73BE520AEEB1100A301FB /* PortraitEditViewController.swift in Sources */,
 				DB73176E20AB255000D49AF3 /* FormationImageGenerator.swift in Sources */,
 				DB05539220B1E6270008DAD5 /* UniformNumberPosition.swift in Sources */,
-				DB0553A820B1E6850008DAD5 /* PartsManager.swift in Sources */,
 				E4B73C1220AEEB4200A301FB /* UniformEditViewController.swift in Sources */,
 				DB0553AA20B1E6850008DAD5 /* FormationManager.swift in Sources */,
 				DB73176320AB1DAB00D49AF3 /* UIView+LayoutConstraint.swift in Sources */,
@@ -1002,7 +991,6 @@
 				DB7317A220AB2CE600D49AF3 /* LaunchViewController.swift in Sources */,
 				DB7317A320AB2CE600D49AF3 /* BootstrapViewController.swift in Sources */,
 				DB0553A720B1E6850008DAD5 /* WallpaperManager.swift in Sources */,
-				DB0553AB20B1E6850008DAD5 /* PositionManager.swift in Sources */,
 				DB7317AC20AB2FE200D49AF3 /* TopViewController.swift in Sources */,
 				E4B73C1120AEEB4200A301FB /* UniformEditPresenter.swift in Sources */,
 				DB7317D020AB39A300D49AF3 /* WallpaperAdapter.swift in Sources */,

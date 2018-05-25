@@ -45,7 +45,7 @@ class Position: Codable {
         percentage = container.point(.percentage)
         goalkeeper = container.bool(.goalkeeper)
         captain    = container.bool(.captain)
-//        portrait   = Portrait.search(id: container.string(.portrait))
+//        portrait   = PortraitManager().search(id: container.string(.portrait))
     }
     
     func encode(to encoder: Encoder) throws {

@@ -29,9 +29,17 @@ class Parts: Codable {
         self.category = category
         self.resource = category.initialResource
         self.position = category.initialPosition
-//        if category.hasColor {
-//            self.color = category.colors.first!
-//        }
+        if category.hasColor {
+            self.color = category.colors.first!
+        }
+    }
+    
+    /// 配色パーツ用のリソースファイル名
+    var resourceForColor: String {
+        var ret = resource.removedBackward(Const.Parts.imageExtension.count)
+        ret += Const.Parts.colorPartsImageSuffix
+        ret += Const.Parts.imageExtension
+        return ret
     }
     
     // MARK: - Decodable & Encodable
