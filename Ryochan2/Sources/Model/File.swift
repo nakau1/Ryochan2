@@ -12,14 +12,14 @@ class File {
     /// - Returns: ファイル名の配列
     class func fileNames(in path: String) -> [String] {
         do {
-            return try FileManager.default.contentsOfDirectory(atPath: path)
+            return try FileManager.default.contentsOfDirectory(atPath: path).sorted()
         } catch(let error) {
             print("File Error: failed get file names: \(error.localizedDescription)")
         }
         return []
     }
     
-    /// ファイル削除
+    /// 指定したファイルを削除する
     ///
     /// - Parameter path: パス文字列
     class func delete(at path: String) {
@@ -31,7 +31,7 @@ class File {
             }
         }
     }
-    
+        
     /// 指定したパスにファイルが存在しない場合に空のテキストファイルを作成する
     ///
     /// - Parameter path: パス文字列
@@ -62,5 +62,28 @@ class File {
             }
         }
         return false
+    }
+}
+
+extension String {
+    
+    /// パスコンポーネントの追加
+    ///
+    /// - Parameters:
+    ///   - component: 追加するコンポーネント
+    ///   - makeDirectory: ディレクトリがなければ作成するかどうか
+    /// - Returns: 追加された結果文字列
+    func path(_ component: String, makeDirectory: Bool) -> String {
+        let ret = path(component)
+        if makeDirectory {
+            _ = File.makeDirectoryIfNeeded(to: ret)
+        }
+        return ret
+    }
+    
+    /// 共通したサムネイル画像ファイルの名前
+    /// e.g) (名前)_thumb.png
+    var thumbName: String {
+        return "\(withoutExtension)_thumb.\(extensionWithoutDot)"
     }
 }

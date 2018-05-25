@@ -29,9 +29,6 @@ class LaunchPresenter: LaunchPresentable {
     
     private func exexuteMigration() {
         let migration = Migration()
-        
-        migration.reset()
-        migration.printDirectory()
         if migration.needsMigration {
             migration.migrate()
         }

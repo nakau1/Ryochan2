@@ -9,16 +9,9 @@ class WallpaperManager {
     private var storedList: [Wallpaper]!
     private var jsonCoder = JsonCoder()
     
-    /// 一覧をファイルに保存する
-    ///
-    /// - Parameter list: 似顔絵オブジェクトの配列
-    private func saveList(_ list: [Wallpaper]) {
-        jsonCoder.saveJson(list, to: Path.Wallpaper.json)
-    }
-    
     /// ファイルに保存された一覧を読み込む
     ///
-    /// - Returns: 似顔絵オブジェクトの配列
+    /// - Returns: 壁紙オブジェクトの配列
     func loadList() -> [Wallpaper] {
         if let list = storedList { return list }
         
@@ -32,19 +25,7 @@ class WallpaperManager {
     /// - Returns: サムネイル画像の一覧
     func loadThumbList() -> [UIImage?] {
         return loadList().map { wallpaper -> UIImage? in
-            return UIImage(path: Path.Wallpaper.thumb(of: wallpaper))
+            return wallpaper.thumbImage
         }
-    }
-    
-    // MARK: - write image -
-    
-    func writeImages(of wallpaper: Wallpaper) {
-        writeThumbImage(of: wallpaper)
-    }
-    
-    private func writeThumbImage(of wallpaper: Wallpaper) {
-        _ = File.makeDirectoryIfNeeded(to: Path.Wallpaper.directory)
-        // TODO: 未実装
-//        generateImage().write(to: Path.portraitImage(self))
     }
 }

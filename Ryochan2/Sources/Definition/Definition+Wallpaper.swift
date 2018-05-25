@@ -10,12 +10,6 @@ extension Const {
     /// 壁紙
     struct Wallpaper {
         
-        /// 画像の拡張子
-        static let imageExtension = ".png"
-        
-        /// 画像のプレフィックス
-        static let imagePrefix = "background" //TODO: wallpaper に変更
-        
         /// 一覧用の縦横比率
         static let sizeRatio = 3.f / 4.f
     }
@@ -33,7 +27,7 @@ extension Path {
         
         /// ディレクトリのパス
         static var directory: String {
-            return documentDirectory.path("Wallpapers")
+            return documentDirectory.path("wallpapers", makeDirectory: true)
         }
         
         /// 画像ファイルのパス
@@ -41,7 +35,7 @@ extension Path {
         /// - Parameter wallpaper: 壁紙オブジェクト
         /// - Returns: パス文字列
         static func image(of wallpaper: Ryochan2.Wallpaper) -> String {
-            return Path.Migration.zipDestination.path(wallpaper.resource)
+            return directory.path(wallpaper.resource)
         }
         
         /// サムネイル画像ファイルのパス
@@ -49,7 +43,7 @@ extension Path {
         /// - Parameter wallpaper: 壁紙オブジェクト
         /// - Returns: パス文字列
         static func thumb(of wallpaper: Ryochan2.Wallpaper) -> String {
-            return directory.path(wallpaper.resource)
+            return directory.path(wallpaper.resource.thumbName)
         }
     }
 }

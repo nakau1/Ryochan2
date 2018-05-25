@@ -50,6 +50,29 @@ extension String {
         return substring(start: 0, end: count - 1 - length)
     }
     
+    /// 拡張子を取り除いた文字列を返す
+    ///
+    /// - Returns: 拡張子を取り除いた文字列
+    var withoutExtension: String {
+        return (self as NSString).deletingPathExtension
+    }
+    
+    /// 拡張子を返す
+    ///
+    /// - Returns: 拡張子
+    var `extension`: String {
+        let ext = (self as NSString).pathExtension
+        return ext.isEmpty ? "" : ".\(ext)"
+    }
+    
+    /// ドットなしの拡張子を返す
+    ///
+    /// - Returns: ドットなしの拡張子
+    var extensionWithoutDot: String {
+        let ext = (self as NSString).pathExtension
+        return ext.isEmpty ? "" : "\(ext)"
+    }
+    
     /// 日付から作成された識別子文字列を返す
     ///
     /// - Returns: 識別子文字列

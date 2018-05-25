@@ -14,6 +14,15 @@ class BootstrapViewController: UITableViewController {
             (title: "アプリ起動", handler: { vc in
                 vc.present(crossDissolve: LaunchViewController.create())
             }),
+            (title: "マイグレーション", handler: { vc in
+                let migration = Migration()
+                
+                migration.reset()
+                migration.printDirectory()
+                if migration.needsMigration {
+                    migration.migrate()
+                }
+            }),
             ]),
         (section: "モジュールテスト",
          rows: [

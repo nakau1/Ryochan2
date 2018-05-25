@@ -62,5 +62,65 @@ class StringExtensionTestSpec: QuickSpec {
                 }
             }
         }
+        describe("String#withoutExtension") {
+            context("対象の文字列をindex.htmlとしたとき") {
+                it("indexが戻ること") {
+                    let target = "index.html".withoutExtension
+                    expect(target).to(equal("index"))
+                }
+            }
+            context("対象の文字列をindexとしたとき") {
+                it("indexが戻ること") {
+                    let target = "index".withoutExtension
+                    expect(target).to(equal("index"))
+                }
+            }
+            context("対象の文字列をindex.min.htmlとしたとき") {
+                it("index.minが戻ること") {
+                    let target = "index.min.html".withoutExtension
+                    expect(target).to(equal("index.min"))
+                }
+            }
+        }
+        describe("String#extension") {
+            context("対象の文字列をindex.htmlとしたとき") {
+                it("indexが戻ること") {
+                    let target = "index.html".extension
+                    expect(target).to(equal(".html"))
+                }
+            }
+            context("対象の文字列をindexとしたとき") {
+                it("indexが戻ること") {
+                    let target = "index".extension
+                    expect(target).to(equal(""))
+                }
+            }
+            context("対象の文字列をindex.min.htmlとしたとき") {
+                it("index.minが戻ること") {
+                    let target = "index.min.html".extension
+                    expect(target).to(equal(".html"))
+                }
+            }
+        }
+        describe("String#extensionWithoutDot") {
+            context("対象の文字列をindex.htmlとしたとき") {
+                it("indexが戻ること") {
+                    let target = "index.html".extensionWithoutDot
+                    expect(target).to(equal("html"))
+                }
+            }
+            context("対象の文字列をindexとしたとき") {
+                it("indexが戻ること") {
+                    let target = "index".extensionWithoutDot
+                    expect(target).to(equal(""))
+                }
+            }
+            context("対象の文字列をindex.min.htmlとしたとき") {
+                it("index.minが戻ること") {
+                    let target = "index.min.html".extensionWithoutDot
+                    expect(target).to(equal("html"))
+                }
+            }
+        }
     }
 }

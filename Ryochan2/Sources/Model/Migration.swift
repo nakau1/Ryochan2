@@ -28,7 +28,7 @@ class Migration {
     /// データ移行を実行する
     func migrate() {
         unzip() { [unowned self] in
-            self.jsonCoder.saveJson(self.distributeCategorizedResources(), to: Path.Parts.json)
+            //self.jsonCoder.saveJson(self.distributeCategorizedResources(), to: Path.Parts.json)
             self.jsonCoder.saveJson(self.distributeWallpapers(), to: Path.Wallpaper.json)
             self.storedVersion = self.currentVersion
         }
@@ -67,6 +67,10 @@ class Migration {
     
     // MARK: - categorized resources
     
+    private func distributePortraitCategorizedResources() -> [CategorizedResources] {
+        return []
+    }
+    
     private func distributeCategorizedResources() -> [CategorizedResources] {
         let ret = Category.items.reduce(into: [CategorizedResources]()) { res, category in
             let categorizedParts = jsonCoder.instantiate(decodableType: CategorizedResources.self)
@@ -76,7 +80,7 @@ class Migration {
             }
             res.append(categorizedParts)
         }
-        return File.fileNames(in: Path.Migration.zipDestination).sorted().reduce(into: ret) { res, resource in
+        return File.fileNames(in: Path.Migration.zipDestination).reduce(into: ret) { res, resource in
             Category.items.forEach { category in
                 if !isMatchedName(resource, for: category) {
                     return
@@ -115,18 +119,16 @@ class Migration {
     // MARK: - wallpaper
     
     private func distributeWallpapers() -> [Wallpaper] {
-        let manager = WallpaperManager()
-        return File.fileNames(in: Path.Migration.zipDestination).reduce(into: [Wallpaper]()) { res, fileName in
-            if isBackgroundName(fileName) {
-                let wallpaper = Wallpaper(resource: fileName)
-                manager.writeImages(of: wallpaper)
-                res.append(wallpaper)
-            }
+        let destinationDirectory = Path.Migration.zipDestination.path("Wallpapers")
+        return File.fileNames(in: destinationDirectory).reduce(into: [Wallpaper]()) { res, fileName in
+            let wallpaper = Wallpaper(resource: fileName)
+            
+            let image = UIImage(path: destinationDirectory.path(fileName))!
+            image.write(to: Path.Wallpaper.image(of: wallpaper))
+            let thumb = image // TODO: リサイズ
+            thumb.write(to: Path.Wallpaper.thumb(of: wallpaper))
+            
+            res.append(wallpaper)
         }
-    }
-    
-    /// 壁紙用のファイル名かどうか
-    private func isBackgroundName(_ fileName: String) -> Bool {
-        return fileName.hasPrefix(Const.Wallpaper.imagePrefix) && fileName.hasSuffix(Const.Wallpaper.imageExtension)
     }
 }
