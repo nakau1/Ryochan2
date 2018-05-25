@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fly-5s-CAo">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,15 +15,79 @@
             <objects>
                 <viewController id="fly-5s-CAo" customClass="PortraitEditViewController" customModule="Ryochan2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ysw-UT-mFT">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Hu-Mb-XOs">
+                                <rect key="frame" x="0.0" y="554" width="375" height="258"/>
+                                <color key="backgroundColor" red="0.90980392160000001" green="0.99607843139999996" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="UaZ-o9-EpK">
+                                <rect key="frame" x="0.0" y="554" width="375" height="224"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="224" id="h8a-8u-oD8"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MOS-iG-laS">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Pb3-uG-amw">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vFg-FS-NfL">
+                                <rect key="frame" x="0.0" y="478" width="375" height="76"/>
+                                <color key="backgroundColor" red="0.61568627450980395" green="0.76862745098039209" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="76" id="u6R-DX-KFU"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="6Kr-I6-bMZ">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="rdZ-Cn-89f">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tTL-1g-ji6" firstAttribute="trailing" secondItem="UaZ-o9-EpK" secondAttribute="trailing" id="Fyq-fT-rpu"/>
+                            <constraint firstItem="UaZ-o9-EpK" firstAttribute="leading" secondItem="tTL-1g-ji6" secondAttribute="leading" id="Np9-uZ-kxf"/>
+                            <constraint firstItem="UaZ-o9-EpK" firstAttribute="top" secondItem="8Hu-Mb-XOs" secondAttribute="top" id="QEw-rH-1xq"/>
+                            <constraint firstItem="tTL-1g-ji6" firstAttribute="trailing" secondItem="8Hu-Mb-XOs" secondAttribute="trailing" id="Qg8-Xm-rUd"/>
+                            <constraint firstItem="tTL-1g-ji6" firstAttribute="bottom" secondItem="UaZ-o9-EpK" secondAttribute="bottom" id="UG8-yb-GvI"/>
+                            <constraint firstItem="8Hu-Mb-XOs" firstAttribute="leading" secondItem="tTL-1g-ji6" secondAttribute="leading" id="mDD-6P-Z6M"/>
+                            <constraint firstItem="tTL-1g-ji6" firstAttribute="trailing" secondItem="vFg-FS-NfL" secondAttribute="trailing" id="n3f-S5-Z7m"/>
+                            <constraint firstAttribute="bottom" secondItem="8Hu-Mb-XOs" secondAttribute="bottom" id="wuq-TK-qQ4"/>
+                            <constraint firstItem="vFg-FS-NfL" firstAttribute="leading" secondItem="tTL-1g-ji6" secondAttribute="leading" id="yEy-wy-h34"/>
+                            <constraint firstItem="8Hu-Mb-XOs" firstAttribute="top" secondItem="vFg-FS-NfL" secondAttribute="bottom" id="zru-Kx-Fau"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="tTL-1g-ji6"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NqY-jZ-KgT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-111" y="73"/>
+            <point key="canvasLocation" x="-111.2" y="72.413793103448285"/>
         </scene>
     </scenes>
 </document>
