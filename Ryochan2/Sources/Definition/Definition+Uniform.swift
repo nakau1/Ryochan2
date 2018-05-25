@@ -35,6 +35,14 @@ extension Path {
             return documentDirectory.path("Uniforms")
         }
         
+        /// 画像ファイルのパス
+        ///
+        /// - Parameter uniform: ユニフォームオブジェクト
+        /// - Returns: パス文字列
+        static func image(of uniform: Ryochan2.Uniform) -> String {
+            return directory.path("\(uniform.id).png")
+        }
+        
         /// サムネイル画像ファイルのパス
         ///
         /// - Parameter uniform: ユニフォームオブジェクト
