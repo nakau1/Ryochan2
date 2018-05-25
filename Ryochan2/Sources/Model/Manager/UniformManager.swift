@@ -7,8 +7,6 @@ import UIKit
 /// ユニフォームマネージャ
 class UniformManager {
     
-    private struct JsonCoder: JsonEncodable, JsonDecodable {}
-    
     private var storedList: [Uniform]!
     private var jsonCoder = JsonCoder()
     

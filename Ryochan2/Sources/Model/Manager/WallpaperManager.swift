@@ -4,9 +4,7 @@
 // =============================================================================
 import UIKit
 
-class WallpaperManager: JsonDecodable {
-    
-    private struct JsonCoder: JsonEncodable, JsonDecodable {}
+class WallpaperManager {
     
     private var storedList: [Wallpaper]!
     private var jsonCoder = JsonCoder()

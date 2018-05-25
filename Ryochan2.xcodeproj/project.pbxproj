@@ -88,10 +88,9 @@
 		DB98A3F520AB15F100A5273D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB98A3F320AB15F100A5273D /* LaunchScreen.storyboard */; };
 		DB98A40020AB15F200A5273D /* StringExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB98A3FF20AB15F200A5273D /* StringExtensionTest.swift */; };
 		DBA039832D1163DC057C0842 /* Pods_Ryochan2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BDA1F74F5AA0ED912797074 /* Pods_Ryochan2.framework */; };
+		E426B6DD20B8039400F54FF9 /* JsonCoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E426B6DC20B8039400F54FF9 /* JsonCoder.swift */; };
 		E4428ABF20B51A8400704862 /* Definition+Migration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4428ABE20B51A8400704862 /* Definition+Migration.swift */; };
 		E4428AC120B549D600704862 /* Resources.zip in Resources */ = {isa = PBXBuildFile; fileRef = E4428AC020B549D600704862 /* Resources.zip */; };
-		E4428AC420B5700A00704862 /* JsonEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4428AC220B5700900704862 /* JsonEncodable.swift */; };
-		E4428AC520B5700A00704862 /* JsonDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4428AC320B5700A00704862 /* JsonDecodable.swift */; };
 		E4428AC720B647D300704862 /* UIImage+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4428AC620B647D300704862 /* UIImage+App.swift */; };
 		E4428AC920B6B80000704862 /* FormationTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4428AC820B6B80000704862 /* FormationTemplate.swift */; };
 		E4B73BE220AEEB1100A301FB /* PortraitEdit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4B73BDE20AEEB1100A301FB /* PortraitEdit.storyboard */; };
@@ -226,10 +225,9 @@
 		DB98A3FB20AB15F200A5273D /* Ryochan2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Ryochan2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB98A3FF20AB15F200A5273D /* StringExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionTest.swift; sourceTree = "<group>"; };
 		DB98A40120AB15F200A5273D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E426B6DC20B8039400F54FF9 /* JsonCoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonCoder.swift; sourceTree = "<group>"; };
 		E4428ABE20B51A8400704862 /* Definition+Migration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Definition+Migration.swift"; sourceTree = "<group>"; };
 		E4428AC020B549D600704862 /* Resources.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = Resources.zip; sourceTree = "<group>"; };
-		E4428AC220B5700900704862 /* JsonEncodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonEncodable.swift; sourceTree = "<group>"; };
-		E4428AC320B5700A00704862 /* JsonDecodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonDecodable.swift; sourceTree = "<group>"; };
 		E4428AC620B647D300704862 /* UIImage+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+App.swift"; sourceTree = "<group>"; };
 		E4428AC820B6B80000704862 /* FormationTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormationTemplate.swift; sourceTree = "<group>"; };
 		E4B73BDE20AEEB1100A301FB /* PortraitEdit.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PortraitEdit.storyboard; sourceTree = "<group>"; };
@@ -395,8 +393,6 @@
 		DB73173520AB192900D49AF3 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
-				E4428AC220B5700900704862 /* JsonEncodable.swift */,
-				E4428AC320B5700A00704862 /* JsonDecodable.swift */,
 				DB73177320AB255C00D49AF3 /* CompoundedImageGeneratorProtocol.swift */,
 				DB73177420AB255C00D49AF3 /* Notificatable.swift */,
 			);
@@ -453,6 +449,7 @@
 				DB05538E20B1E6260008DAD5 /* Manager */,
 				DB05538220B1E6260008DAD5 /* Enum */,
 				DB05539120B1E6270008DAD5 /* File.swift */,
+				E426B6DC20B8039400F54FF9 /* JsonCoder.swift */,
 				DB05538F20B1E6260008DAD5 /* Migration.swift */,
 				DB05539020B1E6260008DAD5 /* Sns.swift */,
 			);
@@ -938,6 +935,7 @@
 				E4B73BEC20AEEB2200A301FB /* PortraitSelectViewController.swift in Sources */,
 				E4B73BE320AEEB1100A301FB /* PortraitEditAdapter.swift in Sources */,
 				DB73177520AB255C00D49AF3 /* CompoundedImageGeneratorProtocol.swift in Sources */,
+				E426B6DD20B8039400F54FF9 /* JsonCoder.swift in Sources */,
 				DB73173E20AB192900D49AF3 /* AppDelegate.swift in Sources */,
 				E4428AC720B647D300704862 /* UIImage+App.swift in Sources */,
 				DB7317AE20AB31DC00D49AF3 /* TopAdapter.swift in Sources */,
@@ -948,7 +946,6 @@
 				DB73175E20AB1DAB00D49AF3 /* UITextField+App.swift in Sources */,
 				DB73175220AB1D9B00D49AF3 /* DialogRightDrawBehavior.swift in Sources */,
 				DB73175C20AB1DAB00D49AF3 /* UIViewController+App.swift in Sources */,
-				E4428AC420B5700A00704862 /* JsonEncodable.swift in Sources */,
 				DB73179720AB257200D49AF3 /* HighlightButton.swift in Sources */,
 				DB73179920AB257200D49AF3 /* RoundedBorderedView.swift in Sources */,
 				E4B73C0F20AEEB4200A301FB /* UniformEditAdapter.swift in Sources */,
@@ -974,7 +971,6 @@
 				DB73176020AB1DAB00D49AF3 /* CoreGraphics+App.swift in Sources */,
 				E4B73C1920AEEB4800A301FB /* UniformSelectViewController.swift in Sources */,
 				E4B73BE420AEEB1100A301FB /* PortraitEditPresenter.swift in Sources */,
-				E4428AC520B5700A00704862 /* JsonDecodable.swift in Sources */,
 				DB05539A20B1E6270008DAD5 /* Portrait.swift in Sources */,
 				DB73174720AB1D7000D49AF3 /* Definition+Uniform.swift in Sources */,
 				DB05539420B1E6270008DAD5 /* MovableType.swift in Sources */,

@@ -5,7 +5,9 @@
 import Foundation
 import SSZipArchive
 
-class Migration: JsonEncodable {
+class Migration {
+    
+    private var jsonCoder = JsonCoder()
     
     /// データ移行の必要性
     var needsMigration: Bool {
@@ -27,7 +29,7 @@ class Migration: JsonEncodable {
     func migrate() {
         unzip() { [unowned self] in
             // TODO: パーツデータのJSON化
-            self.saveJson(self.distributeWallpapers(), to: Path.Wallpaper.json)
+            self.jsonCoder.saveJson(self.distributeWallpapers(), to: Path.Wallpaper.json)
             self.storedVersion = self.currentVersion
         }
     }

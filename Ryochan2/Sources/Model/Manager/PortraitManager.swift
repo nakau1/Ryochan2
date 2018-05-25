@@ -7,8 +7,6 @@ import UIKit
 /// 似顔絵マネージャ
 class PortraitManager {
     
-    private struct JsonCoder: JsonEncodable, JsonDecodable {}
-    
     private var storedList: [Portrait]!
     private var jsonCoder = JsonCoder()
     

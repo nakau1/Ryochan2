@@ -6,8 +6,6 @@ import UIKit
 
 class FormationManager {
     
-    private struct JsonCoder: JsonEncodable, JsonDecodable {}
-    
     private var stored: Formation!
     private var jsonCoder = JsonCoder()
     
