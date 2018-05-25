@@ -4,19 +4,26 @@
 // =============================================================================
 import UIKit
 
+/// 似顔絵マネージャ
 class PortraitManager {
     
-    private class JsonCoder: JsonEncodable, JsonDecodable {}
+    private struct JsonCoder: JsonEncodable, JsonDecodable {}
     
     private var storedList: [Portrait]!
     private var jsonCoder = JsonCoder()
     
     // MARK: - list -
     
+    /// 一覧をファイルに保存する
+    ///
+    /// - Parameter list: 似顔絵オブジェクトの配列
     private func saveList(_ list: [Portrait]) {
         jsonCoder.saveJson(list, to: Path.Portrait.json)
     }
     
+    /// ファイルに保存された一覧を読み込む
+    ///
+    /// - Returns: 似顔絵オブジェクトの配列
     func loadList() -> [Portrait] {
         if let list = storedList { return list }
         
@@ -27,6 +34,10 @@ class PortraitManager {
         return storedList
     }
     
+    /// IDから似顔絵を検索して返す
+    ///
+    /// - Parameter id: ID
+    /// - Returns: 似顔絵オブジェクト
     func search(id: String) -> Portrait? {
         if id.isEmpty { return nil }
         for portrait in loadList() {
@@ -58,6 +69,9 @@ class PortraitManager {
     
     // MARK: - add -
     
+    /// 新たな似顔絵オブジェクトを追加保存する
+    ///
+    /// - Parameter portrait: 似顔絵オブジェクト
     func add(_ portrait: Portrait) {
         var list = loadList()
         list.append(portrait)
@@ -67,6 +81,9 @@ class PortraitManager {
     
     // MARK: - update -
     
+    /// 似顔絵オブジェクトを更新して保存する
+    ///
+    /// - Parameter portrait: 似顔絵オブジェクト
     func update(_ portrait: Portrait) {
         var list = loadList()
         if let i = index(of: portrait) {
@@ -78,6 +95,9 @@ class PortraitManager {
     
     // MARK: - copy -
     
+    /// 似顔絵オブジェクトをコピーして追加保存する
+    ///
+    /// - Parameter portrait: 似顔絵オブジェクト
     func copy(_ portrait: Portrait) {
         let cloned = jsonCoder.clone(portrait, type: Portrait.self)
         cloned.id = String.generateIdentifier()
@@ -86,10 +106,62 @@ class PortraitManager {
     
     // MARK: - delete -
     
+    /// 似顔絵オブジェクトを削除する
+    ///
+    /// - Parameter portrait: 似顔絵オブジェクト
     func delete(_ portrait: Portrait) {
         let filteredList = loadList().filter { $0 != portrait }
         saveList(filteredList)
         deleteImages(of: portrait)
+    }
+    
+    /// すべての似顔絵オブジェクトを削除する
+    func deleteAll() {
+        loadList().forEach {
+            deleteImages(of: $0)
+        }
+        saveList([])
+    }
+    
+    // MARK: - manage resource -
+    
+    /// 指定した似顔絵オブジェクトのパーツのリソースを変更する(保存はしない)
+    ///
+    /// - Parameters:
+    ///   - resource: リソース名
+    ///   - portrait: 似顔絵オブジェクト
+    ///   - category: カテゴリ
+    func setResource(_ resource: String, to portrait: Portrait, for category: Category) {
+        category.parts(of: portrait).resource = resource
+    }
+    
+    // MARK: - generate image -
+    
+    /// 画像を生成する
+    ///
+    /// - Parameter portrait: 似顔絵オブジェクト
+    /// - Returns: 似顔絵画像
+    func generateImage(of portrait: Portrait) -> UIImage {
+        return UIImage() // TODO: 未実装
+//        return PortraitImageGenerator().generateImage(of: self)
+    }
+    
+    /// サムネイル画像を生成する
+    ///
+    /// - Parameter portrait: 似顔絵オブジェクト
+    /// - Returns: 似顔絵サムネイル画像
+    func generateThumbImage(of portrait: Portrait) -> UIImage {
+        return UIImage() // TODO: 未実装
+//        return generateImage().scaled(to: .portraitThumb)
+    }
+    
+    /// サムネイル画像の一覧を取得する
+    ///
+    /// - Returns: サムネイル画像の一覧
+    func loadThumbList() -> [UIImage?] {
+        return loadList().map { portrait -> UIImage? in
+            return UIImage(path: Path.Portrait.thumb(of: portrait))
+        }
     }
     
     // MARK: - write image -
