@@ -28,7 +28,7 @@ class Migration {
     /// データ移行を実行する
     func migrate() {
         unzip() { [unowned self] in
-            // TODO: パーツデータのJSON化
+            self.jsonCoder.saveJson(self.distributeCategorizedResources(), to: Path.Parts.json)
             self.jsonCoder.saveJson(self.distributeWallpapers(), to: Path.Wallpaper.json)
             self.storedVersion = self.currentVersion
         }
@@ -51,18 +51,11 @@ class Migration {
         }
     }
     
-    /// バージョン番号を比較する
-    ///
-    /// - Parameters:
-    ///   - a: 比較対象
-    ///   - b: 比較対象
-    /// - Returns: 比較結果(aよりbの方が大きい場合に.orderedAscendingを返す)
     private func compareVersion(_ a: String, _ b: String) -> ComparisonResult {
+        // 比較結果(aよりbの方が大きい場合に.orderedAscendingを返す)
         return a.compare(b, options: .numeric, range: nil, locale: nil)
     }
     
-    /// ZIPファイルを解凍する
-    /// - Parameter completion: 完了時の処理
     private func unzip(completion: @escaping () -> Void) {
         SSZipArchive.unzipFile(
             atPath: Path.Migration.zipSource,
@@ -72,13 +65,28 @@ class Migration {
         )
     }
     
-    // MARK: - parts
+    // MARK: - categorized resources
     
-    /// ZIP解凍先のファイルから壁紙であるファイルを抽出してオブジェクトで返却する
-    ///
-    /// - Returns: 壁紙オブジェクトの配列
-    private func distributeParts() -> [Parts] {
-        return []
+    private func distributeCategorizedResources() -> [CategorizedResources] {
+        let ret = Category.items.reduce(into: [CategorizedResources]()) { res, category in
+            let categorizedParts = jsonCoder.instantiate(decodableType: CategorizedResources.self)
+            categorizedParts.category = category
+            if category.hasEmpty {
+                categorizedParts.resources.insert("empty", at: 0)
+            }
+            res.append(categorizedParts)
+        }
+        return File.fileNames(in: Path.Migration.zipDestination).sorted().reduce(into: ret) { res, resource in
+            Category.items.forEach { category in
+                if !isMatchedName(resource, for: category) {
+                    return
+                }
+                if isColorMaterialName(resource, for: category) {
+                    return
+                }
+                ret[category]?.resources.append(resource)
+            }
+        }
     }
     
     /// カテゴリのファイル名に即した名前であるかどうかを返す
@@ -87,7 +95,7 @@ class Migration {
     ///   - fileName: 対象のファイル名
     ///   - category: カテゴリ
     /// - Returns: カテゴリのファイル名に即した名前であるかどうか
-    func isMatchedName(_ fileName: String, for category: Category) -> Bool {
+    private func isMatchedName(_ fileName: String, for category: Category) -> Bool {
         return fileName.hasPrefix(category.fileBaseName) && fileName.hasSuffix(Const.Parts.imageExtension)
     }
     
@@ -97,7 +105,7 @@ class Migration {
     ///   - fileName: 対象のファイル名
     ///   - category: カテゴリ
     /// - Returns: 色素材パーツ用のファイル名であるかどうか
-    func isColorMaterialName(_ fileName: String, for category: Category) -> Bool {
+    private func isColorMaterialName(_ fileName: String, for category: Category) -> Bool {
 //        if category.partsColorType != .outlinedColorable {
 //            return false
 //        }
@@ -106,9 +114,6 @@ class Migration {
     
     // MARK: - wallpaper
     
-    /// ZIP解凍先のファイルから壁紙であるファイルを抽出してオブジェクトで返却する
-    ///
-    /// - Returns: 壁紙オブジェクトの配列
     private func distributeWallpapers() -> [Wallpaper] {
         let manager = WallpaperManager()
         return File.fileNames(in: Path.Migration.zipDestination).reduce(into: [Wallpaper]()) { res, fileName in
@@ -121,9 +126,6 @@ class Migration {
     }
     
     /// 壁紙用のファイル名かどうか
-    ///
-    /// - Parameter fileName: ファイル名
-    /// - Returns: "wallpaper(hoge).png"という形式かどうか
     private func isBackgroundName(_ fileName: String) -> Bool {
         return fileName.hasPrefix(Const.Wallpaper.imagePrefix) && fileName.hasSuffix(Const.Wallpaper.imageExtension)
     }

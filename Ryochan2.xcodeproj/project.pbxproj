@@ -89,6 +89,7 @@
 		DB98A40020AB15F200A5273D /* StringExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB98A3FF20AB15F200A5273D /* StringExtensionTest.swift */; };
 		DBA039832D1163DC057C0842 /* Pods_Ryochan2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BDA1F74F5AA0ED912797074 /* Pods_Ryochan2.framework */; };
 		E426B6DD20B8039400F54FF9 /* JsonCoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E426B6DC20B8039400F54FF9 /* JsonCoder.swift */; };
+		E426B6DF20B8195800F54FF9 /* CategorizedResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = E426B6DE20B8195700F54FF9 /* CategorizedResources.swift */; };
 		E4428ABF20B51A8400704862 /* Definition+Migration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4428ABE20B51A8400704862 /* Definition+Migration.swift */; };
 		E4428AC120B549D600704862 /* Resources.zip in Resources */ = {isa = PBXBuildFile; fileRef = E4428AC020B549D600704862 /* Resources.zip */; };
 		E4428AC720B647D300704862 /* UIImage+App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4428AC620B647D300704862 /* UIImage+App.swift */; };
@@ -226,6 +227,7 @@
 		DB98A3FF20AB15F200A5273D /* StringExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionTest.swift; sourceTree = "<group>"; };
 		DB98A40120AB15F200A5273D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E426B6DC20B8039400F54FF9 /* JsonCoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonCoder.swift; sourceTree = "<group>"; };
+		E426B6DE20B8195700F54FF9 /* CategorizedResources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategorizedResources.swift; sourceTree = "<group>"; };
 		E4428ABE20B51A8400704862 /* Definition+Migration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Definition+Migration.swift"; sourceTree = "<group>"; };
 		E4428AC020B549D600704862 /* Resources.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = Resources.zip; sourceTree = "<group>"; };
 		E4428AC620B647D300704862 /* UIImage+App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+App.swift"; sourceTree = "<group>"; };
@@ -319,6 +321,7 @@
 			children = (
 				DB05538920B1E6260008DAD5 /* Parts.swift */,
 				DB05538B20B1E6260008DAD5 /* Category.swift */,
+				E426B6DE20B8195700F54FF9 /* CategorizedResources.swift */,
 				DB05538C20B1E6260008DAD5 /* Portrait.swift */,
 				DB05538720B1E6260008DAD5 /* Uniform.swift */,
 				DB05538A20B1E6260008DAD5 /* Formation.swift */,
@@ -947,6 +950,7 @@
 				DB73175220AB1D9B00D49AF3 /* DialogRightDrawBehavior.swift in Sources */,
 				DB73175C20AB1DAB00D49AF3 /* UIViewController+App.swift in Sources */,
 				DB73179720AB257200D49AF3 /* HighlightButton.swift in Sources */,
+				E426B6DF20B8195800F54FF9 /* CategorizedResources.swift in Sources */,
 				DB73179920AB257200D49AF3 /* RoundedBorderedView.swift in Sources */,
 				E4B73C0F20AEEB4200A301FB /* UniformEditAdapter.swift in Sources */,
 				E4B73BF620AEEB2B00A301FB /* FormationAdapter.swift in Sources */,
