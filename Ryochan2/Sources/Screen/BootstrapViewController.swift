@@ -24,6 +24,31 @@ class BootstrapViewController: UITableViewController {
                 }
             }),
             ]),
+        (section: "画像テスト",
+         rows: [
+            (title: "画像編集", handler: { vc in
+                let origin = UIImage(named: "sample")!
+                let originSize = CGSize(720, 810)
+                let dir = Path.documentDirectory.path("sample", makeDirectory: true)
+                
+                origin.write(to: dir.path("origin.png"))
+                
+                let scaled = origin.scaled(to: originSize / 10)
+                scaled.write(to: dir.path("scaled.png"))
+                
+                let cropped = origin.cropped(to: CGRect(.zero, originSize / 2))
+                cropped.write(to: dir.path("cropped.png"))
+                
+                let fixed = origin.fixed(size: originSize / 2)
+                fixed.write(to: dir.path("fixed.png"))
+                
+                let separated = origin.separated()
+                separated.left.write(to: dir.path("separated_left.png"))
+                separated.right.write(to: dir.path("separated_right.png"))
+                
+                print("open \(dir)")
+            }),
+            ]),
         (section: "モジュールテスト",
          rows: [
             (title: "削除確認アラートダイアログ", handler: { vc in

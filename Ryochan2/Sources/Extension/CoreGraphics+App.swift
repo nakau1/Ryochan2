@@ -69,6 +69,10 @@ extension CGSize {
         return CGRect((parentSize.width - self.width) / 2, 0, self.width, self.height)
     }
     
+    static func *(lhs: CGSize, rhs: CGFloat) -> CGSize {
+        return CGSize(lhs.width * rhs, lhs.height * rhs)
+    }
+    
     static func /(lhs: CGSize, rhs: CGFloat) -> CGSize {
         return CGSize(lhs.width / rhs, lhs.height / rhs)
     }
