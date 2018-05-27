@@ -28,7 +28,8 @@ class Migration {
     /// データ移行を実行する
     func migrate() {
         unzip() { [unowned self] in
-            //self.jsonCoder.saveJson(self.distributeCategorizedResources(), to: Path.Parts.json)
+            self.jsonCoder.saveJson(self.distributePortraitCategorizedResources(), to: Path.Parts.portraitJson)
+            self.jsonCoder.saveJson(self.distributeUniformCategorizedResources(), to: Path.Parts.uniformJson)
             self.jsonCoder.saveJson(self.distributeWallpapers(), to: Path.Wallpaper.json)
             self.storedVersion = self.currentVersion
         }
@@ -68,11 +69,23 @@ class Migration {
     // MARK: - categorized resources
     
     private func distributePortraitCategorizedResources() -> [CategorizedResources] {
-        return []
+        return distributeCategorizedResources(
+            src: Path.Parts.portraitDirectory,
+            dst: Path.Migration.zipDestination.path("Portraits", makeDirectory: true),
+            categories: Category.portraitItems
+        )
     }
     
-    private func distributeCategorizedResources() -> [CategorizedResources] {
-        let ret = Category.items.reduce(into: [CategorizedResources]()) { res, category in
+    private func distributeUniformCategorizedResources() -> [CategorizedResources] {
+        return distributeCategorizedResources(
+            src: Path.Parts.uniformDirectory,
+            dst: Path.Migration.zipDestination.path("Uniforms", makeDirectory: true),
+            categories: Category.uniformItems
+        )
+    }
+    
+    private func distributeCategorizedResources(src: String, dst: String, categories: [Category]) -> [CategorizedResources] {
+        let ret = categories.reduce(into: [CategorizedResources]()) { res, category in
             let categorizedParts = jsonCoder.instantiate(decodableType: CategorizedResources.self)
             categorizedParts.category = category
             if category.hasEmpty {
@@ -80,40 +93,34 @@ class Migration {
             }
             res.append(categorizedParts)
         }
-        return File.fileNames(in: Path.Migration.zipDestination).reduce(into: ret) { res, resource in
-            Category.items.forEach { category in
-                if !isMatchedName(resource, for: category) {
+        return File.fileNames(in: dst).reduce(into: ret) { res, resource in
+            categories.forEach { category in
+                if !isPartsResource(name: resource, for: category) {
                     return
                 }
-                if isColorMaterialName(resource, for: category) {
-                    return
+                if !isColorResource(name: resource, for: category) {
+                    ret[category]?.resources.append(resource)
                 }
-                ret[category]?.resources.append(resource)
+                let image = UIImage(path: dst.path(resource))
+                image?.write(to: src.path(resource))
             }
         }
     }
     
-    /// カテゴリのファイル名に即した名前であるかどうかを返す
-    ///
-    /// - Parameters:
-    ///   - fileName: 対象のファイル名
-    ///   - category: カテゴリ
-    /// - Returns: カテゴリのファイル名に即した名前であるかどうか
-    private func isMatchedName(_ fileName: String, for category: Category) -> Bool {
-        return fileName.hasPrefix(category.fileBaseName) && fileName.hasSuffix(Const.Parts.imageExtension)
+    /// カテゴリのファイル命名規則に即した名前であるかどうか
+    private func isPartsResource(name: String, for category: Category) -> Bool {
+        return name.hasPrefix(category.fileBaseName) && name.hasSuffix(".png")
     }
     
-    /// 色素材パーツ用のファイル名であるかどうかを返す
-    ///
-    /// - Parameters:
-    ///   - fileName: 対象のファイル名
-    ///   - category: カテゴリ
-    /// - Returns: 色素材パーツ用のファイル名であるかどうか
-    private func isColorMaterialName(_ fileName: String, for category: Category) -> Bool {
-//        if category.partsColorType != .outlinedColorable {
-//            return false
-//        }
-        return fileName.removedBackward(Const.Parts.imageExtension.count).hasSuffix(Const.Parts.colorPartsImageSuffix)
+    /// 色素材パーツ用のファイル名であるかどうか
+    private func isColorResource(name: String, for category: Category) -> Bool {
+        if category.partsColorType != .outlinedColorable {
+            return false
+        }
+        var l = name.withoutExtension
+        l = l.extensionWithoutDot
+        
+        return name.withoutExtension.extensionWithoutDot == Const.Parts.colorResourceSuffix
     }
     
     // MARK: - wallpaper

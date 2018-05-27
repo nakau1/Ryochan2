@@ -82,8 +82,14 @@ extension String {
     }
     
     /// 共通したサムネイル画像ファイルの名前
-    /// e.g) (名前)_thumb.png
+    /// e.g) (名前).thumb.png
     var thumbName: String {
-        return "\(withoutExtension)_thumb.\(extensionWithoutDot)"
+        return "\(withoutExtension).thumb.\(extensionWithoutDot)"
     }
+    
+//    /// 共通したカラー画像用ファイルの名前
+//    /// e.g) (名前).color.png
+//    var colorResourceName: String {
+//        return "\(withoutExtension).\(colorResourceSuffix).\(extensionWithoutDot)"
+//    }
 }

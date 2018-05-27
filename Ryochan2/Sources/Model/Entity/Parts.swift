@@ -34,13 +34,13 @@ class Parts: Codable {
         }
     }
     
-    /// 配色パーツ用のリソースファイル名
-    var resourceForColor: String {
-        var ret = resource.removedBackward(Const.Parts.imageExtension.count)
-        ret += Const.Parts.colorPartsImageSuffix
-        ret += Const.Parts.imageExtension
-        return ret
-    }
+//    /// 配色パーツ用のリソースファイル名
+//    var resourceForColor: String {
+//        var ret = resource.removedBackward(Const.Parts.imageExtension.count)
+//        ret += Const.Parts.colorPartsImageSuffix
+//        ret += Const.Parts.imageExtension
+//        return ret
+//    }
     
     // MARK: - Decodable & Encodable
     
