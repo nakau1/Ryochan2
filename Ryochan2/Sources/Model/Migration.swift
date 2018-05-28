@@ -127,12 +127,13 @@ class Migration {
     
     private func distributeWallpapers() -> [Wallpaper] {
         let destinationDirectory = Path.Migration.zipDestination.path("Wallpapers")
+        let imageGenerator = WallpaperImageGenerator()
         return File.fileNames(in: destinationDirectory).reduce(into: [Wallpaper]()) { res, fileName in
             let wallpaper = Wallpaper(resource: fileName)
             
             let image = UIImage(path: destinationDirectory.path(fileName))!
             image.write(to: Path.Wallpaper.image(of: wallpaper))
-            let thumb = image // TODO: リサイズ
+            let thumb = imageGenerator.generateThumb(image)
             thumb.write(to: Path.Wallpaper.thumb(of: wallpaper))
             
             res.append(wallpaper)

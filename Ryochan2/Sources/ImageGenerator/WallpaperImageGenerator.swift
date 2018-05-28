@@ -4,6 +4,9 @@
 // =============================================================================
 import UIKit
 
-class WallpaperedImageGenerator {
+class WallpaperImageGenerator {
     
+    func generateThumb(_ image: UIImage) -> UIImage {
+        return image.scaled(to: .wallpaperThumb)
+    }
 }

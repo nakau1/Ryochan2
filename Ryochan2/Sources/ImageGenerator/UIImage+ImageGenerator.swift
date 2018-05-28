@@ -25,10 +25,10 @@ extension UIImage {
         return UIImage(cgImage: ref, scale: scale, orientation: imageOrientation)
     }
     
-    /// <#Description#>
+    /// 指定のサイズで中央から切り取った画像を生成して返す
     ///
-    /// - Parameter size: <#size description#>
-    /// - Returns: <#return value description#>
+    /// - Parameter size: 切り取るサイズ
+    /// - Returns: 切り取った画層
     func fixed(size: CGSize) -> UIImage {
         return UIImage.imageFromContext(size) { _ in
             let rect = CGRect(
@@ -49,16 +49,10 @@ extension UIImage {
         return(left: leftImage, right: rightImage)
     }
     
-    class func imageFromContext(_ size: CGSize, _ block: (CGContext) -> Void) -> UIImage {
-        UIGraphicsBeginImageContext(size)
-        block(UIGraphicsGetCurrentContext()!)
-        let ret = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        return ret!
-    }
-}
-
-/*
+    /// 指定した色でマスクした画像を返す
+    ///
+    /// - Parameter color: 色
+    /// - Returns: マスクした色
     func masked(color: UIColor) -> UIImage? {
         let rect = CGRect(origin: .zero, size: size)
         let bitmap = CGImageAlphaInfo.premultipliedLast.rawValue
@@ -85,7 +79,14 @@ extension UIImage {
         return UIImage(cgImage: context.makeImage()!)
     }
     
-    class func text(_ text: String, color: UIColor = .black, font: UIFont = UIFont.systemFont(ofSize: 32)) -> UIImage? {
+    /// 文字列を画像化する
+    ///
+    /// - Parameters:
+    ///   - text: 文字列
+    ///   - color: 文字色
+    ///   - font: フォント
+    /// - Returns: 画像化された文字
+    class func text(_ text: String, color: UIColor = .black, font: UIFont = .systemFont(ofSize: 32)) -> UIImage {
         let ns = (text as NSString)
         let attributes: [NSAttributedStringKey : Any] = [
             .font: font,
@@ -97,12 +98,7 @@ extension UIImage {
         }
     }
     
-    /// グラフィックコンテキストの描画処理をラッピングして画像を生成する(クラスメソッド)
-    /// - Parameters:
-    ///   - size: サイズ
-    ///   - block: 描画処理
-    /// - Returns: 生成した画像
-    class func imageFromContext(_ size: CGSize, _ block: (CGContext)->Void) -> UIImage {
+    class func imageFromContext(_ size: CGSize, _ block: (CGContext) -> Void) -> UIImage {
         UIGraphicsBeginImageContext(size)
         block(UIGraphicsGetCurrentContext()!)
         let ret = UIGraphicsGetImageFromCurrentImageContext()
@@ -110,4 +106,3 @@ extension UIImage {
         return ret!
     }
 }
-*/

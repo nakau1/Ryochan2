@@ -46,6 +46,12 @@ class BootstrapViewController: UITableViewController {
                 separated.left.write(to: dir.path("separated_left.png"))
                 separated.right.write(to: dir.path("separated_right.png"))
                 
+                let texted = UIImage.text("あいうABC", color: .red)
+                texted.write(to: dir.path("texted.png"))
+                
+                let masked = texted.masked(color: .blue)
+                masked?.write(to: dir.path("masked.png"))
+                
                 print("open \(dir)")
             }),
             ]),
