@@ -90,6 +90,7 @@
 		DBA039832D1163DC057C0842 /* Pods_Ryochan2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BDA1F74F5AA0ED912797074 /* Pods_Ryochan2.framework */; };
 		E426B6DD20B8039400F54FF9 /* JsonCoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E426B6DC20B8039400F54FF9 /* JsonCoder.swift */; };
 		E426B6DF20B8195800F54FF9 /* CategorizedResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = E426B6DE20B8195700F54FF9 /* CategorizedResources.swift */; };
+		E426B6E120BB8B5600F54FF9 /* PartsThumbImageGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E426B6E020BB8B5600F54FF9 /* PartsThumbImageGenerator.swift */; };
 		E426B6E320BBA96900F54FF9 /* PartsKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = E426B6E220BBA96900F54FF9 /* PartsKind.swift */; };
 		E4428ABF20B51A8400704862 /* Definition+Migration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4428ABE20B51A8400704862 /* Definition+Migration.swift */; };
 		E4428AC120B549D600704862 /* Resources.zip in Resources */ = {isa = PBXBuildFile; fileRef = E4428AC020B549D600704862 /* Resources.zip */; };
@@ -229,6 +230,7 @@
 		DB98A40120AB15F200A5273D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E426B6DC20B8039400F54FF9 /* JsonCoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonCoder.swift; sourceTree = "<group>"; };
 		E426B6DE20B8195700F54FF9 /* CategorizedResources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategorizedResources.swift; sourceTree = "<group>"; };
+		E426B6E020BB8B5600F54FF9 /* PartsThumbImageGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartsThumbImageGenerator.swift; sourceTree = "<group>"; };
 		E426B6E220BBA96900F54FF9 /* PartsKind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartsKind.swift; sourceTree = "<group>"; };
 		E4428ABE20B51A8400704862 /* Definition+Migration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Definition+Migration.swift"; sourceTree = "<group>"; };
 		E4428AC020B549D600704862 /* Resources.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = Resources.zip; sourceTree = "<group>"; };
@@ -387,6 +389,7 @@
 			isa = PBXGroup;
 			children = (
 				DB73179B20AB297100D49AF3 /* UIImage+ImageGenerator.swift */,
+				E426B6E020BB8B5600F54FF9 /* PartsThumbImageGenerator.swift */,
 				DB73176920AB255000D49AF3 /* FormationImageGenerator.swift */,
 				DB73176A20AB255000D49AF3 /* PlayerImageGenerator.swift */,
 				DB73176C20AB255000D49AF3 /* PortraitImageGenerator.swift */,
@@ -964,6 +967,7 @@
 				E4B73C0820AEEB3D00A301FB /* UniformListAdapter.swift in Sources */,
 				DB05539E20B1E6270008DAD5 /* File.swift in Sources */,
 				DB05539620B1E6270008DAD5 /* Wallpaper.swift in Sources */,
+				E426B6E120BB8B5600F54FF9 /* PartsThumbImageGenerator.swift in Sources */,
 				E4B73C0620AEEB3D00A301FB /* UniformListPresenter.swift in Sources */,
 				DB0553A620B1E6850008DAD5 /* UniformManager.swift in Sources */,
 				DB73174E20AB1D7000D49AF3 /* Definition+Wallpaper.swift in Sources */,
