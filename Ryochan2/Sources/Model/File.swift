@@ -87,9 +87,9 @@ extension String {
         return "\(withoutExtension).thumb.\(extensionWithoutDot)"
     }
     
-//    /// 共通したカラー画像用ファイルの名前
-//    /// e.g) (名前).color.png
-//    var colorResourceName: String {
-//        return "\(withoutExtension).\(colorResourceSuffix).\(extensionWithoutDot)"
-//    }
+    /// 共通したカラー画像用ファイルの名前
+    /// e.g) (名前).color.png
+    var colorResourceName: String {
+        return "\(withoutExtension).\(Const.Parts.colorResourceSuffix).\(extensionWithoutDot)"
+    }
 }

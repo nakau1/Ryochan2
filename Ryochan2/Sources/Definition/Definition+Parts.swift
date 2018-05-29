@@ -36,5 +36,11 @@ extension Path {
         static var uniformDirectory: String {
             return documentDirectory.path("parts", makeDirectory: true).path("uniform", makeDirectory: true)
         }
+        
+        /// パーツサムネイル素材ファイル
+        static func thumb(of resource: String) -> String {
+            let dir = documentDirectory.path("parts", makeDirectory: true).path("thumb", makeDirectory: true)
+            return dir.path(resource)
+        }
     }
 }

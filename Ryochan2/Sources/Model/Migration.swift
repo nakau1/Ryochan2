@@ -31,6 +31,8 @@ class Migration {
             self.jsonCoder.saveJson(self.distributePortraitCategorizedResources(), to: Path.Parts.portraitJson)
             self.jsonCoder.saveJson(self.distributeUniformCategorizedResources(), to: Path.Parts.uniformJson)
             self.jsonCoder.saveJson(self.distributeWallpapers(), to: Path.Wallpaper.json)
+            File.delete(at: Path.Migration.zipDestination)
+            File.delete(at: Path.documentDirectory.path("__MACOSX"))
             self.storedVersion = self.currentVersion
         }
     }
@@ -93,6 +95,8 @@ class Migration {
             }
             res.append(categorizedParts)
         }
+        
+        let thumbGenerator = PartsThumbImageGenerator()
         return File.fileNames(in: dst).reduce(into: ret) { res, resource in
             categories.forEach { category in
                 if !isPartsResource(name: resource, for: category) {
@@ -100,6 +104,8 @@ class Migration {
                 }
                 if !isColorResource(name: resource, for: category) {
                     ret[category]?.resources.append(resource)
+                    let thumb = thumbGenerator.generate(path: dst.path(resource), category: category)
+                    thumb.write(to: Path.Parts.thumb(of: resource))
                 }
                 let image = UIImage(path: dst.path(resource))
                 image?.write(to: src.path(resource))

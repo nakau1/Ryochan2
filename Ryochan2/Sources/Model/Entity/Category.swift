@@ -62,6 +62,15 @@ extension Category {
         ]
     }
     
+    /// 種別
+    var kind: PartsKind {
+        if Category.portraitItems.contains(self) {
+            return .portrait
+        } else {
+            return .uniform
+        }
+    }
+    
     /// パーツカテゴリ名
     var name: String {
         switch self {
@@ -216,6 +225,24 @@ extension Category {
             return .colorable
         default:
             return .none
+        }
+    }
+    
+    /// サムネイル用の色
+    var thumbDisplayColor: UIColor! {
+        switch self {
+        case .contour:
+            return #colorLiteral(red: 0.9960784314, green: 0.9215686275, blue: 0.8745098039, alpha: 1)
+        case .baseHair, .hair, .backHair:
+            return #colorLiteral(red: 0.3450980392, green: 0.1411764706, blue: 0.01960784314, alpha: 1)
+        case .sleeve1, .sleeve2, .sleeve3,
+             .collar,
+             .shirtsLarge1,  .shirtsLarge2,  .shirtsLarge3,  .shirtsLarge4,
+             .shirtsMiddle1, .shirtsMiddle2, .shirtsMiddle3, .shirtsMiddle4,
+             .shirtsSmall1,  .shirtsSmall2,  .shirtsSmall3,  .shirtsSmall4:
+            return #colorLiteral(red: 0.1764705926, green: 0.4980392158, blue: 0.7568627596, alpha: 1)
+        default:
+            return nil
         }
     }
 
