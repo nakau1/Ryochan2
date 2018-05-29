@@ -26,14 +26,20 @@ class Migration {
     }
     
     /// データ移行を実行する
-    func migrate() {
-        unzip() { [unowned self] in
-            self.jsonCoder.saveJson(self.distributePortraitCategorizedResources(), to: Path.Parts.portraitJson)
-            self.jsonCoder.saveJson(self.distributeUniformCategorizedResources(), to: Path.Parts.uniformJson)
-            self.jsonCoder.saveJson(self.distributeWallpapers(), to: Path.Wallpaper.json)
-            File.delete(at: Path.Migration.zipDestination)
-            File.delete(at: Path.documentDirectory.path("__MACOSX"))
-            self.storedVersion = self.currentVersion
+    func migrate(completed: @escaping () -> Void) {
+        DispatchQueue.global(qos: .default).async { [unowned self] in
+            self.unzip() { [unowned self] in
+                self.jsonCoder.saveJson(self.distributePortraitCategorizedResources(), to: Path.Parts.portraitJson)
+                self.jsonCoder.saveJson(self.distributeUniformCategorizedResources(), to: Path.Parts.uniformJson)
+                self.jsonCoder.saveJson(self.distributeWallpapers(), to: Path.Wallpaper.json)
+                File.delete(at: Path.Migration.zipDestination)
+                File.delete(at: Path.documentDirectory.path("__MACOSX"))
+                self.storedVersion = self.currentVersion
+                
+                DispatchQueue.main.async {
+                    completed()
+                }
+            }
         }
     }
     

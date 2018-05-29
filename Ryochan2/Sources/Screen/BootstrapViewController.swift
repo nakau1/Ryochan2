@@ -18,9 +18,10 @@ class BootstrapViewController: UITableViewController {
                 let migration = Migration()
                 
                 migration.reset()
-                migration.printDirectory()
                 if migration.needsMigration {
-                    migration.migrate()
+                    migration.migrate() {
+                        migration.printDirectory()
+                    }
                 }
             }),
             ]),

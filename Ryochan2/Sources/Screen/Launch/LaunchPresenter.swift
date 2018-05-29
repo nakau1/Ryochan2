@@ -23,14 +23,14 @@ class LaunchPresenter: LaunchPresentable {
     }
     
     func executeLaunching() {
-        exexuteMigration()
-        view.showResultExecuteLaunching()
-    }
-    
-    private func exexuteMigration() {
+        // マイグレーション
         let migration = Migration()
         if migration.needsMigration {
-            migration.migrate()
+            migration.migrate() { [unowned self] in
+                self.view.showResultExecuteLaunching()
+            }
+        } else {
+            view.showResultExecuteLaunching()
         }
     }
 }
