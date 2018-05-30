@@ -390,9 +390,9 @@
 			children = (
 				DB73179B20AB297100D49AF3 /* UIImage+ImageGenerator.swift */,
 				E426B6E020BB8B5600F54FF9 /* PartsThumbImageGenerator.swift */,
+				DB73176C20AB255000D49AF3 /* PortraitImageGenerator.swift */,
 				DB73176920AB255000D49AF3 /* FormationImageGenerator.swift */,
 				DB73176A20AB255000D49AF3 /* PlayerImageGenerator.swift */,
-				DB73176C20AB255000D49AF3 /* PortraitImageGenerator.swift */,
 				DB73176D20AB255000D49AF3 /* UniformImageGenerator.swift */,
 				DB73176B20AB255000D49AF3 /* WallpaperImageGenerator.swift */,
 			);

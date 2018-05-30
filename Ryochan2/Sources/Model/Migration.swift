@@ -32,8 +32,8 @@ class Migration {
                 self.jsonCoder.saveJson(self.distributePortraitCategorizedResources(), to: Path.Parts.portraitJson)
                 self.jsonCoder.saveJson(self.distributeUniformCategorizedResources(), to: Path.Parts.uniformJson)
                 self.jsonCoder.saveJson(self.distributeWallpapers(), to: Path.Wallpaper.json)
-                File.delete(at: Path.Migration.zipDestination)
-                File.delete(at: Path.documentDirectory.path("__MACOSX"))
+                self.makeDefaultListsIfNeeded()
+                self.deleteDestinations()
                 self.storedVersion = self.currentVersion
                 
                 DispatchQueue.main.async {
@@ -150,5 +150,21 @@ class Migration {
             
             res.append(wallpaper)
         }
+    }
+    
+    // MARK: - stored json
+    
+    private func makeDefaultListsIfNeeded() {
+        _ = UniformManager().loadList()
+        _ = PortraitManager().loadList()
+        _ = FormationManager().load()
+    }
+    
+    // MARK: - delete destinations
+    
+    private func deleteDestinations() {
+        File.delete(at: Path.Migration.zipDestination)
+        File.delete(at: Path.documentDirectory.path("__MACOSX"))
+
     }
 }

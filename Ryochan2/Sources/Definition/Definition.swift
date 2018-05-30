@@ -17,3 +17,5 @@ struct Path {
         return NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
     }
 }
+
+

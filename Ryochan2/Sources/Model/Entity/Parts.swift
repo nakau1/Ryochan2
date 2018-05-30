@@ -34,13 +34,52 @@ class Parts: Codable {
         }
     }
     
-//    /// 配色パーツ用のリソースファイル名
-//    var resourceForColor: String {
-//        var ret = resource.removedBackward(Const.Parts.imageExtension.count)
-//        ret += Const.Parts.colorPartsImageSuffix
-//        ret += Const.Parts.imageExtension
-//        return ret
-//    }
+    /// パーツ画像ディレクトリ
+    var imageDirectory: String {
+        switch category.kind {
+        case .portrait: return Path.Parts.portraitDirectory
+        case .uniform:  return Path.Parts.uniformDirectory
+        }
+    }
+    
+    /// パーツ画像ファイルパス
+    var imagePath: String {
+        return imageDirectory.path(resource)
+    }
+    
+    /// パーツ画像
+    var image: UIImage? {
+        return imagePath.fileImage
+    }
+    
+    /// パーツサムネイル画像ファイルパス
+    var thumbImagePath: String {
+        return Path.Parts.thumb(of: resource)
+    }
+    
+    /// パーツサムネイル画像
+    var thumbImage: UIImage? {
+        return thumbImagePath.fileImage
+    }
+    
+    /// パーツ色用画像ファイルパス
+    var colorImagePath: String {
+        print(imageDirectory.path(Parts.colorResourceName(of: resource)))
+        return imageDirectory.path(Parts.colorResourceName(of: resource))
+    }
+    
+    /// 指定したリソース名のパーツ色用ファイル名を取得
+    ///
+    /// - Parameter resource: リソース名
+    /// - Returns: パーツ色用ファイル名
+    class func colorResourceName(of resource: String) -> String {
+        return "\(resource.withoutExtension).\(Const.Parts.colorResourceSuffix).\(resource.extensionWithoutDot)"
+    }
+    
+    /// パーツ色用画像
+    var colorImage: UIImage? {
+        return colorImagePath.fileImage
+    }
     
     // MARK: - Decodable & Encodable
     

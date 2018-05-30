@@ -37,7 +37,7 @@ class File {
     /// - Parameter path: パス文字列
     /// - Returns: 作成を完了した場合のみ true を返す
     class func makeTextFileIfNeeded(to path: String) -> Bool {
-        if FileManager.default.fileExists(atPath: path) {
+        if !FileManager.default.fileExists(atPath: path) {
             do {
                 try "".write(to: URL(fileURLWithPath: path), atomically: true, encoding: .utf8)
                 return true

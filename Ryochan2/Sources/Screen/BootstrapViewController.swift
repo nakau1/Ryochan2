@@ -25,6 +25,14 @@ class BootstrapViewController: UITableViewController {
                 }
             }),
             ]),
+        (section: "画像ジェネレータ",
+         rows: [
+            (title: "似顔絵", handler: { vc in
+                let portrait = PortraitManager().loadList().first!
+                let image = PortraitImageGenerator().generateImage(of: portrait)
+                image.write(to: Path.documentDirectory.path("portraitImageGenerator.test.png"))
+            }),
+            ]),
         (section: "画像テスト",
          rows: [
             (title: "画像編集", handler: { vc in
