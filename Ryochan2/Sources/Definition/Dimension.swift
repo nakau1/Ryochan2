@@ -23,4 +23,7 @@ extension CGSize {
     
     /// 似顔絵の生サイズ
     static let portrait = CGSize(width: 500, height: 500)
+    
+    /// ユニフォームの生サイズ
+    static let uniform = CGSize(width: 500, height: 500)
 }

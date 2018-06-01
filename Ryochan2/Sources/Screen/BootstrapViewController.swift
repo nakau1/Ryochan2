@@ -32,6 +32,11 @@ class BootstrapViewController: UITableViewController {
                 let image = PortraitImageGenerator().generateImage(of: portrait)
                 image.write(to: Path.documentDirectory.path("portraitImageGenerator.test.png"))
             }),
+            (title: "ユニフォーム", handler: { vc in
+                let uniform = UniformManager().loadList().first!
+                let image = UniformImageGenerator().generateImage(of: uniform)
+                image.write(to: Path.documentDirectory.path("uniformImageGenerator.test.png"))
+            }),
             ]),
         (section: "画像テスト",
          rows: [
